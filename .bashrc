@@ -102,14 +102,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export BELINKR_DB_URL=belinkr
-export BELINKR_MONGO_URL=belinkr
 export IRBRC=./.irbrc
 export RACK_ENV=development
 export MAIL_USERNAME=yiyun6674
 export MAIL_PASSWORD=updateupdate
-alias belinkr='cd /home/wenbo/workspace/bitbucket/belinkr'
-alias neo4j='/home/wenbo/src/neo4j-community-1.5.M01/bin/neo4j start'
 alias irbpid="ps ax | grep irb | grep -v grep | awk '{print $1}'"
 alias gems='cd `rvm gemdir`/bundler/gems'
 alias now='date +%F-%T'
