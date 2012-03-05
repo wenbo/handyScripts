@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/lxyluu/git_work/dkuai_scm/vendor'
+let g:netrw_dirhist_2='/home/lxyluu/git_work/enjoyoung/app/views/admin/shops'
+let g:netrw_dirhist_3='/home/lxyluu/.vim'
+let g:netrw_dirhist_4='/etc/rc0.d'
+let g:netrw_dirhist_5='/home/wenbo/.rvm/gems/ruby-1.9.2-p290@oauth/gems/dm-core-1.2.0'
+let g:netrw_dirhist_6='/home/wenbo/.rvm/gems/ruby-1.9.2-p290@belinkr/bin'
+let g:netrw_dirhist_7='/home/wenbo/.rvm/gems/ruby-1.9.2-p290@belinkr/bundler/gems/belinkr_support-87e9cb5c7de9/lib'
+let g:netrw_dirhist_8='/home/wenbo/.vim/indent'
