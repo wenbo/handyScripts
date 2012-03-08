@@ -14,3 +14,7 @@ sudo /usr/bin/apt-get install build-essential openssl libreadline6 libreadline6-
 
 sudo apt-get install fglrx-updates fglrx-amdcccle-updates
 
+#install wubi input method
+sudo apt-get install scim scim-gtk2-immodule scim-modules-socket scim-modules-table scim-pinyin scim-tables-zh 
+sudo sh -c " echo 'export XMODIFIERS=@im=SCIM ; export GTK_IM_MODULE="scim" ; scim -d ' > /etc/X11/Xsession.d/95xinput " 
+sudo chmod 755 /etc/X11/Xsession.d/95xinput
