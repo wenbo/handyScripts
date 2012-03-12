@@ -57,3 +57,4 @@ map <leader>c :set filetype=css<CR>
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set tags=/home/wenbo/src/tags/gems,/home/wenbo/src/tags/
+nmap <F2> irequire "ruby-debug"<CR><ESC>
