@@ -18,3 +18,5 @@ sudo apt-get install fglrx-updates fglrx-amdcccle-updates
 sudo apt-get install scim scim-gtk2-immodule scim-modules-socket scim-modules-table scim-pinyin scim-tables-zh 
 sudo sh -c " echo 'export XMODIFIERS=@im=SCIM ; export GTK_IM_MODULE="scim" ; scim -d ' > /etc/X11/Xsession.d/95xinput " 
 sudo chmod 755 /etc/X11/Xsession.d/95xinput
+
+for x in  `ps -eo pid,comm|grep scim|awk -F\  '{ print $1 }'`; do echo $x&& kill -s 9 $x; done

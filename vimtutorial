@@ -41,3 +41,5 @@ daw  删除光标上的单词 (包括空白字符)
 dG   删除到文件末
 dgg  删除到文件首
 如果你用 "c" 代替 "d",这会变成修改命令;而改用 "y",则变成拷贝命令,等等等
+cis  change inner sentence
+vas  visualize a sentence
