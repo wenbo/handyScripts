@@ -20,3 +20,6 @@ sudo sh -c " echo 'export XMODIFIERS=@im=SCIM ; export GTK_IM_MODULE="scim" ; sc
 sudo chmod 755 /etc/X11/Xsession.d/95xinput
 
 for x in  `ps -eo pid,comm|grep scim|awk -F\  '{ print $1 }'`; do echo $x&& kill -s 9 $x; done
+
+dpkg --get-selections > myselections
+dpkg --set-selections < myselections
