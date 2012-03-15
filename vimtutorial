@@ -43,3 +43,9 @@ dgg  删除到文件首
 如果你用 "c" 代替 "d",这会变成修改命令;而改用 "y",则变成拷贝命令,等等等
 cis  change inner sentence
 vas  visualize a sentence
+
+:marks      List all the current marks (not a motion command).
+'{a-z}      `{a-z}		Jump to the mark {a-z} in the current buffer.
+CTRL-O      Go to [count] Older cursor position in jump list
+CTRL-I			Go to [count] newer cursor position in jump list
+:ju[mps]		Print the jump list (not a motion command).
