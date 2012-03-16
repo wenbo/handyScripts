@@ -58,5 +58,5 @@ set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set tags=/home/wenbo/src/tags/gems,/home/wenbo/src/tags/
 nmap <F2> irequire "ruby-debug"<CR><ESC>
-nmap <UP> <C-W>+
-nmap <DOWN> <C-W>-
+nmap <UP> <C-W>20+
+nmap <DOWN> <C-W>20-

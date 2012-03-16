@@ -1,3 +1,6 @@
+:version 可以看到 Vim 有很多不同的特性(feature)可在编译时打开或关闭
+history | vim -
+
 :map <F2> GoDate: <Esc>:read !date<CR>kJ
 这显示了如何使用三种不同的运行模式。在用 "G" 移动到最后一行后,"o" 命令开始一
 个新行并开始插入模式。然后文本 "Date: " 被输入并用 <Esc> 离开插入模式。
@@ -9,6 +12,9 @@
 :omap 操作符等待模式
 :map! 插入和命令行模式
 :imap 插入模式
+
+nmap <UP> <C-W>20+
+nmap <DOWN> <C-W>20-
 
 :cmap 命令行模式
 要删除一个映射,使用 ":unmap" 命令。同样,删除映射的命令也和运行模式相关:
@@ -43,9 +49,18 @@ dgg  删除到文件首
 如果你用 "c" 代替 "d",这会变成修改命令;而改用 "y",则变成拷贝命令,等等等
 cis  change inner sentence
 vas  visualize a sentence
-
-:marks      List all the current marks (not a motion command).
+        
+:marks List all the current marks (not a motion command).
+A mark is not visible in any way.  It is just a position in the file that is
+remembered. Do not confuse marks with named registers, they are totally unrelated.
 '{a-z}      `{a-z}		Jump to the mark {a-z} in the current buffer.
 CTRL-O      Go to [count] Older cursor position in jump list
 CTRL-I			Go to [count] newer cursor position in jump list
 :ju[mps]		Print the jump list (not a motion command).
+
+
+*  Search forward for the [count]'th occurrence of the word nearest to the cursor.
+#  Same as "*", but search backward.
+
+:mak[e][!]  [arguments]	1. If vim was built with |+autocmd|, all relevant |QuickFixCmdPre| autocommands are executed.
+:TOhtml ( 根 据 Vim 的 语 法 加 亮 的 方 式 生 成 HTML 代 码 )
