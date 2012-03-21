@@ -64,3 +64,12 @@ CTRL-I			Go to [count] newer cursor position in jump list
 
 :mak[e][!]  [arguments]	1. If vim was built with |+autocmd|, all relevant |QuickFixCmdPre| autocommands are executed.
 :TOhtml ( 根 据 Vim 的 语 法 加 亮 的 方 式 生 成 HTML 代 码 )
+
+CHANGING FILES
+:e [file]            Examine a new file.
+^X^V                 Same as :e.
+:n                *  Examine the (N-th) next file from the command line.
+:p                *  Examine the (N-th) previous file from the command line.
+:x                *  Examine the first (or N-th) file from the command line.
+:d                   Delete the current file from the command line list.
+=  ^G  :f            Print current file name.
