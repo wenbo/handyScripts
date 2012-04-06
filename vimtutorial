@@ -73,3 +73,6 @@ CHANGING FILES
 :x                *  Examine the first (or N-th) file from the command line.
 :d                   Delete the current file from the command line list.
 =  ^G  :f            Print current file name.
+
+:!echo %:p  打印出当前文件的绝对路径 Make file name a full path.
+:w !sudo tee %    How to Save file in vi not opened with sudo 
