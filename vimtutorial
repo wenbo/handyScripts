@@ -76,3 +76,5 @@ CHANGING FILES
 
 :!echo %:p  打印出当前文件的绝对路径 Make file name a full path.
 :w !sudo tee %    How to Save file in vi not opened with sudo 
+:scrip[tnames]    List all sourced script names, in the order they were  
+first sourced.  The number is used for the script ID <SID>.                                                 

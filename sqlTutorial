@@ -1,0 +1,6 @@
+postgres: 
+   \du[+]  [PATTERN]      list roles
+   /usr/lib/postgresql/9.1/bin/postgres -D /var/lib/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+   /etc/postgresql/9.1/main/pg_hba.conf
+   $ psql -U lxr lxr
+   > \i lxrconf.d/initdb-postgres-custom.sql
