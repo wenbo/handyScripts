@@ -78,3 +78,7 @@ CHANGING FILES
 :w !sudo tee %    How to Save file in vi not opened with sudo 
 :scrip[tnames]    List all sourced script names, in the order they were  
 first sourced.  The number is used for the script ID <SID>.                                                 
+
+To define a mapping which uses the "mapleader" variable, the special string
+"<Leader>" can be used.  It is replaced with the string value of "mapleader".
+If "mapleader" is not set or empty, a backslash(\) is used instead.
