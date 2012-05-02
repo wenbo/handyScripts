@@ -10,3 +10,6 @@ ps -ef |grep  httpd| grep -v grep| cut -c 9-15| sudo xargs kill -9
 wenbo@hp:mod_perl-2.0.6$ perl Makefile.PL MP_APXS=/usr/local/apache2/bin/apxs
 MP_APR_CONFIG=/usr/local/apr/bin/apr-1-config #wenbo@hp:httpd-2.2.9
 sudo tcpdump -i eth0
+sudo tcpdump -i eth0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) -
+ ((tcp[12]&0xf0)>>2)) != 0)'
+
