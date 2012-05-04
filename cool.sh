@@ -12,4 +12,5 @@ MP_APR_CONFIG=/usr/local/apr/bin/apr-1-config #wenbo@hp:httpd-2.2.9
 sudo tcpdump -i eth0
 sudo tcpdump -i eth0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) -
  ((tcp[12]&0xf0)>>2)) != 0)'
+ echo 4 > /sys/class/backlight/acpi_video0/brightness
 
