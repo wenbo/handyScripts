@@ -4,3 +4,5 @@ postgres:
    /etc/postgresql/9.1/main/pg_hba.conf
    $ psql -U lxr lxr
    > \i lxrconf.d/initdb-postgres-custom.sql
+   createdb -U lxr lxr
+   sudo /etc/init.d/postgresql restart
