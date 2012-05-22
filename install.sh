@@ -1,3 +1,4 @@
+wenbo@hp:~$ usb-creator-gtk
 sudo echo "deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu intrepid main" >> /etc/apt/sources.list 
 sudo echo "deb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu intrepid main" >> /etc/apt/sources.list  
 sudo apt-get update
