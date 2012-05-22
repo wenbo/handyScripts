@@ -17,8 +17,26 @@ wenbo@hp:mod_perl-2.0.6$ perl Makefile.PL MP_APXS=/usr/local/apache2/bin/apxs
 MP_APR_CONFIG=/usr/local/apr/bin/apr-1-config #wenbo@hp:httpd-2.2.9
 ################# LXR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+
+################# Network @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+sudo apt-get install wireshark
 sudo tcpdump -i eth0
 sudo tcpdump -i eth0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) -
  ((tcp[12]&0xf0)>>2)) != 0)'
+################# Network @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
  echo 4 > /sys/class/backlight/acpi_video0/brightness
 
+ wenbo@hp:~$ ls -l `locate libc.so.6`
+
+chkconfig --list            # 列出所有系统服务
+chkconfig --list | grep on  # 列出所有启动的系统服务程序
+grep Mem /proc/meminfo 
+du -sh <目录名>             # 查看指定目录的大小
+cat /proc/loadavg           # 查看系统负载磁盘和分区
+dpkg -S file――这个文件属于哪个已安装软件包。 
+dpkg -L package――列出软件包中的所有文件。 
+iptables -L                          # 查看防火墙设置
+route -n                               # 查看路由表
+netstat -lntp                       # 查看所有监听端口
+netstat -antp                      # 查看所有已经建立的连接
+netstat -s                           # 查看网络统计信息进程
