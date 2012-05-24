@@ -1,0 +1,11 @@
+manual:
+http://wiki.otterhub.org/index.php?title=Installation_on_Ubuntu_Lucid_Lynx_(10.4)
+wenbo@hp:tar$ wget http://ftp.otrs.org/pub/otrs/otrs-3.0.12.tar.gz
+sudo apt-get  install libapache2-mod-perl2 libdbd-mysql-perl libnet-dns-perl libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl libsoap-lite-perl libgd-text-perl libgd-graph-perl libapache-dbi-perl mysql-server`
+
+Database-User (New)
+  Password: otrs
+
+http://127.0.0.1/otrs/index.pl
+  username: root@localhost
+  password:  root
