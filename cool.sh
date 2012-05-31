@@ -23,6 +23,7 @@ sudo apt-get install wireshark
 sudo tcpdump -i eth0
 sudo tcpdump -i eth0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) -
  ((tcp[12]&0xf0)>>2)) != 0)'
+lsof -i :25 #:25和-i选项组合可以让lsof列出占用TCP或UDP的25端口的进程。
 ################# Network @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
  echo 4 > /sys/class/backlight/acpi_video0/brightness
 

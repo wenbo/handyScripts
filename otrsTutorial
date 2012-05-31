@@ -9,3 +9,9 @@ Database-User (New)
 http://127.0.0.1/otrs/index.pl
   username: root@localhost
   password:  root
+
+http://127.0.0.1/otrs/index.pl?Action=AdminSysConfig;Subaction=Edit;SysConfigGroup=Ticket;SysConfigSubGroup=Core::Ticket#Ticket::Service
+Edit Config Settings in Ticket -> Core::Ticket
+
+the guidline of otrs web service
+http://doc.otrs.org/3.1/en/html/genericinterface-webservices.html

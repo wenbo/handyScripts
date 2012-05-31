@@ -5,8 +5,8 @@ sudo apt-get update
 sudo apt-get install chromium-browser
 
 sudo apt-get install git 
-
 sudo apt-get install curl
+sudo apt-get install cloc
 
 curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm

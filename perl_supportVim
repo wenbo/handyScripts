@@ -1,0 +1,13 @@
+$ vim myprogram.pl
+
+Adding Perl Subroutine using \isu in normal mode
+
+Insert a Function Header using \cfu
+
+Add a Frame comment using \cfr
+
+Save the file and execute it immediately using \rr
+
+Comment a block of code using \cc
+
+Insert pre-defined code-snippet to the Perl code using \nr
