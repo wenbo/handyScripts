@@ -7,6 +7,8 @@ sudo apt-get install chromium-browser
 sudo apt-get install git 
 sudo apt-get install curl
 sudo apt-get install cloc
+sudo apt-get install vsftpd
+netstat -na --ip 
 
 curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
