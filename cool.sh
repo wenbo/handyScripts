@@ -43,3 +43,4 @@ route -n                               # 查看路由表
 netstat -lntp                       # 查看所有监听端口
 netstat -antp                      # 查看所有已经建立的连接
 netstat -s                           # 查看网络统计信息进程
+wenbo@hp:~$ service vsftpd restart
