@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset='utf-8'>
+    <script src="./js/jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="./js/jquery-ui-1.8.17.custom.js" type="text/javascript"></script>
+    <script src="./js/strophe.js" type="text/javascript"></script>
+    <script src="./js/flxhr/flXHR.js" type="text/javascript"></script>
+    <script src="./js/strophe.flxhr.js" type="text/javascript"></script>
+    <link href='./css/jquery-ui-1.8.17.custom.css' rel='stylesheet'>
+
+    <script src="./js/client/gab.js" type="text/javascript"></script>
+    <link href='./css/gab.css' rel='stylesheet'>
+    <title></title>
+</head>
+<body>
+<h1>Gab</h1>
+
+<div id="toolbar">
+    <span class="button" id="new-contact">添加联系人</span> ||
+    <span class="button" id="new-chat">正在聊天...</span> ||
+    <span class="button" id="disconnect">断开</span>
+</div>
+
+<div id="chat-area">
+    <ul></ul>
+</div>
+
+<div id="roster-area">
+    <ul></ul>
+</div>
+
+<!-- login dialog -->
+<div id="login_dialog" class="hidden">
+    <label>JID:</label><input type="text" id="jid">
+    <label>Password:</label><input type="password" id="password">
+</div>
+
+<!-- contact dialog -->
+<div id="contact_dialog" class="hidden">
+    <label>JID:</label><input type="text" id="contact-jid">
+    <label>Name:</label><input type="text" id="contact-name">
+</div>
+
+
+<!-- chat dialog -->
+<div id="chat_dialog" class="hidden">
+    <label>JID:</label><input type="text" id="char-jid">
+</div>
+
+<!-- approval dialog -->
+<div id="approve_dialog" class="hidden">
+    <p><span id="approve-jid"></span> 请求加您为好友.同意? 还是 拒绝?</p>
+</div>
+
+
+
+</body>
+</html>
