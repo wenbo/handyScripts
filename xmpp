@@ -1,0 +1,9 @@
+wenbo@hp:~$ sudo apt-get install erlang-base
+wenbo@hp:~$ sudo apt-get install ejabberd
+sudo ejabberdctl status
+ejabberdctl register admin localhost 123456
+
+/etc/ejabberd/ejabberd.cfg#59    {acl, admin, {user, "admin", "localhost"}}.
+/etc/ejabberd/ejabberd.cfg#568   {mod_http_bind,      []},
+
+wenbo@hp:handyScripts$ sudo ejabberdctl restart
