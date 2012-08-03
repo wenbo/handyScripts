@@ -6,7 +6,11 @@ $su - #  (注意有- ，这和su是不同的，在用命令"su"的时候只是�
 ~$ netstat -nap |grep 7001
 Firefox plugin: autoproxy
 pmap pid
+
 ssh -qTfnN -D 7070 wenbo@0371zhong.com
+ssh-keygen -t rsa 
+scp .ssh/id_rsa.pub wenbo@0371zhong.com:~/.ssh/authorized_keys
+
 以 root 执行： cd /home chmod 700 * 
 ps -ef |grep  httpd| grep -v grep| cut -c 9-15| sudo xargs kill -9
 
