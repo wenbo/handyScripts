@@ -40,6 +40,7 @@ chkconfig --list | grep on  # 列出所有启动的系统服务程序
 grep Mem /proc/meminfo 
 du -sh <目录名>             # 查看指定目录的大小
 cat /proc/loadavg           # 查看系统负载磁盘和分区
+dpkg --list
 dpkg -S file――这个文件属于哪个已安装软件包。 
 dpkg -L package――列出软件包中的所有文件。 
 iptables -L                          # 查看防火墙设置
@@ -48,3 +49,6 @@ netstat -lntp                       # 查看所有监听端口
 netstat -antp                      # 查看所有已经建立的连接
 netstat -s                           # 查看网络统计信息进程
 wenbo@hp:~$ service vsftpd restart
+
+sudo mount -t nfs -o resvport 192.168.1.115:/home/bob/nfs /private/nfs
+sudo wget -r -p -np -k http://jquery-in-place-editor.googlecode.com/svn/trunk/demo/index.html
