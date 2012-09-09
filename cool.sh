@@ -52,3 +52,4 @@ wenbo@hp:~$ service vsftpd restart
 
 sudo mount -t nfs -o resvport 192.168.1.115:/home/bob/nfs /private/nfs
 sudo wget -r -p -np -k http://jquery-in-place-editor.googlecode.com/svn/trunk/demo/index.html
+tmux -S /tmp/pair attach 
