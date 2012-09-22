@@ -1,0 +1,12 @@
+######################### gitlabhq #################################
+https://github.com/gitlabhq/gitlabhq/blob/stable/doc/installation.md
+######################### gitlabhq #################################
+
+sudo adduser \
+       --system \
+       --shell /bin/sh \
+       --gecos 'git version control' \
+       --group \
+       --disabled-password \
+       --home /home/git \
+       git

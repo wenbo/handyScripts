@@ -1,0 +1,4 @@
+ RAILS_ENV=production ruby script/console 
+ cd /home/kembo/www/sharp/staging
+RAILS_ENV=production rake db:migrate:down VERSION=20120718135026
+RAILS_ENV=production rake db:migrate:up VERSION=20120718135026

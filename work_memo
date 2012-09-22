@@ -1,0 +1,2 @@
+unzip -O CP936 0919.zip
+rake db:migrate:up VERSION=20080906120000
