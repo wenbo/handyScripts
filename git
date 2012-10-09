@@ -10,3 +10,5 @@ sudo adduser \
        --disabled-password \
        --home /home/git \
        git
+
+git clone git@localhost:exampleproj.git

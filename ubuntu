@@ -1,2 +1,3 @@
 $ dpkg -L libxslt-dev
 $ apt-cache show checkinstall
+$ nautilus # then CTRL+L  
