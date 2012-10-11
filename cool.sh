@@ -30,6 +30,9 @@ sudo tcpdump -i eth0
 sudo tcpdump -i eth0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) -
  ((tcp[12]&0xf0)>>2)) != 0)'
 lsof -i :25 #:25和-i选项组合可以让lsof列出占用TCP或UDP的25端口的进程。
+bob@hp:production$ lsof -i:3000
+[kembo@51idc-02 ~]$ netstat -anp | grep 3000
+pmap pid
 ################# Network @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
  echo 4 > /sys/class/backlight/acpi_video0/brightness
 
@@ -49,7 +52,6 @@ netstat -lntp                       # 查看所有监听端口
 netstat -antp                      # 查看所有已经建立的连接
 netstat -s                           # 查看网络统计信息进程
 wenbo@hp:~$ service vsftpd restart
-
 sudo mount -t nfs -o resvport 192.168.1.115:/home/bob/nfs /private/nfs
 sudo wget -r -p -np -k http://jquery-in-place-editor.googlecode.com/svn/trunk/demo/index.html
 axel  -n 10  -vo .  http://xxx/xx.tar.gz 

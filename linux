@@ -1,1 +1,2 @@
-rsync
+$sudo dmidecode |grep -A16 "Memory Device$"
+ rsync
