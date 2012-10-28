@@ -9,3 +9,10 @@ postgres:
 
    sudo apt-get install emma
    sudo apt-get install clustalw
+
+
+mysql
+  mysqldump -u 用户名 -p 数据库名 > 导出的文件名    
+  mysqldump -u wcnc -p smgp_apps_wcnc > wcnc.sql
+
+SELECT users.name, comments.content FROM manshion_development.comments, users where comments.user_id = users.id limit 0, 100000;

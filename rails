@@ -2,3 +2,5 @@
  cd /home/kembo/www/sharp/staging
 RAILS_ENV=production rake db:migrate:down VERSION=20120718135026
 RAILS_ENV=production rake db:migrate:up VERSION=20120718135026
+
+grep "200 OK" production.log | awk '{print "ALL: " $5 "  View: " $7 " DB: " $10  }' | sort -r | head -n 500 > timing.log

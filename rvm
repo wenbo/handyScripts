@@ -1,0 +1,2 @@
+bob@hp:trunk$ rvm env
+bob@hp:trunk$ rvm gemset list

@@ -1,0 +1,4 @@
+注意：如果修改了svn配置，需要重启svn服务，步骤如下：
+# ps aux|grep svnserve
+# kill -9 ID号
+# svnserve -d -r /home/svn
