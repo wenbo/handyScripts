@@ -1,7 +1,9 @@
-$sudo dmidecode |grep -A16 "Memory Device$"
+$udo dmidecode |grep -A16 "Memory Device$"
  rsync
 
  bob@hp:handyScripts$ sudo apt-get install inetutils-traceroute
 
  /usr/sbin/logrotate /etc/logrotate.conf
  bob@hp:trunk$ cat  /var/lib/logrotate/status 
+
+$ /usr/bin/env  ruby

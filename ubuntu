@@ -1,3 +1,7 @@
 $ dpkg -L libxslt-dev
 $ apt-cache show checkinstall
 $ nautilus # then CTRL+L  
+$ sudo updatedb 
+
+mosh
+http://mosh.mit.edu/

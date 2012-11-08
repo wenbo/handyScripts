@@ -4,3 +4,10 @@ RAILS_ENV=production rake db:migrate:down VERSION=20120718135026
 RAILS_ENV=production rake db:migrate:up VERSION=20120718135026
 
 grep "200 OK" production.log | awk '{print "ALL: " $5 "  View: " $7 " DB: " $10  }' | sort -r | head -n 500 > timing.log
+
+
+=============== Phusion Passenger Standalone web server started ===============
+rvmsudo passenger start -p 80 
+
+crontab -l
+whenever -c

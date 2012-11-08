@@ -1,0 +1,7 @@
+RubyMine
+key: http://blog.csdn.net/huguang/article/details/7661620
+
+If you have both Oracle (Sun) JDK and OpenJDK installed
+please validate either RUBYMINE_JDK, JDK_HOME, or JAVA_HOME environment variable points to valid Oracle (Sun) JDK installation.
+See http://ow.ly/6TuKQ for more info on switching default JDK.
+
