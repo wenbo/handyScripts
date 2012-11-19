@@ -12,3 +12,9 @@ sudo adduser \
        git
 
 git clone git@localhost:exampleproj.git
+
+git fetch
+Fetch seems to update the local representation of the remote branch, which doesn't necessarily happen when you do a "git pull remote branch".
+
+$ git stash
+$ git stash pop
