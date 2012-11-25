@@ -11,3 +11,6 @@ rvmsudo passenger start -p 80
 
 crontab -l
 whenever -c
+
+rails 2.3.8
+ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)

@@ -7,3 +7,4 @@ $udo dmidecode |grep -A16 "Memory Device$"
  bob@hp:trunk$ cat  /var/lib/logrotate/status 
 
 $ /usr/bin/env  ruby
+ulimit -n # /etc/security/limits.conf
