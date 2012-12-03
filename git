@@ -18,3 +18,7 @@ Fetch seems to update the local representation of the remote branch, which doesn
 
 $ git stash
 $ git stash pop
+
+$ mkdir appname.git
+$ cd appname.git/
+$ git --bare init

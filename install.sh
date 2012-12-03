@@ -1,3 +1,18 @@
+打开/etc/bash.bashrc（需要root权限）或者~/.bashrc文件加入如下内容：
+
+# Set colors for man pages
+man() {
+  env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    man "$@"
+}
+
 wenbo@hp:~$ sudo su
 wenbo@hp:~$ usb-creator-gtk
 sudo echo "deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu intrepid main" >> /etc/apt/sources.list 
@@ -34,3 +49,4 @@ dpkg --set-selections < myselections
 
 打开外接显示器，同时关闭笔记本液晶屏幕（只用外接显示器工作）
 xrandr --output VGA1 --auto --output LVDS1 --off
+

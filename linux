@@ -8,3 +8,4 @@ $udo dmidecode |grep -A16 "Memory Device$"
 
 $ /usr/bin/env  ruby
 ulimit -n # /etc/security/limits.conf
+

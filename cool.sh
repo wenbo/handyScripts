@@ -14,6 +14,7 @@ scp .ssh/id_rsa.pub wenbo@0371zhong.com:~/.ssh/authorized_keys
 
 以 root 执行： cd /home chmod 700 * 
 ps -ef |grep  httpd| grep -v grep| cut -c 9-15| sudo xargs kill -9
+find . -type d -name ".svn"|xargs rm -rf
 
 ################# LXR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ./configure --prefix=/usr/local/apache2
