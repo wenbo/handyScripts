@@ -1,0 +1,2 @@
+wine msiexec /i install.msi
+bob@hp:drive_c$ env LANG=zh_CN.UTF-8 wine Ear50s.exe 

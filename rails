@@ -12,5 +12,40 @@ rvmsudo passenger start -p 80
 crontab -l
 whenever -c
 
-rails 2.3.8
+rails 2.3.8 .irbrc
 ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
+
+
+>>>>>>>>>>>>>>>>>> apache >>>>>>>>>>>>>>>>>>>>>>
+/usr/local/nginx
+/usr/sbin/apache2
+/etc/apache2/apache2.conf
+
+Installation instructions for required software
+
+* To install Apache 2:
+Please run apt-get install apache2-mpm-prefork as root.
+
+* To install Apache 2 development headers:
+Please run apt-get install apache2-prefork-dev as root.
+
+* To install Apache Portable Runtime (APR) development headers:
+Please run apt-get install libapr1-dev as root.
+
+* To install Apache Portable Runtime Utility (APU) development headers:
+Please run apt-get install libaprutil1-dev as root.
+
+If the aforementioned instructions didn't solve your problem, then please take
+a look at the Users Guide:
+
+/home/bob/.rvm/gems/ruby-1.8.7-p370/gems/passenger-3.0.18/doc/Users guide Apache.html
+
+
+Please edit your Apache configuration file, and add these lines:
+LoadModule passenger_module /home/bob/.rvm/gems/ruby-1.8.7-p370/gems/passenger-3.0.18/ext/apache2/mod_passenger.so
+PassengerRoot /home/bob/.rvm/gems/ruby-1.8.7-p370/gems/passenger-3.0.18
+PassengerRuby /home/bob/.rvm/wrappers/ruby-1.8.7-p370/ruby
+
+After you restart Apache, you are ready to deploy any number of Ruby on Rails
+
+<<<<<<<<<<<<<<<<<< apache <<<<<<<<<<<<<<<<<<<<<<

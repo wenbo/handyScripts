@@ -14,5 +14,6 @@ postgres:
 mysql
   mysqldump -u 用户名 -p 数据库名 > 导出的文件名    
   mysqldump -u wcnc -p smgp_apps_wcnc > wcnc.sql
+  mysqldump -u kembo -p mailbulk > mailbulk.sql
 
 SELECT users.name, comments.content FROM manshion_development.comments, users where comments.user_id = users.id limit 0, 100000;
