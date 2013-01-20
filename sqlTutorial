@@ -17,3 +17,6 @@ mysql
   mysqldump -u kembo -p mailbulk > mailbulk.sql
 
 SELECT users.name, comments.content FROM manshion_development.comments, users where comments.user_id = users.id limit 0, 100000;
+
+SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users where result_logs.user_id = users.id limit 0, 100000;
+

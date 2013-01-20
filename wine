@@ -1,2 +1,6 @@
 wine msiexec /i install.msi
 bob@hp:drive_c$ env LANG=zh_CN.UTF-8 wine Ear50s.exe 
+
+bob@hp:handyScripts$ cd ~/wine/调音软件/
+bob@hp:调音软件$ env LANG=zh_CN.UTF-8 wine APGuitarTuner.exe 
+

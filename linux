@@ -9,3 +9,5 @@ $udo dmidecode |grep -A16 "Memory Device$"
 $ /usr/bin/env  ruby
 ulimit -n # /etc/security/limits.conf
 
+使用sudo fdisk -l 命令查看自己的分区
+sudo mount -o codepage=936,iocharset=utf8 /dev/sda6 /mnt/localdisk
