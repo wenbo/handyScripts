@@ -1,0 +1,10 @@
+bob@hp:~$ sudo cat  /etc/exports
+/home/bob/centos_share *(rw,no_root_squash)
+
+bob@hp:handyScripts$ sudo service portmap restart
+bob@hp:~$ service portmap status
+
+bob@hp:handyScripts$ sudo /etc/init.d/nfs-kernel-server restart
+bob@hp:handyScripts$ showmount -e
+
+[wenbo@192 nfs]$ sudo mount -v  192.168.2.104:/home/bob/centos_share ~/nfs

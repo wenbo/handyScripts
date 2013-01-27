@@ -1,3 +1,9 @@
 #redis
 WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf
 sysctl vm.overcommit_memory=1
+
+3、安装内核对应版本的kernel-devel
+安装内核
+
+ version=`uname -a | awk '{print $3}'` 
+ yum install kernel-devel-${version}
