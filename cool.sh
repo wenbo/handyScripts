@@ -26,6 +26,12 @@ wenbo@hp:mod_perl-2.0.6$ perl Makefile.PL MP_APXS=/usr/local/apache2/bin/apxs
 MP_APR_CONFIG=/usr/local/apr/bin/apr-1-config #wenbo@hp:httpd-2.2.9
 ################# LXR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+################# Server @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+iostat
+iostat -x 1 10
+lsof
+################# Server @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 
 ################# Network @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 sudo apt-get install wireshark
@@ -36,6 +42,7 @@ lsof -i :25 #:25和-i选项组合可以让lsof列出占用TCP或UDP的25端口�
 bob@hp:production$ lsof -i:3000
 [kembo@51idc-02 ~]$ netstat -anp | grep 3000
 pmap pid
+bob@linux:ruby-china$ nslookup -type=mx 0371zhong.com
 ################# Network @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
  echo 4 > /sys/class/backlight/acpi_video0/brightness
 
@@ -59,3 +66,5 @@ sudo mount -t nfs -o resvport 192.168.1.115:/home/bob/nfs /private/nfs
 sudo wget -r -p -np -k http://jquery-in-place-editor.googlecode.com/svn/trunk/demo/index.html
 axel  -n 10  -vo .  http://xxx/xx.tar.gz 
 tmux -S /tmp/pair attach 
+
+sudo dpkg-reconfigure gdm
