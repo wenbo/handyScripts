@@ -1,0 +1,15 @@
+webm, mp4
+
+
+sources: [{
+file: "Videos/PingPong440blue.webm",
+        width: "100%",
+        height: "100%"
+},{
+file:
+  "Videos/PingPong440blue.mp4",
+    width:
+      "100%",
+    height:
+      "100%"
+}],

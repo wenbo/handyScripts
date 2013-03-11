@@ -16,8 +16,17 @@ mysql
   mysqldump -u wcnc -p smgp_apps_wcnc > wcnc.sql
   mysqldump -u kembo -p mailbulk > mailbulk.sql
   mysqldump -u root -p zine_production > zine_production_20130217.sql
+  mysqldump -u root -p glico_cp_production > glico_cp_production_20130228.sql
+
+  mysqldump -u root -p glico_development.divisions > glico_cp_divisions.sql
 
 SELECT users.name, comments.content FROM manshion_development.comments, users where comments.user_id = users.id limit 0, 100000;
 
 SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users where result_logs.user_id = users.id limit 0, 100000;
+
+
+ SELECT COUNT(posts.user_id ) as count_all , users.name  FROM  posts   INNER
+ JOIN  users ON  users.id =  posts.user_id   and  posts.created_at  BETWEEN
+ '2008-08-23 19:00:00'  AND  '2015-08-23 19:05:00' GROUP BY posts.user_id  ORDER
+ BY count_all DESC  ;
 
