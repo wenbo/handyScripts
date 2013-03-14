@@ -30,3 +30,6 @@ SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users w
  '2008-08-23 19:00:00'  AND  '2015-08-23 19:05:00' GROUP BY posts.user_id  ORDER
  BY count_all DESC  ;
 
+ 只导入数据表结构
+ bob@linux:~$ mysqldump --opt -d postfix  -u root -p >> bob.sql
+

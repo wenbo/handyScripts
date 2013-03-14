@@ -1,0 +1,72 @@
+bob@linux:handyScripts$ tail -f  /var/log/mysql/error.log
+
+http://hi.baidu.com/michael7768/item/1b1dcfb394c3a377254b098a
+sudo tail -f /var/log/syslog
+
+master: koeda@192.168.1.202
+slave: 192.168.1.114
+
+show master status;
+show variables like 'server_id';
+show slave status;
+
+master:
+   GRANT FILE ON *.* TO 'backup'@'192.168.1.114' IDENTIFIED BY '1234';
+   GRANT REPLICATION SLAVE ON *.* TO 'backup'@'192.168.1.114' IDENTIFIED BY '1234';
+
+   create database test;
+   create table mytest (username varchar(20),password varchar(20));
+
+   修改A的/etc/my.cnf 文件，在my.cnf 配置项中加入下面配置：
+   server-id = 1      #Server 标识
+   log-bin = /var/log/mysql/mysql-bin.log 
+   binlog-do-db=test
+
+   insert into mytest(username,password) values('user1','password1');
+   insert into mytest(username,password) values('user2','password2');
+   insert into mytest(username,password) values('user3','password3');
+
+   restart;
+   show master status; #用show master status 命令看日志情况。
+
+
+slave:
+  create database test;
+  create table mytest (username varchar(20),password varchar(20));
+  
+  修改slave的/etc/my.cnf 文件，在my.cnf 配置项中加入下面配置：
+  server-id=2
+  /******  no need ********/
+  master-host=192.168.1.202
+  master-user=backup    #同步用户帐号
+  master-password=1234
+  master-port=3306
+  master-connect-retry=60 #预设重试间隔60秒
+  /****** no need *******/
+  replicate-do-db=test    #告诉slave只做backup数据库的更新
+  skip-slave-start
+
+   CHANGE MASTER TO MASTER_HOST='192.168.1.202',MASTER_USER='backup',MASTER_PASSWORD='1234',MASTER_LOG_FILE='mysql-bin.000003',MASTER_LOG_POS=330;
+
+   mysql> start slave;
+   ERROR 1201 (HY000): Could not initialize master info structure; more error
+   messages can be found in the MySQL error log
+   mysql> slave stop;
+   mysql> reset slave;
+
+
+  在启动辅库slave的时候必须先把数据同步，并删除日志目录下的：master.info文件。
+  因为master.info记录了上次要连接主库的信息，如果不删除，即使my.cnf里进行了修改，
+  也不起作用。因为读取的还是master.info文件里的信息。  
+     
+
+  show variables like 'server_id';
+
+  bob@linux:mysql$ sudo  service mysql stop
+  bob@linux:mysql$ sudo  service mysql start
+
+  show slave status;
+
+
+  bob@linux:handyScripts$ mysql -u root -p -h 192.168.1.202
+  mysql> show grants for backup@192.168.1.114;
