@@ -1,0 +1,7 @@
+passenger-config --root
+Run Nginx’s configure script with --add-module=/path-to-passenger-root/ext/nginx
+/usr/local/nginx/sbin
+ /usr/local/rvm/gems/ruby-1.9.3-p125/gems/passenger-3.0.19/ext/nginx/
+
+ bob@linux:sbin$ sudo /usr/local/nginx/sbin/nginx -c /home/bob/workspace/github/handyScripts/nginx_config
+

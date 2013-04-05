@@ -13,3 +13,6 @@ file:
     height:
       "100%"
 }],
+
+
+sudo gedit  /etc/fonts/conf.d/49-sansserif.conf

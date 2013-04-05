@@ -5,6 +5,11 @@ RAILS_ENV=production rake db:migrate:up VERSION=20120718135026
 
 grep "200 OK" production.log | awk '{print "ALL: " $5 "  View: " $7 " DB: " $10  }' | sort -r | head -n 500 > timing.log
 
+================== rake db ================
+rails generate migration AddTargetBlankToTopimages target_blank:boolean
+================== rake db ================
+
+
 
 =============== Phusion Passenger Standalone web server started ===============
 rvmsudo passenger start -p 80 
