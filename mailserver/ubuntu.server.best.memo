@@ -1,0 +1,1 @@
+$myhostname /etc/amavis/conf.d/05-node_id

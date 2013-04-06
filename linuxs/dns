@@ -1,0 +1,2 @@
+sudo vi /etc/resolv.conf
+  nameserver 192.168.1.110  

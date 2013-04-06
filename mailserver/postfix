@@ -5,3 +5,4 @@ CREATE TABLE `virtual_domains` (id INT NOT NULL AUTO_INCREMENT ,name VARCHAR(50)
 
 sudo apt-get install phpmyadmin telnet mutt bsd-mailx
 
+$ sudo postfix check
