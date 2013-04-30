@@ -92,7 +92,11 @@ http {
           root /home/bob/workspace/kembo/git/new_glico/glico/public;                    
         }                                                                               
 
-        location ~ \.(js|css|jpg|jpeg|gif|png|swf|html|exe|flv)$ {                      
+        location ^~ /example/ {                                                            
+          root /home/bob/workspace/kembo/git/new_glico/glico/public;                    
+        }                                                                               
+
+        location ~ \.(js|css|jpg|jpeg|gif|png|swf|html|exe|flv|example)$ {                      
           root /home/bob/static_html;                                                   
           index index.html index.htm;                                                   
         }            

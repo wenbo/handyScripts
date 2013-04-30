@@ -20,6 +20,8 @@ mysql
 
   mysqldump -u root -p glico_development.divisions > glico_cp_divisions.sql
 
+  mysqldump -u root -p glico_production campaign_records > glico_production.campaign_records_0407.sql
+
 SELECT users.name, comments.content FROM manshion_development.comments, users where comments.user_id = users.id limit 0, 100000;
 
 SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users where result_logs.user_id = users.id limit 0, 100000;

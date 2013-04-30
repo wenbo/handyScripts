@@ -68,3 +68,4 @@ axel  -n 10  -vo .  http://xxx/xx.tar.gz
 tmux -S /tmp/pair attach 
 
 sudo dpkg-reconfigure gdm
+find . -name ._* 

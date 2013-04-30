@@ -6,3 +6,9 @@ CREATE TABLE `virtual_domains` (id INT NOT NULL AUTO_INCREMENT ,name VARCHAR(50)
 sudo apt-get install phpmyadmin telnet mutt bsd-mailx
 
 $ sudo postfix check
+
+我的 队 列里堆积了一大堆邮件,而我确定这些邮件都是垃圾。有没有任何办法可以一次
+清空队列里的所有信息?
+# postsuper -d ALL
+
+利用 postconf -l 命令可查看你的系统提供了哪些锁定机制可供 Postfix 使 用:
