@@ -14,13 +14,15 @@ postgres:
 mysql
   mysqldump -u 用户名 -p 数据库名 > 导出的文件名    
   mysqldump -u wcnc -p smgp_apps_wcnc > wcnc.sql
+  mysqldump -u root -p yamaha_staging > yamaha_staging_20130502.sql
   mysqldump -u kembo -p mailbulk > mailbulk.sql
   mysqldump -u root -p zine_production > zine_production_20130217.sql
   mysqldump -u root -p glico_cp_production > glico_cp_production_20130228.sql
 
   mysqldump -u root -p glico_development.divisions > glico_cp_divisions.sql
 
-  mysqldump -u root -p glico_production campaign_records > glico_production.campaign_records_0407.sql
+  mysqldump -u root -p glico_production campaign_records > glico_production.campaign_records_0502.sql
+  mysqldump -u root -p glico_production users > glico_production.users_0502.sql
 
 SELECT users.name, comments.content FROM manshion_development.comments, users where comments.user_id = users.id limit 0, 100000;
 
@@ -35,3 +37,8 @@ SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users w
  只导入数据表结构
  bob@linux:~$ mysqldump --opt -d postfix  -u root -p >> bob.sql
 
+只导入某些column
+ SELECT id,login,name,nickname,birthday,address1,address2,like_snack,email_agreement, is_admin,deleted_at,crypted_password,salt,created_at,updated_at,remember_token, remember_token_expires_at, activation_code, activated_at, state FROM users INTO OUTFILE '/home/bob/tmp/05041154_users.sql'
+
+防中文字符乱码
+LOAD DATA INFILE '/home/bob/tmp/05041154_users.sql' INTO TABLE users CHARACTER SET  utf8;
