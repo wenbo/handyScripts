@@ -2,3 +2,5 @@
 # ps aux|grep svnserve
 # kill -9 ID号
 # svnserve -d -r /home/svn
+
+svn diff -r 123:124

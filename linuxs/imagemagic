@@ -1,0 +1,17 @@
+Options used to compile and link:
+PREFIX          = /usr/local
+EXEC-PREFIX     = /usr/local
+VERSION         = 6.8.5
+CC              = gcc -std=gnu99 -std=gnu99
+CFLAGS          = -I/usr/include/freetype2 -fopenmp -g -O2 -Wall -pthread -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
+CPPFLAGS        = -I/usr/local/include/ImageMagick-6
+PCFLAGS         = -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
+DEFS            = -DHAVE_CONFIG_H
+LDFLAGS         = 
+MAGICK_LDFLAGS  = -L/usr/local/lib 
+LIBS            = -lMagickCore -ljbig -llcms -ltiff -lfreetype -ljasper -ljpeg -lpng12 -lXext -lSM -lICE -lX11 -llzma -lbz2 -lxml2 -lz -lm -lgomp -lpthread
+CXX             = g++
+CXXFLAGS        = -g -O2 -pthread
+FEATURES        = DPC OpenMP
+DELEGATES       = bzlib freetype jbig jng jp2 jpeg lcms lzma png ps tiff x xml zlib
+
