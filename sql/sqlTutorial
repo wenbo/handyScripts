@@ -36,9 +36,17 @@ SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users w
 
  只导入数据表结构
  bob@linux:~$ mysqldump --opt -d postfix  -u root -p >> bob.sql
+ bob@linux:~$ mysqldump --opt -d us_exporter_staging  -u root -p >> us_exporter_staging.sql
+ bob@linux:~$ mysqldump --opt -d glico_production  -u root -p >> /home/kembo/tmp/wenbo/tables.sql
 
 只导入某些column
  SELECT id,login,name,nickname,birthday,address1,address2,like_snack,email_agreement, is_admin,deleted_at,crypted_password,salt,created_at,updated_at,remember_token, remember_token_expires_at, activation_code, activated_at, state FROM users INTO OUTFILE '/home/bob/tmp/05041154_users.sql'
 
+ SELECT * from users where users.created_at between '2012-08-01 00:00:00' and '2013-07-01
+ 00:00:00' INTO OUTFILE '/home/kembo/www/glico/users_20120801_to_20130701.sql'
+
+
+
 防中文字符乱码
 LOAD DATA INFILE '/home/bob/tmp/05041154_users.sql' INTO TABLE users CHARACTER SET  utf8;
+LOAD DATA INFILE '/home/bob/workspace/kembo/git/glico_memo/users_20120801_to_20130701.sql' INTO TABLE users CHARACTER SET  utf8;

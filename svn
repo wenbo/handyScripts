@@ -4,3 +4,5 @@
 # svnserve -d -r /home/svn
 
 svn diff -r 123:124
+
+svn status | grep '?' | sed 's/^.* /svn add /' | bash
