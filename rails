@@ -12,7 +12,7 @@ rails generate migration AddTargetBlankToTopimages target_blank:boolean
 
 
 =============== Phusion Passenger Standalone web server started ===============
-rvmsudo passenger start -p 80 
+rvmsudo passenger start -p 8080 & > /dev/null 2>&1
 
 crontab -l
 whenever -c
