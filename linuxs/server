@@ -1,0 +1,3 @@
+find out files with big size
+$ find /home -size +200000
+
