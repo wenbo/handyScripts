@@ -12,3 +12,7 @@ wenbo@li412-168:~/src/tar/php-5.2.13$ ./configure  --prefix=/usr/local/php --ena
 #only with sudo, you can see the pid
 $ sudo netstat -tulpn | grep :9000
 $ file /etc/init.d/php-fastcgi
+
+
+php-cgi   -b   9000
+bob@bob-Vostro-320:php-5.5.1$ ./configure --with-mysql

@@ -5,4 +5,6 @@
 
 svn diff -r 123:124
 
+svn update -r 788
+
 svn status | grep '?' | sed 's/^.* /svn add /' | bash
