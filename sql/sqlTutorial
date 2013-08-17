@@ -53,8 +53,10 @@ LOAD DATA INFILE '/home/bob/tmp/05041154_users.sql' INTO TABLE users CHARACTER S
 /*********************************** glico-cp sending list ****************/
  SELECT * FROM  `send_users` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '2012-04-30 23:59:59' ) AND STATUS =2
 
+ SELECT * FROM  `send_users` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '2012-04-30 23:59:59' ) AND STATUS =2
+
 SELECT * FROM  `emails` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '2012-04-30 23:59:59' )
 
-SELECT email_id, COUNT( email_id ) FROM  `send_users` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '2012-04-30 23:59:59' )
+SELECT email_id, COUNT( email_id ) FROM  `send_users` WHERE ( created_at BETWEEN  '2013-04-01 00:00:00' AND  '2013-07-31 23:59:59' )
 /*********************************** glico-cp sending list ****************/
 LOAD DATA INFILE '/home/bob/workspace/kembo/git/glico_memo/users_20120801_to_20130701.sql' INTO TABLE users CHARACTER SET  utf8;
