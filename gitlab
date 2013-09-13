@@ -1,0 +1,7 @@
+https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md
+
+sudo apt-get install python-docutils
+sudo apt-get install -y postfix 
+sudo adduser --disabled-login --gecos 'GitLab' git
+
+sudo apt-get install libicu-dev

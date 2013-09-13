@@ -1,2 +1,4 @@
 # /usr/sbin/httpd -t
 
+htpasswd -b .htpasswd wenbo wenbo2008
+

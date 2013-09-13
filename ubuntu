@@ -5,3 +5,9 @@ $ sudo updatedb
 
 mosh
 http://mosh.mit.edu/
+
+=============== songbird ===============
+sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu quantal-getdeb apps"
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo apt-get install songbird
+=============== songbird ===============

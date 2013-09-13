@@ -19,7 +19,7 @@ mysql
   mysqldump -u root -p zine_production > zine_production_20130217.sql
   mysqldump -u root -p glico_cp_production > glico_cp_production_20130228.sql
 
-  mysqldump -u root -p glico_development.divisions > glico_cp_divisions.sql
+  mysqldump -u root -p glico_development divisions > glico_cp_divisions.sql
 
   mysqldump -u root -p glico_production campaign_records > glico_production.campaign_records_0502.sql
   mysqldump -u root -p glico_production users > glico_production.users_0502.sql
@@ -58,3 +58,6 @@ SELECT * FROM  `emails` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '
 SELECT email_id, COUNT( email_id ) FROM  `send_users` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '2012-04-30 23:59:59' )
 /*********************************** glico-cp sending list ****************/
 LOAD DATA INFILE '/home/bob/workspace/kembo/git/glico_memo/users_20120801_to_20130701.sql' INTO TABLE users CHARACTER SET  utf8;
+
+select user,host from mysql.user;
+show grants for gitlab@localhost;

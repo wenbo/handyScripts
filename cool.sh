@@ -70,3 +70,4 @@ tmux -S /tmp/pair attach
 sudo dpkg-reconfigure gdm
 find . -name "._*" 
 htpasswd -b .htpasswd wenbo wenbo2008
+sed -i "s/原字符串/新字符串/g" `grep 原字符串 -rl 所在目录`

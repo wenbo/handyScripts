@@ -22,3 +22,17 @@ $ git stash pop
 $ mkdir appname.git
 $ cd appname.git/
 $ git --bare init
+
+
+mkdir testproj.git
+git init --bare
+ 
+git config core.worktree /var/www/htdocs/testproj
+git config core.bare false
+git config receive.denycurrentbranch ignore
+ 
+vi hooks/post-receive
+输入：
+#!/bin/sh
+git checkout -f 
+chmod +x hooks/post-receive

@@ -9,3 +9,5 @@ sysctl vm.overcommit_memory=1
  yum install kernel-devel-${version}
 
 [root@kembo-67 ~]# vi /etc/sysconfig/iptables
+
+rpm -qa | grep php
