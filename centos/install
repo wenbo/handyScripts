@@ -11,3 +11,4 @@ sysctl vm.overcommit_memory=1
 [root@kembo-67 ~]# vi /etc/sysconfig/iptables
 
 rpm -qa | grep php
+rpm -qa | grep libicu-dev

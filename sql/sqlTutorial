@@ -61,5 +61,12 @@ SELECT email_id, COUNT( email_id ) FROM  `send_users` WHERE ( created_at BETWEEN
 /*********************************** glico-cp sending list ****************/
 LOAD DATA INFILE '/home/bob/workspace/kembo/git/glico_memo/users_20120801_to_20130701.sql' INTO TABLE users CHARACTER SET  utf8;
 
+GRANT ALL ON `api_production`.* TO 'sharpclub'@'%' IDENTIFIED BY 'club2013';
+DROP USER xxx@'10.0.0.1';
+
 select user,host from mysql.user;
 show grants for gitlab@localhost;
+
+CREATE USER 'gitlab'@'localhost' IDENTIFIED BY '$password';
+CREATE DATABASE IF NOT EXISTS `gitlabhq_production` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`;
+GRANT SELECT, LOCK TABLES, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER ON `gitlabhq_production`.* TO 'gitlab'@'localhost';

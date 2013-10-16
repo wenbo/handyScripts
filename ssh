@@ -1,1 +1,9 @@
 ssh-keygen -t rsa
+
+bob@bob-Vostro-320:trunk$ cat ../expect.sh 
+#!/usr/bin/expect  
+set timeout 60  
+spawn ssh root@host
+interact {          
+    timeout 300 {send "\x20"}  
+}
