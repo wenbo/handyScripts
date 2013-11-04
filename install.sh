@@ -56,3 +56,5 @@ dpkg --set-selections < myselections
 打开外接显示器，同时关闭笔记本液晶屏幕（只用外接显示器工作）
 xrandr --output VGA1 --auto --output LVDS1 --off
 xrandr --output VGA1 --right-of LVDS1 --auto
+
+sudo apt-get install xnoise
