@@ -8,7 +8,17 @@ sysctl vm.overcommit_memory=1
  version=`uname -a | awk '{print $3}'` 
  yum install kernel-devel-${version}
 
+通过命令 netstat -tnl 可以查看当前服务器打开了哪些端口
+
 [root@kembo-67 ~]# vi /etc/sysconfig/iptables
 
 rpm -qa | grep php
 rpm -qa | grep libicu-dev
+
+把3306端口设置为只允许本机访问 
+[root@tp ~]#/sbin/iptables -A INPUT -p tcp -s 127.0.0.1 --dport 3306 -j ACCEPT 
+[root@tp ~]#/sbin/iptables -A OUTPUT -p tcp -s 127.0.0.1 --dport 3306 -j ACCEPT
+[root@tp ~]#iptables -A INPUT -p tcp -m tcp --dport 3306 -j DROP
+
+/etc/rc.d/init.d/iptables save
+/etc/rc.d/init.d/iptables restart
