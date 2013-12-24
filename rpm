@@ -1,0 +1,6 @@
+查询一个包是否被安装
+# rpm -q < rpm package name>
+
+rpm -qa | grep 
+rpm -qpi Linux-1.4-6.i368.rpm
+卸载某个安装过的软件，只需执行rpm-e <文件名>命令即可。
