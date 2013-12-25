@@ -1,0 +1,5 @@
+export http_proxy='http://YOUR_USERNAME:YOUR_PASSWORD@PROXY_IP:PROXY_PORT/'
+
+curl icanhazip.com
+
+unset http_proxy
