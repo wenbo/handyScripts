@@ -1,0 +1,5 @@
+smbclient -L //127.0.0.1
+mount -t cifs //127.0.0.1/smb1 /mnt -o username=smb1
+
+mount //192.168.1.106/share /mnt -o username=wenbo
+mount //192.168.1.106/share /mnt -o username=wenbo,password=xxxx,domain=xxxx,sec=ntlm

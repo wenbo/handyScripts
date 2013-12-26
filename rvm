@@ -2,3 +2,5 @@ bob@hp:trunk$ rvm env
 bob@hp:trunk$ rvm gemset list
 bob@hp:production$ rvm gemset list_all
 rvm use 1.9.3@captor --create --rvmrc
+
+ global do gem uninstall -ax rubygems-bundler

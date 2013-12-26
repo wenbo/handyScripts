@@ -49,6 +49,9 @@ SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users w
 
 防中文字符乱码
 LOAD DATA INFILE '/home/bob/tmp/05041154_users.sql' INTO TABLE users CHARACTER SET  utf8;
+bob@hp:handyScripts$ sudo vi /etc/apparmor.d/usr.sbin.mysqld 
+bob@hp:handyScripts$ sudo /etc/init.d/apparmor reload
+
 
 /*********************************** glico-cp sending list ****************/
  SELECT * FROM  `send_users` WHERE ( created_at BETWEEN  '2012-02-01 00:00:00' AND  '2012-04-30 23:59:59' ) AND STATUS =2
