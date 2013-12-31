@@ -60,6 +60,7 @@ set tags=/home/wenbo/src/tags/gems,/home/wenbo/src/tags/
 nmap <F2> irequire "ruby-debug"<CR><ESC>
 nmap <UP> <C-W>20+
 nmap <DOWN> <C-W>20-
+map <F2> !xmllint –format %
 
 set textwidth=80   
 set cc=+1,+2,+3  " highlight three columns after 'textwidth'
