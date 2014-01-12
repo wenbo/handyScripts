@@ -1,0 +1,1 @@
+user@computer:~$ xmllint --valid --schema test.xsd test.xml
