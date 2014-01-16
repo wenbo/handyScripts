@@ -25,3 +25,10 @@ rpm -qa | grep libicu-dev
 
 /etc/rc.d/init.d/iptables save
 /etc/rc.d/init.d/iptables restart
+
+unable to ping domain:
+确保可用DNS解析
+$grep hosts /etc/nsswitch.conf
+----------------------------------
+hosts: files dns
+----------------------------------
