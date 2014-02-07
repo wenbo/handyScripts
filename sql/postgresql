@@ -1,0 +1,15 @@
+sudo apt-get install postgresql
+bob@bob-Vostro-320:repos$ sudo apt-get install pgadmin3
+sudo su postgres -c psql template1
+postgres=# ALTER USER postgres WITH PASSWORD 'update'
+bob@bob-Vostro-320:repos$ sudo passwd postgres
+#update
+sudo apt-get install libpq-dev
+SELECT rolname FROM pg_roles;
+
+bob@bob-Vostro-320:discourse$ sudo su postgres -c createuser
+could not change directory to "/home/bob/workspace/github/discourse"
+Enter name of role to add: bob
+
+sudo su postgres -c psql template1
+sudo apt-get install postgresql-contrib

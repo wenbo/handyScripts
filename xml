@@ -1,1 +1,3 @@
 user@computer:~$ xmllint --valid --schema test.xsd test.xml
+xmllint --noout --schema sample.xsd ./test.xml
+xmllint --format 
