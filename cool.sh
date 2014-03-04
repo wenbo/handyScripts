@@ -15,7 +15,8 @@ scp .ssh/id_rsa.pub wenbo@0371zhong.com:~/.ssh/authorized_keys
 以 root 执行： cd /home chmod 700 * 
 ps -ef |grep  httpd| grep -v grep| cut -c 9-15| sudo xargs kill -9
 ps -ef |grep  nginx| grep -v grep| cut -c 9-15| sudo xargs kill -9
-find . -type d -name ".svn"|xargs rm -rf
+fme ".txt~"|xargs rm -rfind . -type d -name ".svn"|xargs rm -rf
+find . -name "*.txt~"|xargs rm -rf
 
 ################# LXR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ./configure --prefix=/usr/local/apache2
@@ -74,4 +75,5 @@ sed -i "s/原字符串/新字符串/g" `grep 原字符串 -rl 所在目录`
 
 
 sudo apt-get install traceroute
- sudo traceroute -d  www.com.cn 
+sudo traceroute -d  www.com.cn 
+du -S | sort -n
