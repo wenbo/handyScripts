@@ -1,0 +1,2 @@
+for file in .; do ffmpeg -i $file  -qscale 0  $file.mpg done 
+
