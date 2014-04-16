@@ -1,2 +1,2 @@
-for file in .; do ffmpeg -i $file  -qscale 0  $file.mpg done 
+ for file in *; do ffmpeg -i $file -s 960x540 -qscale 0  $file.mpg; done
 
