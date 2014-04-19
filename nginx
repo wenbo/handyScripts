@@ -4,3 +4,8 @@ $ sudo ./sbin/nginx -V
 --with-pcre=/home/bob/src/untar/pcre-8.21
 
 "rewrite or internal redirection cycle"
+
+你可以使用这条命令来查看当前的CPU情况：
+cat /proc/cpuinfo
+或者直接显示逻辑CPU的个数：
+cat /proc/cpuinfo |grep "processor"|wc -l

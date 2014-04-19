@@ -72,3 +72,5 @@ GRANT SELECT, LOCK TABLES, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER ON
 select t1.* from accounts t1, packages t2 ,messages t3 where t1.id = 2 and t1.id = t2.account_id  and t2.id=t3.package_id;
 
 skip-name-resolve 
+
+SHOW ENGINE INNODB STATUS\G 
