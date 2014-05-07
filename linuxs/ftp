@@ -1,0 +1,18 @@
+１、修改/etc/vsftpd/vsftpd.conf
+
+将底下三行
+
+#chroot_list_enable=YES
+# (default follows)
+#chroot_list_file=/etc/vsftpd.chroot_list
+改为
+
+chroot_list_enable=YES
+# (default follows)
+chroot_list_file=/etc/vsftpd/chroot_list
+
+
+useradd -d /home/wwwroot/ftpuser -g ftp -s /sbin/nologin ftpuser
+passwd ftpuser
+vi /etc/vsftpd/chroot_list
+service vsftpd restart

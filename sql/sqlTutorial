@@ -74,3 +74,9 @@ select t1.* from accounts t1, packages t2 ,messages t3 where t1.id = 2 and t1.id
 skip-name-resolve 
 
 SHOW ENGINE INNODB STATUS\G 
+
+mysql默认使用系统时区。可以通过修改系统时区修改mysql的时区，修改后需要重启数据库。
+如果修改当前时区为utc
+rm -rf  /etc/localtime 
+cp /usr/share/zoneinfo/UTC  /Asia/Shanghai /etc/localtime 
+重启数据库。
