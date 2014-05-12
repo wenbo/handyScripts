@@ -82,3 +82,16 @@ first sourced.  The number is used for the script ID <SID>.
 To define a mapping which uses the "mapleader" variable, the special string
 "<Leader>" can be used.  It is replaced with the string value of "mapleader".
 If "mapleader" is not set or empty, a backslash(\) is used instead.
+
+
+Get ctrlp.vim:
+Clone the plugin into a separate directory:
+$ cd ~/.vim
+$ git clone https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
+Or if you prefer Mercurial:
+$ hg clone https://bitbucket.org/kien/ctrlp.vim bundle/ctrlp.vim
+Add to your ~/.vimrc:
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+Run at Vim's command line:
+:helptags ~/.vim/bundle/ctrlp.vim/doc
+Restart Vim and check :help ctrlp.txt for usage instructions and configuration details.

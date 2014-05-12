@@ -77,3 +77,6 @@ sed -i "s/原字符串/新字符串/g" `grep 原字符串 -rl 所在目录`
 sudo apt-get install traceroute
 sudo traceroute -d  www.com.cn 
 du -S | sort -n
+
+count directories:  
+ls -l |grep '^d' | wc -l
