@@ -15,3 +15,5 @@ CXXFLAGS        = -g -O2 -pthread
 FEATURES        = DPC OpenMP
 DELEGATES       = bzlib freetype jbig jng jp2 jpeg lcms lzma png ps tiff x xml zlib
 
+
+fc-list :lang=zh-cn
