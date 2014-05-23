@@ -62,6 +62,6 @@ nmap <UP> <C-W>20+
 nmap <DOWN> <C-W>20-
 map <F2> !xmllint –format %
 
-set textwidth=80   
-set cc=+1,+2,+3  " highlight three columns after 'textwidth'
-hi ColorColumn ctermbg=lightgrey guibg=lightgrey 
+"set textwidth=80   
+"set cc=+1,+2,+3  " highlight three columns after 'textwidth'
+"hi ColorColumn ctermbg=lightgrey guibg=lightgrey 
