@@ -41,7 +41,20 @@ sudo apt-get install libmysql-ruby libmysqlclient-dev
 
 #install wubi input method
 sudo apt-get install scim scim-gtk2-immodule scim-modules-socket scim-modules-table scim-pinyin scim-tables-zh 
+
+------------------------- ibus -----------------------------
 sudo apt-get install ibus-mozc
+sudo apt-get install ibus-table-wubi
+默认情况下，ibus-table不开启直接上屏模式（即敲完四个码，没有重码时，直接显示到屏幕上），在五笔输入法下
+Ctrl + / 即可。
+开机自动启动ibus
+System - Preferences - Startup Applications - Add
+Name: ibus daemon
+Command: /usr/bin/ibus-daemon -d
+Comment: start ibus daemon when gnome start
+------------------------- ibus -----------------------------
+
+
 sudo apt-get install scim-tables-ja
 sudo apt-get  install uim-anthy
 
