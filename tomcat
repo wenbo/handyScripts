@@ -1,0 +1,19 @@
+wget http://mirror.esocc.com/apache/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz
+
+bob@bob-Vostro-320:apache-tomcat-7.0.54$ ./bin/startup.sh 
+
+http://localhost:8080/
+
+vi conf/tomcat-users.xml
+
+<role rolename="manager"/>
+<user name="tomcat" password="tomcat" roles="tomcat" />
+<user name="role1"  password="tomcat" roles="role1"  />
+<user name="both"   password="tomcat" roles="tomcat,role1" />
+<user username="admin" password="admin" roles="manager"/>
+<role rolename="manager-gui"/>
+<user username="admin" password="admin" roles="manager-gui"/>
+
+bob@bob-Vostro-320:apache-tomcat-7.0.54$ ./bin/shutdown.sh 
+bob@bob-Vostro-320:apache-tomcat-7.0.54$ ./bin/startup.sh 
+http://localhost:8080/manager/status
