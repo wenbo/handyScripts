@@ -17,3 +17,5 @@ vi conf/tomcat-users.xml
 bob@bob-Vostro-320:apache-tomcat-7.0.54$ ./bin/shutdown.sh 
 bob@bob-Vostro-320:apache-tomcat-7.0.54$ ./bin/startup.sh 
 http://localhost:8080/manager/status
+
+CATALINA_HOME是TOMCAT安装路径的别名

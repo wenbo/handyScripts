@@ -1,0 +1,8 @@
+http://localhost:8080/opencms/opencms/system/login/  Admin admin
+
+
+The OpenCms site URL:
+
+Alkacon OpenCms is capable of managing multiple sites. However, the OpenCms Workplace must always be accessed through one specific URL.
+
+The site URL you enter here will be used both as URL to access the Workplace, and as URL for the default site. In case you want to add other sites, or if you want to use different URLs for default site and Workplace, you must manually edit the opencms-system.xml file after the installation.
