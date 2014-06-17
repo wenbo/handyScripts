@@ -80,3 +80,7 @@ mysql默认使用系统时区。可以通过修改系统时区修改mysql的时�
 rm -rf  /etc/localtime 
 cp /usr/share/zoneinfo/UTC  /Asia/Shanghai /etc/localtime 
 重启数据库。
+
+
+show variables like 'datadir';
+show VARIABLES like '%max_allowed_packet%';

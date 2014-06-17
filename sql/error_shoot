@@ -1,0 +1,7 @@
+ERROR 1018 (HY000): Can't read dir of './dbname/' (errno: 13)
+cd /var/lib/mysql/
+ls -l
+chown mysql:mysql dbname/ -R
+
+sudo -u mysql -H ln -s /home/bob/mysql/datadir/opencms opencms
+sudo -u mysql -H mkdir /var/lib/mysql
