@@ -1,1 +1,3 @@
 bob@bob-Vostro-320:doc$ openssl req -in ssl.www.sharp.cn.key.csr -noout -text
+
+openssl s_client -connect www.nnn.cn:443 -showcerts
