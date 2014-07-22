@@ -5,3 +5,6 @@ chown mysql:mysql dbname/ -R
 
 sudo -u mysql -H ln -s /home/bob/mysql/datadir/opencms opencms
 sudo -u mysql -H mkdir /var/lib/mysql
+
+
+Mysql::Error: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=': SELECT * FROM `pci_provinces` WHERE (`pci_provinces`.`name` = '天津市')  LIMIT 1
