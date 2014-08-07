@@ -79,4 +79,3 @@ sudo traceroute -d  www.com.cn
 du -S | sort -n
 
 count directories:  
-ls -l |grep '^d' | wc -l

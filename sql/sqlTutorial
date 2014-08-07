@@ -24,15 +24,15 @@ SELECT users.name, comments.content FROM manshion_development.comments, users wh
 SELECT users.name, result_logs.weibo_link FROM conancp_test.result_logs, users where result_logs.user_id = users.id limit 0, 100000;
 
 
- SELECT COUNT(posts.user_id ) as count_all , users.name  FROM  posts   INNER
- JOIN  users ON  users.id =  posts.user_id   and  posts.created_at  BETWEEN
- '2008-08-23 19:00:00'  AND  '2015-08-23 19:05:00' GROUP BY posts.user_id  ORDER
- BY count_all DESC  ;
+SELECT COUNT(posts.user_id ) as count_all , users.name  FROM  posts   INNER
+JOIN  users ON  users.id =  posts.user_id   and  posts.created_at  BETWEEN
+'2008-08-23 19:00:00'  AND  '2015-08-23 19:05:00' GROUP BY posts.user_id  ORDER
+BY count_all DESC  ;
 
- 只导入数据表结构
- bob@linux:~$ mysqldump --opt -d postfix  -u root -p >> bob.sql
- bob@linux:~$ mysqldump --opt -d us_exporter_staging  -u root -p >> us_exporter_staging.sql
- bob@linux:~$ mysqldump --opt -d glico_production  -u root -p >> /home/kembo/tmp/wenbo/tables.sql
+只导入数据表结构
+bob@linux:~$ mysqldump --opt -d postfix  -u root -p >> bob.sql
+bob@linux:~$ mysqldump --opt -d us_exporter_staging  -u root -p >> us_exporter_staging.sql
+bob@linux:~$ mysqldump --opt -d glico_production  -u root -p >> /home/kembo/tmp/wenbo/tables.sql
 
 只导入某些column
  SELECT id,login,name,nickname,birthday,address1,address2,like_snack,email_agreement, is_admin,deleted_at,crypted_password,salt,created_at,updated_at,remember_token, remember_token_expires_at, activation_code, activated_at, state FROM users INTO OUTFILE '/home/bob/tmp/05041154_users.sql'
@@ -84,3 +84,8 @@ cp /usr/share/zoneinfo/UTC  /Asia/Shanghai /etc/localtime
 
 show variables like 'datadir';
 show VARIABLES like '%max_allowed_packet%';
+在mysql 命令行中运行
+set global max_allowed_packet = 2*1024*1024*10 (20M)
+然后关闭掉这此mysql server链接，再进入。
+show VARIABLES like '%max_allowed_packet%';
+查看下max_allowed_packet是否编辑成功
