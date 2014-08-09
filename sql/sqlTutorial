@@ -89,3 +89,8 @@ set global max_allowed_packet = 2*1024*1024*10 (20M)
 然后关闭掉这此mysql server链接，再进入。
 show VARIABLES like '%max_allowed_packet%';
 查看下max_allowed_packet是否编辑成功
+
+$ vi /etc/mysql/my.cnf
+72 general_log_file        = /var/log/mysql/mysql.log
+73 general_log             = 1
+
