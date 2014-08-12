@@ -1,1 +1,3 @@
 C-h t (help-with-tutorial)
+C-x Character eXtend.  Followed by one character.
+M-x Named command eXtend.  Followed by a long name.
