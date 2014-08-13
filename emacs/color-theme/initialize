@@ -1,0 +1,10 @@
+1：先安装emacs用 suod apt-get install emacs即可。
+2：下载http://ftp.twaren.net/Unix/NonGNU/color-theme/color-theme-6.6.0.tar.gz  然后自己解压
+3：把color-theme-6.6.0.tar.gz解压后的 color-theme.el和 theme文件夹 复制到 ~/.emacs.d文件夹内（如果~/.emacs.d文件夹不存在请先建立）。
+4：打开~/.emacs文件，写入 :
+      (add-to-list 'load-path "~/.emacs.d/")
+      (require 'color-theme)
+      (color-theme-initialize)
+      (color-theme-matrix)
+5。打开emacs后在tools下可以找到一个color themes的选项 然后点击 出现很多出题名字，鼠标放到任意一行 然后回车 就可以看到效果了。  如果喜欢就可以写入到 .emacs文件内，之后的都可以用这个效果了。具体的修改办法是：
+ 一般来说，你从M-x color-theme-select 中选择的主题名称中间有空格你只要 1、把空格改成英文的连字符就可以了 2、都用小写字母 就可以了比如，我选择的是 Calm Forest，在这里写成 calm-forest就可以了
