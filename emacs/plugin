@@ -8,3 +8,26 @@ C-c C-n 创建文件，若以 / 结尾则表示创建文件夹。
 C-c C-d 删除文件或目录。
 C-c C-r 重命名文件或目录。
 C-c C-c 改变根目录。
+
+<-------------------------- すごい ------------------------
+Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, and provides facilities for writing custom extensions.
+git clone git://gitorious.org/evil/evil.git
+https://gitorious.org/evil/pages/Home
+http://tieba.baidu.com/p/2065740974
+C-x C-f輸入~/.emacs回車，將代碼貼入
+
+(add-to-list 'load-path "d:\evil-evil")
+(require 'evil)
+(evil-mode 1)
+(global-set-key (kbd "C-h")
+'backward-delete-char-untabify)
+
+Note that you can always disable Normal state with C-z, which switches to an “Emacs state” (denoted by <E>) in which vi
+keys are completely disabled. Press C-z again to switch back to Normal state.
+
+Evil uses the term state for what is called a “mode” in vi, since “mode” already has its
+own meaning in Emacs. Evil defines a number of states, such as Normal state (<N>), Insert
+state (<I>), Visual state (<V>), Replace state (<R>), Operator-Pending state (<O>), Motion
+state (<M>) and Emacs state (<E>). Each state has its own keymaps and customization
+variables.
+-------------------------- すごい ------------------------>

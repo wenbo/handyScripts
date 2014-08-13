@@ -1,3 +1,11 @@
 C-h t (help-with-tutorial)
 C-x Character eXtend.  Followed by one character.
 M-x Named command eXtend.  Followed by a long name.
+“dired” is short for Directory Edit. It is a old term for file management.
+
+Emacs可以向前，向后搜索字符串，搜索命令是渐进的（incremental）的，就是搜索与输入同步，没输入一个字符，Emacs就已经开始搜索了。
+向前搜索：C-r.
+向后搜索：C-s.
+注意：在搜索时候，可以按C-s/r 查看下/上一处，C-g取消搜索，回到初始搜索光标处；<Enter>结束搜索，光标留在搜索结果上。
+
+在新窗口中打开文件：C-x 4 C-f.
