@@ -1,0 +1,12 @@
+在linux的X-Window中，可以使用xmodmap工具。在你的主目录新建一个名字为.xmodmap的文件，如果已经存在则只需修改。向该文件加入下列内容：
+ !
+ ! Swap Caps_Lock and Control_L
+ !
+ remove Lock = Caps_Lock
+ remove Control = Control_L
+ keysym Control_L = Caps_Lock
+ keysym Caps_Lock = Control_L
+ add Lock = Caps_Lock
+ add Control = Control_L
+保存，再向你的 /etc/rc.local 文件加入一行：
+xmodmap ~/.xmodmap 2>/dev/null
