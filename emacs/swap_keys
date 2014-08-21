@@ -10,3 +10,4 @@
  add Control = Control_L
 保存，再向你的 /etc/rc.local 文件加入一行：
 xmodmap ~/.xmodmap 2>/dev/null
+在gnome中可以通过图形界面选项调整。打开 系统 -> 首选项 -> 键盘 -> 布局 -> 选项… -> Ctrl key position，选择”Swap Ctrl and CapsLock”即可。

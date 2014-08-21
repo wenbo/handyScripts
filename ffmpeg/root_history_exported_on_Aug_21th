@@ -1,0 +1,999 @@
+    1  vim print880.com.access.log-20130707
+    2  ls
+    3  vim print880.com.error.log-20130707
+    4  cat /proc/cpuinfo 
+    5  vi /opt/nginx/conf/rails3.conf 
+    6  /opt/nginx/sbin/nginx -t
+    7  /opt/nginx/sbin/nginx -h
+    8  /opt/nginx/sbin/nginx -s reload
+    9  exit
+   10  vi /opt/nginx/conf/rails3.conf 
+   11  /opt/nginx/sbin/nginx -h
+   12  /opt/nginx/sbin/nginx -t
+   13  /opt/nginx/sbin/nginx -s reload
+   14  exit
+   15  pwd
+   16  whoami
+   17  exit
+   18  vim /opt/nginx/
+   19  vim /etc/nginx/
+   20  vim /opt/nginx/
+   21  vim /opt/nginx/
+   22  vim /opt/nginx/
+   23  mv /opt/nginx/test.conf /opt/nginx/conf/.
+   24  vim /opt/nginx/
+   25  /opt/nginx/sbin/nginx -t
+   26  /opt/nginx/sbin/nginx -s reload
+   27  vim /opt/nginx/
+   28  /opt/nginx/sbin/nginx -s reload
+   29  vim /opt/nginx/
+   30  /opt/nginx/sbin/nginx -s reload
+   31  /opt/nginx/sbin/nginx -t
+   32  vim /etc/sysconfig/
+   33  iptables -l
+   34  iptables -L
+   35  vim /etc/sysconfig/iptables
+   36  /etc/init.d/iptables stop
+   37  vim /etc/sysconfig/iptables
+   38  vim /etc/sysconfig/
+   39  vim /etc/init.d/iptables 
+   40  vim /var/lock/subsys/
+   41  vim /etc/init.d/iptables 
+   42  vim /etc/init.d/iptables 
+   43  vim /etc/sysconfig/
+   44   /sbin/iptables -t filter -A INPUT -p tcp --dport 9080
+   45  iptables -L
+   46  vim /etc/sysconfig/iptables
+   47   /et restart
+   48  iptables -L
+   49  vim /etc/nginx
+   50  vim /opt/nginx/
+   51  /opt/nginx/sbin/nginx -s reload
+   52  vim /opt/nginx/
+   53  /opt/nginx/sbin/nginx -s reload
+   54  vim /opt/nginx/
+   55  /opt/nginx/sbin/nginx -s reload
+   56  /etc/init.d/iptables stop
+   57  vim /etc/sysconfig/iptables
+   58  /etc/init.d/iptables restart
+   59  ls
+   60  vi chroot_list 
+   61  vi ftpusers 
+   62  vi user_list 
+   63  vi vsftpd.conf
+   64  ls
+   65  vi user_list 
+   66  /etc/init.d/vsftpd -h
+   67  /etc/init.d/vsftpd restart
+   68  iptables -L -n
+   69  vi /etc/sysconfig/iptables
+   70  /etc/init.d/iptables -h
+   71  /etc/init.d/iptables restart
+   72  ls
+   73  vi user_list 
+   74  /etc/init.d/vsftpd restart
+   75  exit
+   76  yum -y install ffmpeg ffmpeg-devel
+   77  pwd
+   78  ls
+   79  ls
+   80  cd ../
+   81  ls
+   82  cd ../
+   83  ls
+   84  cd ../
+   85  ls
+   86  wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
+   87  ls
+   88  rpm -i rpmforge-release-0.5.2-2.el6.rf.*.rpm
+   89  yum -y install ffmpeg ffmpeg-devel
+   90  ls
+   91  exit
+   92  yum remove ffmpeg
+   93  yum install libvpx libvpx-utils libvpx-devel libvorbis libvorbis-devel
+   94  ls
+   95  exit
+   96  yum remove ffmpeg
+   97   yum remove ffmpeg-devel
+   98  yum install libvpx libvpx-utils libvpx-devel libvorbis libvorbis-devel
+   99  yum install ffmpeg ffmpeg-devel
+  100  exit
+  101  yum -y install ffmpeg ffmpeg-devel  
+  102  cat /etc/redhat-release
+  103  uname -a
+  104  cd /opt
+  105  ls
+  106  ls
+  107  git clone http://git.chromium.org/webm/libvpx.git
+  108   
+  109  ls
+  110  cd libvpx/
+  111  ls
+  112  ./configure --extra-cflags=-fPIC --disable-shared
+  113  cd ../
+  114  ls
+  115  yum remove yasm
+  116                          
+  117  ls
+  118  wget http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
+  119  tar xzfv yasm-1.2.0.tar.gz
+  120  cd yasm-1.2.0
+  121  ./configure --bindir="$HOME/bin" --enable-shared
+  122  make
+  123  make install
+  124  cd ../
+  125  ls
+  126  cd libvpx
+  127  ./configure --extra-cflags=-fPIC --disable-shared
+  128  ./configure -h
+  129  echo $PATH
+  130  cd ../
+  131  ls
+  132  cd yasm-1.2.0
+  133  ls
+  134  vi configure
+  135  ls
+  136  make uninstall
+  137  echo $PATH
+  138  ./configure --bindir="usr/bin" --enable-shared
+  139  ls
+  140  ./configure --bindir="/usr/bin" --enable-shared
+  141  make
+  142  make install
+  143  cd ../
+  144  ls
+  145  cd libvpx/
+  146  ls
+  147  ./configure --extra-cflags=-fPIC --disable-shared
+  148  make
+  149  make install
+  150  cd ../
+  151  ls
+  152  cd libvpx/
+  153  ./configure --extra-cflags=-fPIC --disable-shared
+  154  make
+  155  make install
+  156  vpx -h
+  157  exit
+  158   yum remove ffmpeg
+  159  yum remove ffmpeg-devel
+  160  yum install libogg libvorbis vorbis-tools mesa-libGL-devel mesa-libGLU-devel xorg-x11-proto-devel zlib-devel
+  161  yum install libtheora theora-tools
+  162  yum install ncurses-devel
+  163  yum install libdc1394 libdc1394-devel
+  164  yum install amrnb-devel amrwb-devel opencore-amr-devel 
+  165  cd /opt
+  166  ls
+  167  wget http://downloads.xvid.org/downloads/xvidcore-1.3.2.tar.gz
+  168  tar xzvf xvidcore-1.3.2.tar.gz
+  169  cd xvidcore/build/generic
+  170  ./configure --enable-shared
+  171  make
+  172  make install
+  173  cd /opt
+  174  wget http://downloads.xiph.org/releases/ogg/libogg-1.3.1.tar.gz
+  175  tar xzvf libogg-1.3.1.tar.gz
+  176  cd libogg-1.3.1
+  177  ./configure --enable-shared
+  178  make
+  179  make install
+  180  cd /opt
+  181  wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.4.tar.gz
+  182  tar xzvf libvorbis-1.3.4.tar.gz
+  183  cd libvorbis-1.3.4
+  184  ./configure --enable-shared
+  185  make
+  186  make install
+  187  cd ../
+  188  ls
+  189  wget http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.gz
+  190  tar xzvf libtheora-1.1.1.tar.gz
+  191  cd libtheora-1.1.1
+  192  ./configure --enable-shared
+  193  make 
+  194  make install
+  195  cd /opt
+  196  wget http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.gz
+  197  tar xzvf libtheora-1.1.1.tar.gz
+  198  cd libtheora-1.1.1
+  199  ./configure --enable-shared
+  200  make
+  201  make install
+  202  cd /opt
+  203  wget http://downloads.sourceforge.net/opencore-amr/vo-aacenc-0.1.2.tar.gz
+  204  ls
+  205  tar xzvf vo-aacenc-0.1.2.tar.gz
+  206  cd vo-aacenc-0.1.2
+  207  ./configure --enable-shared
+  208  make 
+  209  make install
+  210  cd /opt
+  211  git clone git://git.videolan.org/x264.git
+  212    
+  213  cd x264
+  214  ./configure --enable-shared --extra-cflags=-fPIC --extra-asflags=-D__PIC__
+  215  make
+  216  make install
+  217  export LD_LIBRARY_PATH=/usr/local/lib/
+  218  echo /usr/local/lib >> /etc/ld.so.conf.d/custom-libs.conf
+  219  ldconfig
+  220  cd /opt
+  221  git clone git://source.ffmpeg.org/ffmpeg.git
+  222  ls
+  223  axel  -n 10  -vo .  http://git.videolan.org/git/ffmpeg.git
+  224  yum install axel
+  225  axel  -n 10  -vo .  http://git.videolan.org/git/ffmpeg.git
+  226  git clone http://git.videolan.org/git/ffmpeg.git
+  227  git clone git://source.ffmpeg.org/ffmpeg.git
+  228  ls
+  229  git clone https://github.com/FFmpeg/FFmpeg.git
+  230  axel  -n 10  -vo .  https://github.com/FFmpeg/FFmpeg/archive/master.zip
+  231  ls
+  232  wget https://github.com/FFmpeg/FFmpeg/archive/master.zip
+  233  ls
+  234  ls
+  235  rm master.zip
+  236  rm master 
+  237  ls
+  238  pwd
+  239  ls
+  240  cp /home/kembo/master.zip ./
+  241  ls
+  242  unzip master.zip 
+  243  ls
+  244  cd FFmpeg-master/
+  245  ls
+  246  git checkout release/2.2
+  247  ls
+  248  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  249  make 
+  250    yum erase x264
+  251  cd ../
+  252  ls
+  253  cd x264/
+  254  ls
+  255  ./configure --enable-shared --extra-cflags=-fPIC --extra-asflags=-D__PIC__
+  256  make 
+  257  make install
+  258  cd ../
+  259  ls
+  260  cd FFmpeg-master/
+  261  ls
+  262  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  263  make 
+  264  make install
+  265  ls
+  266  cd ../
+  267  cd ../
+  268  ls
+  269  exit
+  270  ./configure --enable-shared --extra-cflags=-fPIC --extra-asflags=-D__PIC__
+  271  make
+  272  make install
+  273  git clone git://source.ffmpeg.org/ffmpeg.git
+  274  ls
+  275  mv ffmpeg/ ../
+  276  ls
+  277  cd ../
+  278  ls
+  279  cd FFmpeg-master/
+  280  ls
+  281  make uninstall
+  282  cd ../
+  283  ls
+  284  cd ffmpeg/
+  285  ls
+  286  git checkout release/2.2
+  287  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  288  make 
+  289  make install
+  290  ls
+  291  cd ../
+  292  ls
+  293  exit
+  294  ls
+  295  ls
+  296  cd libvpx/
+  297  ls
+  298  git status
+  299  git diff
+  300  make uninstall
+  301  git remote -v
+  302  ./configure --extra-cflags=-fPIC --disable-shared
+  303  make 
+  304  make install
+  305  cd ../
+  306  ls
+  307  cd ffmpeg/
+  308  ls
+  309  make uninstall
+  310  git checkout release/2.2
+  311  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  312  make
+  313      exit
+  314  ls
+  315  make
+  316  qvlc --version
+  317  cd ../
+  318  ls'
+  319  pwd
+  320  ls
+  321  ls
+  322  ls
+  323  cd libvpx/
+  324  ls
+  325  make clean
+  326  file /usr/local/lib/libvpx.a
+  327  make uninstall
+  328  file /usr/local/lib/libvpx.a
+  329  ls
+  330  ./ffmpeg
+  331  make install
+  332  cd ../
+  333  ls
+  334  cd libvpx/
+  335  ls
+  336  ./configure --extra-cflags=-fPIC --disable-shared
+  337  make
+  338  make install
+  339  ls
+  340  ls
+  341  ls
+  342  /kembo/www/funtec/production/current/public/movies/1092/webm.sh 
+  343  /kembo/www/funtec/production/current/public/movies/1092/webm.sh 
+  344  /current/public/movies/1092/webm.sh
+  345  /home/kembo/www/funtec/production/current/public/movies/1092/webm.sh
+  346  ls
+  347  ls
+  348  ls
+  349  cd ../
+  350  ls
+  351  cd ffmpeg/
+  352  ls
+  353  vi configure 
+  354  ls
+  355  make install
+  356  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  357  ls
+  358  vi Makefile 
+  359  ls
+  360  grep -nR fPIC .
+  361  ls
+  362  make
+  363                     
+  364  cd ../
+  365  ls
+  366  cd libvpx/
+  367  ls
+  368  ls
+  369  make uninstall
+  370  make uninstall
+  371  ls
+  372  ./configure 
+  373  ls
+  374  make install
+  375  make uninstall
+  376  ls
+  377  vi configure 
+  378  ls
+  379  make clean
+  380  ./configure --extra-cflags=-fPIC --disable-shared
+  381  make
+  382  make
+  383  make install
+  384  cd ../
+  385  ls
+  386  cd ffmpeg/
+  387  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac     --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay     --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  388  make
+  389  make clean
+  390  make uninstall
+  391  ls /usr/local/lib/libvpx.a
+  392  file  /usr/local/lib/libvpx.a
+  393  cd ../
+  394  ls
+  395  cd libvpx/
+  396  ls
+  397  make clean
+  398  file  /usr/local/lib/libvpx.a
+  399  file  /usr/local/lib/libvpx.a
+  400  ls -alh   /usr/local/lib/libvpx.a
+  401  make clean
+  402  make uninstall
+  403  ls -alh   /usr/local/lib/libvpx.a
+  404  rm    /usr/local/lib/libvpx.a
+  405  ./configure --extra-cflags=-fPIC --disable-shared
+  406  make 
+  407  make install
+  408  file /usr/local/lib/libvpx.a
+  409  ls -alh  /usr/local/lib/libvpx.a
+  410  cd ../ffmpeg/
+  411  ls
+  412  make clean
+  413  make 
+  414    
+  415  ls
+  416  make 
+  417  sudo su
+  418  cd ../
+  419  ls
+  420  cd libvpx/
+  421  ls
+  422  vi Makefile 
+  423  ./configure --extra-cflags=-fPIC --disable-shared
+  424  make clean
+  425  make uninstall
+  426  ./configure --extra-cflags=-fPIC --disable-shared
+  427  make 
+  428  make install
+  429  cd ../
+  430  ls
+  431  cd ffmpeg/
+  432  make clean
+  433  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  434  make 
+  435   
+  436  vi Makefile 
+  437   
+  438  cd ../
+  439  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac     --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay     --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  440  make
+  441    
+  442  ls
+  443  re
+  444  cd ./
+  445  cd ../libvpx/
+  446  make clean
+  447  make uninstall
+  448  ./configure --extra-cflags=-fPIC --enable-shared
+  449  ./configure --extra-cflags=-fPIC --enable-shared
+  450  mkae
+  451  make
+  452  make install
+  453  cd ../
+  454  ls
+  455  cd ffmpeg/
+  456  ls
+  457  make clean
+  458  make uninstall
+  459  ./configure --enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvpx --enable-libfaac     --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libvo-aacenc --enable-libxvid --disable-ffplay     --enable-shared --enable-gpl --enable-postproc --enable-nonfree --enable-avfilter --enable-pthreads --extra-cflags=-fPIC
+  460  make
+  461    
+  462  ls
+  463  make install
+  464  ls
+  465  pwd
+  466  cd ../
+  467  ls
+  468  ls
+  469  cd ffmpeg/
+  470  pw
+  471  ls
+  472  ./ffmpeg -h
+  473  ./ffmpeg -
+  474  ./ffmpeg 
+  475  xport LD_LIBRARY_PATH=/usr/local/lib/
+  476  export LD_LIBRARY_PATH=/usr/local/lib/
+  477  echo /usr/local/lib >> /etc/ld.so.conf.d/custom-libs.conf
+  478  ldconfig
+  479  ./ffmpeg 
+  480  exit
+  481  /etc/init.d/vsftpd -h
+  482  /etc/init.d/vsftpd stop
+  483  ps -ef | grep vsftpd
+  484  /etc/init.d/vsftpd start
+  485  ps -ef | grep 
+  486  d /etc/vsftpd/
+  487  ls
+  488  cd /etc/vsftpd/
+  489  ls
+  490  vi user_list 
+  491  vi user_list 
+  492  vi vsftpd.conf.orig 
+  493  s
+  494  ls
+  495  vi user_list 
+  496  vi chroot_list 
+  497  vi ftpusers 
+  498  /etc/init.d/vsftpd restrt
+  499  /etc/init.d/vsftpd restart
+  500  LS
+  501  LS
+  502  vi
+  503  ls
+  504  vi vsftpd.conf.orig 
+  505  ls
+  506  vi user_list 
+  507  /etc/init.d/vsftpd restart
+  508             
+  509  ls
+  510  ls
+  511  pwd
+  512  ls
+  513  ls
+  514   
+  515  ls
+  516  cd ../
+  517  cd /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146
+  518  ls
+  519  cd /home/kembo/www/funtec/production/releases/201403260403222/public/movies/1146
+  520  cd /home/kembo/www/funtec/production/releases/201403260403222/public/movies/1146
+  521  ls /home/kembo/www/funtec/production/releases/201403260403222/public
+  522  ls
+  523  pwd
+  524  ls /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146
+  525  cd /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146 && convert -delay 9 honda*.jpg 1146_honda.mov
+  526  ls
+  527  cd /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146 && convert -delay 9 honda*.jpg 1146_honda.mov && ls 1146_honda.mov
+  528  cd /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146 && convert -delay 9 honda*.jpg 1146_honda.mov && ls -lah 1146_honda.mov
+  529  convert --version
+  530  ls
+  531  ls
+  532  ls
+  533   
+  534  r
+  535  cd ../../../
+  536  cd ../
+  537  ls
+  538  cd ../
+  539  ls
+  540  cd ../
+  541  ls
+  542  pwd
+  543  yum -y remove ImageMagick ImageMagick-devel
+  544  yum -y install jasper-devel OpenEXR fftw3 xz-devel libwmf libtool-ltdl
+  545   wget http://www.imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-6.7.8-4.x86_64.rpm
+  546  wget http://www.imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-6.8.8-10.x86_64.rpm
+  547  wget http://www.imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-devel-6.8.8-10.x86_64.rpm
+  548        
+  549  ls
+  550  rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm 
+  551  yum install libtool-ltdl libtool-ltdl-devel freetype freetype-devel fontconfig-devel
+  552  ls
+  553  yum install --nogpgcheck   ImageMagick-6.8.8-10.x86_64.rpm
+  554  yum -y install openexr graphviz fftw3 jasper
+  555  rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm 
+  556   yum install --nogpgcheck   ImageMagick-6.8.8-10.x86_64.rpm 
+  557  ldconfig 
+  558  rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm
+  559  ldconfig 
+  560  rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm
+  561   
+  562  yum install bzip2-devel freetype-devel libjpeg-devel libpng-devel libtiff-devel giflib-devel zlib-devel ghostscript-devel djvulibre-devel libwmf-devel jasper-devel libtool-ltdl-devel libX11-devel libXext-devel libXt-devel lcms-devel libxml2-devel librsvg2-devel OpenEXR-devel
+  563  ls
+  564  rpm -ivh ImageMagick-6.8.8-10.x86_64.rpm
+  565  wget http://imagemagick.mirrorcatalogs.com/linux/SRPMS/ImageMagick-6.8.0-4.src.rpm
+  566  ls
+  567  wget http://imagemagick.mirrorcatalogs.com/linux/SRPMS/ImageMagick-6.8.8-10.src.rpm
+  568  rpmbuild --rebuild ImageMagick-6.8.8-10.src.rpm
+  569  yum install OpenEXR-devel.i686 OpenEXR-libs.i686 OpenEXR-devel.x86_64 OpenEXR-libs.x86_64
+  570  ls
+  571  rpm -ivh ImageMagick-6.8.8-10.x86_64.rpm
+  572  whereis libHalf.so
+  573  whereis libHalf.so
+  574  ls -lah /usr/lib64/libHalf.so
+  575   rpm -Uvh ImageMagick-6.8.8-10.i386.rpm
+  576   rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm 
+  577  ls
+  578  rpm -ivh ImageMagick-6.7.7-10.x86_64.rpm
+  579  yum install --nogpgcheck ImageMagick-6.8
+  580  ls
+  581  yum install --nogpgcheck  ImageMagick-6.8.8-10.x86_64.rpm
+  582  yum install libtool-ltdl libtool-ltdl-devel freetype freetype-devel fontconfig-devel
+  583  wget http://www.ijg.org/files/jpegsrc.v6b.tar.gz
+  584  ls
+  585  tar -xzf jpegsrc.v6b.tar.gz
+  586  ls
+  587  cd jpeg
+  588  cd jpeg-6b/
+  589  ls
+  590  ./configure 
+  591  make && make install
+  592  make && make install
+  593  wget ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng-1.2.50.tar.gz
+  594  yum install ImageMagick ImageMagick-devel
+  595  convert --version
+  596   
+  597  cd /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146 && convert -delay 9 honda*.jpg 1146_honda.mov && ls -lah 1146_honda.mov
+  598   yum install rpmbuild -y
+  599  c -
+  600  cd -
+  601  ls
+  602  cd ../
+  603  ls
+  604  rpm -Uvh "http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/19/Fedora/source/SRPMS/i/ImageMagick-6.7.8.9-5.fc19.src.rpm"
+  605  ls
+  606  ls -laht
+  607  man rpm
+  608  convert --version
+  609  ls
+  610  yum install --nogpgcheck ImageMagick-6.8.8-10.x86_64.rpm 
+  611  yum remove ImageMagick  ImageMagick-devel
+  612  cd /etc/yum.repos.d/
+  613  wget http://centos.karan.org/kbsingh-CentOS-Misc.repo
+  614  ls
+  615  vi kbsingh-CentOS-Misc.repo
+  616  ls
+  617  yum install ImageMagick.x86_64 ImageMagick-devel.x86_64
+  618  ls
+  619  ls
+  620  fg
+  621  vi kbsingh-CentOS-Misc.repo 
+  622  wget http://centos.karan.org/kbsingh-CentOS-Misc.repo
+  623  ls
+  624  rm kbsingh-CentOS-Misc.repo
+  625  cp kbsingh-CentOS-Misc.repo.1 kbsingh-CentOS-Misc.repo
+  626  ls
+  627  vi kbsingh-CentOS-Misc.repo
+  628  yum install ImageMagick.x86_64 ImageMagick-devel.x86_64
+  629  convert --version
+  630  yum localinstall ImageMagick-6.7.4-8.x86_64.rpm
+  631  convert -v
+  632  convert --version
+  633      
+  634  ls
+  635  rm kbsingh-CentOS-Misc.repo*
+  636  ls
+  637  convert --version
+  638  cd /opt/
+  639  ;s
+  640  ls
+  641  cd /home/kembo/www/funtec/production
+  642  ls
+  643  cd current/
+  644  ls
+  645  cd ../
+  646  ls
+  647  cd ../
+  648  ls
+  649  rpmbuild --target x86_64 -ba ImageMagick.spec
+  650  rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm 
+  651  whereis libltdl.so.3
+  652  rpm -qpR ./ImageMagick-6.8.8-10.x86_64.rpm 
+  653  rpm -Uvh ImageMagick-6.8.8-10.x86_64.rpm 
+  654   yum install bzip2-devel freetype-devel libjpeg-devel libpng-devel libtiff-devel giflib-devel zlib-devel ghostscript-devel djvulibre-devel libwmf-devel jasper-devel libtool-ltdl-devel libX11-devel libXext-devel libXt-devel lcms-devel libxml2-devel librsvg2-devel OpenEXR-devel
+  655  ls
+  656  rm ImageMagick-6.8.8-10.x86_64.rpm
+  657  ls
+  658  rpmbuild --rebuild ImageMagick-6.8.8-10.src.rpm 
+  659  yum install perl-devel
+  660  rpmbuild --rebuild ImageMagick-6.8.8-10.src.rpm 
+  661   convert --version
+  662  yum -y remove ImageMagick ImageMagick-devel
+  663  ls
+  664  rpm -ivh /root/rpmbuild/RPMS/x86_64/ImageMagick-6.8.8-10.x86_64.rpm 
+  665  convert --version
+  666  cd ../
+  667  ls
+  668  cd /home/kembo/www/funtec/production/releases/20140326040322/public/movies/1146
+  669  ls
+  670  ls -lah 
+  671   convert -delay 9 honda*.jpg 1146_honda.mov && ls -lah 1146_honda.mov
+  672  ls
+  673  convert -delay 9 honda*.jpg 1146_honda.mov
+  674  "ffmpeg" -v -1 -i "%M%%d.jpg" "%u.%m" 2> "%Z"
+  675  ls
+  676  ffmpeg -v -1 -i "%M%%d.jpg" "%u.%m" 2> "%Z"
+  677  ffmpeg
+  678  ffmpeg
+  679  exit
+  680  ls
+  681  vi /opt/nginx/conf/rails3.conf 
+  682  /opt/nginx/sbin/nginx -s
+  683  /opt/nginx/sbin/nginx -h
+  684  /opt/nginx/sbin/nginx -s reload
+  685  vi /etc/sysconfig/iptables
+  686  /etc/rc.d/init.d/iptables restart
+  687  ls
+  688  vi /opt/nginx/conf/rails3.conf 
+  689  ls /home/kembo/www/funtec/staging/current/public
+  690  ls
+  691  pwd
+  692  ls
+  693  ls current/
+  694  ls -alh current/
+  695  ls releases/
+  696  ls -alh
+  697  ls /home/kembo/www/funtec/staging/releases/20140408030856/
+  698  cp -r  shared/cached_copy/  /home/kembo/www/funtec/staging/releases/20140408030856/
+  699  ls
+  700  ls
+  701  ls
+  702  ls current/
+  703  rm -rf  current/cached_copy/
+  704  cp -r  shared/cached_copy/*  /home/kembo/www/funtec/staging/releases/20140408030856/
+  705  ls
+  706  vi current/config/database.yml 
+  707  ls /home/kembo/www/funtec/staging/current/config/initializers/
+  708  ls -alh  /home/kembo/www/funtec/staging/current/config/initializers/ 
+  709  ls
+  710  ls -alh
+  711  chown kembo:kembo -R /home/kembo/www/funtec/staging/releases/20140408030856
+  712  ls -alh  /home/kembo/www/funtec/staging/current/config/initializers/ 
+  713  mkdir  current/tmp
+  714  touch current/tmp/restart.txt
+  715  lsr
+  716  cd current/
+  717  ls -alh
+  718  ls -alh ../../production/current 
+  719  ls -alh ../../production/releases
+  720  exit
+  721  ls
+  722  exit
+  723  exit
+  724  ls"
+  725  ls
+  726  sudo chown kembo:kembo -R tmp/
+  727  touch tmp/restart.txt 
+  728   
+  729  exit
+  730  yum install logwatch
+  731  chown kembo:kembo -r  /opt/
+  732  chown kembo:kembo -R  /opt/
+  733  ls
+  734  cd opt/
+  735  ls
+  736  ls -alh
+  737  ls nginx/
+  738  ls nginx/ -alh
+  739  chown root:root -R  nginx/ 
+  740  ls -alh
+  741  pwd
+  742  ls
+  743  ls
+  744  ls
+  745  ls ffmpeg/
+  746  ls
+  747  pwd
+  748  cd ffmpeg/
+  749  ls
+  750  git remote -v
+  751  cd ../FFmpeg-master/
+  752  git remote -v
+  753  ls
+  754  ls
+  755  git status
+  756  cd ../
+  757  ls
+  758  rm -rf  FFmpeg-master/
+  759  ls
+  760  ls
+  761  cd libvpx/
+  762  git status
+  763  git remote -v
+  764  ls
+  765  cd ../
+  766  ls
+  767  cd x264/
+  768  git remote -v
+  769  ls
+  770  pwd
+  771  exit
+  772  alternatives --config mta
+  773  mail clover.ec.2010@gmail.com
+  774  vim /etc/postfix/main.cf
+  775  vim  /etc/postfix/main.cf
+  776  vim  /etc/postfix/main.cf
+  777  /etc/init.d/postfix restart
+  778  mail clover.ec.2010@gmail.com
+  779  mail watase@kembo-net.com
+  780  mail kurihara@kembo-net.com
+  781  /etc/init.d/httpd restart
+  782  top
+  783  ls /home/kembo/
+  784  ls /home/kembo/www/
+  785  ps -ef | grep httpd
+  786  /etc/init.d/httpd -h
+  787  /etc/init.d/httpd start
+  788  cd /etc/httpd/
+  789  ls
+  790  ls
+  791  ls -alh
+  792  tail -f logs/
+  793  ls
+  794  netstat -lnp|grep 80
+  795  cd ../
+  796  ls
+  797  ps -ef | grep nginx
+  798  cd /opt/nginx/
+  799  ls
+  800  ./sbin/nginx -h
+  801  ./sbin/nginx -s rstop
+  802  ./sbin/nginx -s stop
+  803  ./sbin/nginx 
+  804  ls
+  805  tail -f /home/kembo/www/funtec/staging/current/log/processor.log 
+  806  ls
+  807  vi /home/kembo/www/funtec/staging/current/config/initializers/processor.rb 
+  808  exit
+  809  iptables -L -n
+  810  vi /etc/sysconfig/iptables
+  811  /etc/rc.d/init.d/iptables restart
+  812  exit
+  813  vi /opt/nginx/conf/nginx.conf
+  814  ls
+  815  fg
+  816  ps -ef | grep nginx
+  817  ls
+  818  /opt/nginx/sbin/nginx -s reload
+  819  ps -ef | grep nginx
+  820  ps -ef |grep ruby
+  821  ps -ef |grep nginx
+  822  exit
+  823  exit
+  824  /etc/init.d/httpd stop
+  825  tail -f log/processor.log 
+  826  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  827  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  828  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  829  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  830  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  831  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  832  which convert
+  833  ps -ef | grep nginx
+  834  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  835  ls
+  836  ls -alh
+  837  convert -v
+  838  convert -versioni
+  839  convert --version
+  840  vi /etc/ImageMagick/delegates.xml 
+  841  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/436/ && convert -delay 9 honda*.jpg 436_honda.mov
+  842  convert
+  843  convert -version
+  844  tail ../../../log/processor.log 
+  845  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/437/ && convert -delay 9 honda*.jpg 437_honda.mov
+  846  /opt/nginx/
+  847  ls
+  848  cd /opt/nginx/
+  849  ls
+  850  cd ../
+  851  ls
+  852  ls -alh
+  853  /opt/nginx/sbin/nginx -s stop
+  854  chown kembo:kembo -R /opt/nginx/sbin/nginx 
+  855  exit
+  856  chown kembo:kembo -R /opt/nginx/
+  857  exit
+  858  /opt/nginx/sbin/nginx 
+  859  ps -ef | grep nginx
+  860  tail -f log/processor.log 
+  861  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/439/ && convert -delay 9 honda*.jpg 439_honda.mov
+  862  chown root:root -R  /opt/nginx/
+  863  ls
+  864  pwd
+  865  rls
+  866  ls
+  867  ls
+  868  echo $PATH
+  869  cp /usr/local/bin/ffmpeg /usr/bin/
+  870  ls
+  871  ls
+  872  ls
+  873  cd /home/kembo/www/funtec/staging/releases/20140408030856/public/movies/439/ && convert -delay 9 honda*.jpg 439_honda.mov
+  874   
+  875  pwd
+  876  ls
+  877  cd ../
+  878  ls
+  879  cd ../
+  880  ls
+  881  cd ../
+  882  tail -f log/processor.log 
+  883  tail -f log/processor.log 
+  884  exit
+  885  ls
+  886  vi /opt/nginx/conf/nginx.conf
+  887  vi /opt/nginx/conf/rails3.conf 
+  888  ls
+  889  exit
+  890  /etc/init.d/mysqld -h
+  891  /etc/init.d/mysqld status
+  892  /etc/init.d/mysqld restart
+  893  cd /opt/nginx/
+  894  ls
+  895  vi conf/rails3.conf 
+  896  vi /etc/sysconfig/iptables
+  897  /etc/init.d/iptables -h
+  898  /etc/init.d/iptables restart
+  899  vi /etc/sysconfig/iptables
+  900  /etc/init.d/iptables restart
+  901  ls
+  902  ./sbin/nginx -h
+  903  ./sbin/nginx -s reload
+  904   exit
+  905  /opt/nginx/sbin/nginx -h
+  906  /opt/nginx/sbin/nginx -s reload
+  907  exit
+  908  cd /opt/nginx/conf/
+  909  ls
+  910  vi rails3.conf 
+  911  /opt/nginx/sbin/nginx -h
+  912  /opt/nginx/sbin/nginx -t
+  913  fg
+  914  vi rails3.conf 
+  915  /opt/nginx/sbin/nginx -t
+  916  /opt/nginx/sbin/nginx -s 
+  917  /opt/nginx/sbin/nginx -h
+  918  /opt/nginx/sbin/nginx -s reload
+  919  fg
+  920  top
+  921  ls
+  922  vi
+  923  ls
+  924  fg
+  925  /opt/nginx/sbin/nginx -s reload
+  926    
+  927  exit
+  928  exit
+  929  vim /etc/init.d/nginx
+  930  vim /opt/nginx/conf
+  931  vim /opt/nginx/conf
+  932  cd /opt/nginx/
+  933  ls
+  934  cd conf/
+  935  ls
+  936  vi rails3.conf 
+  937  /opt/nginx/sbin/nginx -h
+  938  /opt/nginx/sbin/nginx -t
+  939  /opt/nginx/sbin/nginx -s reload
+  940   
+  941  fg
+  942  /opt/nginx/sbin/nginx -t
+  943  /opt/nginx/sbin/nginx -s reload
+  944  pwd
+  945  ls
+  946  ls
+  947  tail -f ../logs/nginx.pid 
+  948  tail -f ../logs/error.log 
+  949  fg
+  950  /opt/nginx/sbin/nginx -s reload
+  951  /opt/nginx/sbin/nginx -t
+  952  tail -f ../logs/error.log 
+  953  vi rails3.conf 
+  954  fg
+  955  /opt/nginx/sbin/nginx -t
+  956  /opt/nginx/sbin/nginx -s reload
+  957    
+  958        
+  959  top
+  960  ls
+  961  exit
+  962  ls
+  963  exit
+  964  ls
+  965  exit
+  966  ls
+  967  exit
+  968  exit
+  969  ls
+  970  cd www/
+  971  ls
+  972  cd ../
+  973  ls
+  974  wpd
+  975  pwd
+  976  vi /opt/nginx/conf/rails3.conf 
+  977  fg
+  978  vi /opt/nginx/conf/rails3.conf 
+  979  ls
+  980  ls
+  981  exit
+  982  /opt/nginx/sbin/nginx -t
+  983  /opt/nginx/sbin/nginx -s reload
+  984  exit
+  985  vi /etc/sysconfig/iptables
+  986  ls
+  987  ls
+  988  exit
+  989  vi /etc/sysconfig/iptables
+  990  exit
+  991  exit
+  992  /opt/nginx/sbin/nginx -t
+  993  /opt/nginx/sbin/nginx -s reload
+  994  vim .
+  995  pwd
+  996  ls
+  997  exit
+  998  history | more
+  999  history >> /home/kembo/root_history_exported_on_Aug_21th
