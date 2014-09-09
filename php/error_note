@@ -1,0 +1,23 @@
+http://www.kaiyuanba.cn/html/1/131/226/4085.htm
+
+Q. The mysql driver is not currently installed
+
+A. 解决是没有安装pdo-mysql这个扩展了，重新配置，加上–with-pdo-mysql=/usr/local/mysql/
+
+file:///home/bob/workspace/kembo/doc/yamaha/localhost/php_cgi_i.html
+
+./configure --with-mysql --with-pdo-mysql=/usr/sbin/
+
+./configure --with-mysql --with-pdo-mysql OK
+
+As of PHP 5.1.0, the CLI SAPI provides an interactive shell using the -a option if PHP is compiled with the --with-readline option.
+./configure --with-mysql=mysqlnd --with-pdo-mysql=mysqlnd --with-readline --with-libedit
+
+/usr/local/lib
+
+http://localhost:10086/app/phpinfo001.php OK
+
+bob@bob-Vostro-320:php$ sudo cp /usr/local/bin/php-cgi  /usr/local/apache2/cgi-bin/
+
+bob@bob-Vostro-320:self$ ls -alh `which php`
+-rwxr-xr-x 1 root root 23M  8月 26 11:44 /usr/local/bin/php
