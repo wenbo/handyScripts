@@ -1,0 +1,20 @@
+This command, if installed, shows programs holding open a network socket.
+
+lsof -i
+
+This command will show all running processes:
+
+ps -ef
+
+adding a pipe to a output paging program may help for long output, example:
+
+lsof -i | less 
+ps -ef | less
+
+This command, if you replace XXXX with a Process ID (PID) will show you the path to a executable file that is the origin of a process:
+
+ls -al /proc/XXXX/exe
+
+Common places trojans hide are /boot /tmp /run and /root. This command you can list all content, including "dot files", in /boot
+
+ls -al /boot
