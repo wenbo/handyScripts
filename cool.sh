@@ -1,4 +1,4 @@
-cp spec/api/requests_spec.rb{,bk}
+c765A_UE20Ap spec/api/requests_spec.rb{,bk}
 sudo chown -R `whoami` /var/log/cassandra 
 linux-2.6.32.59$ find -name *defconfig* 
 linux-2.6.32.59$ grep ".arch.info.init" * -nR
@@ -8,7 +8,7 @@ type cd # cd is a shell builtin
 Firefox plugin: autoproxy
 pmap pid
 
-ssh -qTfnN -D 7070 wenbo@0371zhong.com
+ssh -qTfnN -D 7070 root@520gsjt.com
 ssh-keygen -t rsa 
 scp .ssh/id_rsa.pub wenbo@0371zhong.com:~/.ssh/authorized_keys
 

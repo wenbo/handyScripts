@@ -1,0 +1,13 @@
+-------------------------  tips 1 --------------------------
+Use mysql + grep to find out where MySQL will look
+
+Running this command from the command line / terminal will show where MySQL will look for the my.cnf file on Linux/BSD/OS X systems:
+
+mysql --help | grep "Default options" -A 1
+
+This will output something like this:
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
+-------------------------  tips 1 --------------------------
+
