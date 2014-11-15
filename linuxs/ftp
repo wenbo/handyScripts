@@ -16,3 +16,17 @@ useradd -d /home/wwwroot/ftpuser -g ftp -s /sbin/nologin ftpuser
 passwd ftpuser
 vi /etc/vsftpd/chroot_list
 service vsftpd restart
+
+
+2. fpt command
+ftp   ftp.xxx.com  
+
+pwd：显示远程主机的当前工作目录。  
+cd   remote-dir：进入远程主机目录。  
+lcd[dir]：将本地工作目录切换至dir。  
+dir[remote-dir][local-file]：显示远程主机目录，并将结果存入本地文件 
+ls[remote-dir][local-file]：显示远程目录remote-dir，   并存入本地文件local-file。  
+put   local-file[remote-file]：将本地文件local-file传送至远程主机。  
+get   remote-file[local-file]：   将远程主机的文件remote-file传至本地硬盘的local-file。  
+mget  remote-files：传输多个远程文件。  
+mput  local-file：将多个文件传输至远程主机。  
