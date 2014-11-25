@@ -72,6 +72,8 @@ sudo dpkg-reconfigure gdm
 find . -name "._*" 
 htpasswd -b .htpasswd wenbo wenbo2008
 sed -i "s/原字符串/新字符串/g" `grep 原字符串 -rl 所在目录`
+$ sed -i '' -e '1i #encoding: utf-8' ./app/models/*.rb
+
 sed -n '650,655p' 1000.log
 egrep -r '.+?07/Aug/2014.+?\/refrigerator\/technology\/ HTTP' .  | wc -l
 
