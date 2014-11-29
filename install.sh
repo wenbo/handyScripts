@@ -72,3 +72,6 @@ xrandr --output VGA1 --right-of LVDS1 --auto
 xrandr --output LVDS1 --brightness 0.5
 
 sudo apt-get install xnoise
+
+
+xmodmap ~/.xmodmap
