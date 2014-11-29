@@ -1,1 +1,89 @@
 PHP 同时在名为 $GLOBALS[index] 的数组中存储了所有的全局变量。下标存有变量名。这个数组在函数内也可以访问，并能够用于直接更新全局变量。
+
+In PHP, identifiers are case sensitive. $tireqty is not the same as $TireQty.Trying
+to use them interchangeably is a common programming error. Function names are
+an exception to this rule:Their names can be used in any case.
+
+PHP supports the following basic data types:
+Integer—Used for whole numbers
+Float (also called double)—Used for real numbers
+String—Used for strings of characters
+Boolean—Used for true or false values
+Array—Used to store multiple data items (see Chapter 3, “Using Arrays”)
+Object—Used for storing instances of classes (see Chapter 6)
+Two special types are also available: NULL and resource.
+
+One important difference between constants and variables is that when you refer to a
+constant, it does not have a dollar sign in front of it. 
+One other difference between variables and constants is that constants can store only
+boolean, integer, float, or string data.These types are collectively known as scalar values.
+
+The complete list of superglobals is as follows:
+* $GLOBALS—An array of all global variables (Like the global keyword, this allows you to access global variables inside a function—for example, as $GLOBALS[‘myvariable’].)
+* $_SERVER—An array of server environment variables
+* $_GET—An array of variables passed to the script via the GET method
+* $_POST—An array of variables passed to the script via the POST method
+* $_COOKIE—An array of cookie variables
+* $_FILES—An array of variables related to file uploads
+* $_ENV—An array of environment variables
+* $_REQUEST—An array of all user input including the contents of input including
+* $_GET, $_POST, and $_COOKIE (but not including $_FILES since PHP 4.3.0)
+* $_SESSION—An array of session variables
+
+class classname
+{
+  function __construct($param)
+  {
+    echo "Constructor called with parameter ".$param."<br />";
+  }
+}
+
+
+class classname
+{
+  public $attribute;
+  function __get($name)
+  {
+    return $this->$name;
+  }
+  function __set ($name, $value)
+  {
+    $this->$name = $value;
+  }
+}
+With only a single access point, you can implement validity checks to make sure that
+only sensible data is being stored. If it occurs to you later that the value of $attribute
+should only be between 0 and 100, you can add a few lines of code once and check
+before allowing changes.You could change the __set() function to look as follows:
+function _set ($name, $value)
+{
+  if( ($name="attribute") && ($value >= 0) && ($value <= 100) )
+    $this->attribute = $value;
+}
+
+
+If the class is to be a subclass of another, you can use the extends keyword to specify
+this use.The following code creates a class named B that inherits from some previously
+defined class named A:
+class B extends A
+{
+  public $attribute2;
+  function operation2()
+  {
+  }
+}
+
+
+If you need to implement the functionality seen in instances of multiple inheritance, you
+can do so in PHP through interfaces.
+interface Displayable
+{
+  function display();
+}
+class webPage implements Displayable
+{
+  function display()
+  {
+    // ...
+  }
+}
