@@ -1,1 +1,25 @@
 M-x list-packages
+C-x 0  关闭当前窗口
+C-x 1  只保留当前窗口
+C-x 2  横向分屏
+C-x 3  竖向分屏
+F5     刷新当前文件
+C-Space 开始Mark选中
+M-w    复制
+C-y   粘贴
+M-<Arrow> 移动光标
+C-x C-s 保存
+tab  　缩进
+
+C-c i 跳向上窗口
+C-c k 跳向下窗口
+C-c j 跳向左窗口
+C-c l 跳向右窗口
+
+Shift+Alt+< 页首
+Shfit+Alt+> 页尾
+C-c < 窗口后退
+C-c > 窗口前进
+
+C-c g goto line
+
