@@ -11,3 +11,5 @@ Emacs可以向前，向后搜索字符串，搜索命令是渐进的（increment
 在新窗口中打开文件：C-x 4 C-f.
 
 M-x list-color-display
+
+M-x load-theme <RET> <TAB>
