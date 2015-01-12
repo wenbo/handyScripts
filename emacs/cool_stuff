@@ -43,6 +43,7 @@ C-c l 跳向右窗口
 C-c m windresize
 
 C-x ^ enlarge-window
+
 C-x - shrink-window-if-larger-than-buffer
 C-x { shrink-window-horizontally
 C-x } enlarge-window-horizontally
@@ -76,3 +77,4 @@ C-x r s r
   Copy region into register r(copy-to-register)
 C-x r i r 
   Insert text from register r(copy-to-register)
+C-x r l runs the command bookmark-bmenu-list, Display a list of existing bookmarks.
