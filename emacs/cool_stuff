@@ -8,6 +8,8 @@ M-n 或 C-u n 重复执行n次后继命令
 M-x list-packages
 M-x view-register 查看某一个 register
 M-x list-registers 查看所有的 register
+M-a : go to beginning of the sentence
+M-e : go to end of the sentence
 
 C-x 0  关闭当前窗口
 C-x o  other-window
@@ -65,7 +67,7 @@ M-v  屏幕下卷一个屏
 C-M-v  另一个窗口下卷一个屏 
 C-M-V  另一个窗口上卷一个屏 
 
-C-c g goto line
+C-c g, M-g g, M-g M-g:  goto line(runs the command goto-line, )
 
 C-x r SPC r (C-x r SPC runs the command point-to-register)
   Save position of point in register r(point-to-register)
