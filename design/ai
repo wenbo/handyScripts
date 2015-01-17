@@ -1,0 +1,6 @@
+<tab>: 隐藏两边子菜单
+commond -:  缩小
+command +: 放大
+h:  hand(此时可移动e)
+space:  hand
+选择工具选中后 Command c(复制), Command n(新建画板), Command v 粘贴所选中的。
