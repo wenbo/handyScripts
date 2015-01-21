@@ -2,12 +2,17 @@ C-h c  which command does this keystroke invoke (C-h c runs the command describe
 C-h k  which command does this keystroke invoke and what does it do?(C-h k runs the command describe-key) <-*好き*->
 C-h l  what were my last 100 typed keys
 C-h v  what's this variable and what is it's value <-*好き*->
+C-h v package-activated-list
 
 M-n 或 C-u n 重复执行n次后继命令
 
 M-x list-packages
 M-x view-register 查看某一个 register
 M-x list-registers 查看所有的 register
+M-x package-install solarized-theme
+M-x eval-buffer (eval current buffer)
+M-x revert-buffer (revert current buffer)
+M-x load-theme
 M-a : go to beginning of the sentence
 M-e : go to end of the sentence
 
@@ -16,7 +21,7 @@ C-x o  other-window
 C-x 1  只保留当前窗口(delete-other-windows)
 C-x 1  横向分屏(split-window-vertically)
 C-x 3  竖向分屏(split-window-horizontally)
-F5     刷新当前文件
+F5     刷新当前文件(M-x revert-buffer)
 C-Space 开始Mark选中
 C-@    标记文本块的开始
 C-x h  标记整个缓冲区
