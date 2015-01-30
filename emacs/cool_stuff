@@ -8,6 +8,8 @@ C-h f list-colors-display
 
 C-x v C-h
 C-c C-h
+C-k kill the rest of the visual line
+C-0 C-k kill until to beginning-of-visual-line
 M-x C-h
 
 M-n 或 C-u n 重复执行n次后继命令
@@ -22,6 +24,7 @@ M-x revert-buffer (revert current buffer)
 M-x load-theme
 M-a : go to beginning of the sentence
 M-e : go to end of the sentence
+M-m : back-to-indentation
 
 C-x 0  关闭当前窗口
 C-x o  other-window
