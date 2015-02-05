@@ -13,3 +13,4 @@ Emacs可以向前，向后搜索字符串，搜索命令是渐进的（increment
 M-x list-color-display
 
 M-x load-theme <RET> <TAB>
+(global-linum-mode 1) ; always show line numbers
