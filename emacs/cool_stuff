@@ -5,6 +5,8 @@ C-h v  what's this variable and what is it's value <-*好き*->
 C-h v package-activated-list
 C-h a  C-h a runs the command apropos-command, show commands that match PATTERN. PATTERN cna be a word, a list of words (separated by spaces), or a regexp (using some regexp special characters).
 C-h f list-colors-display
+c-h i runs the command info
+c-h i m elisp
 
 C-x v C-h
 C-c C-h
@@ -97,3 +99,4 @@ C-x r i r
 C-x r l runs the command bookmark-bmenu-list, Display a list of existing bookmarks.
 
 C-j runs the command eval-print-last-sexp
+C-x C-e runs the command eval-last-sexp
