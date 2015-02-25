@@ -95,3 +95,5 @@ C-x r s r
 C-x r i r 
   Insert text from register r(copy-to-register)
 C-x r l runs the command bookmark-bmenu-list, Display a list of existing bookmarks.
+
+C-j runs the command eval-print-last-sexp
