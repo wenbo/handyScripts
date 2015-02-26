@@ -60,6 +60,7 @@ C-c k 跳向下窗口
 C-c j 跳向左窗口
 C-c l 跳向右窗口
 C-c m windresize
+C-c z runs the command shell, which is an interactive compiled Lisp
 
 C-x ^ enlarge-window
 
