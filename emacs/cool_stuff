@@ -101,3 +101,4 @@ C-x r l runs the command bookmark-bmenu-list, Display a list of existing bookmar
 
 C-j runs the command eval-print-last-sexp
 C-x C-e runs the command eval-last-sexp
+M-!:  M-! runs the command shell-command
