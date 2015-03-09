@@ -94,3 +94,4 @@ $ vi /etc/mysql/my.cnf
 72 general_log_file        = /var/log/mysql/mysql.log
 73 general_log             = 1
 
+alter table  campaigns default character set utf8 COLLATE utf8_unicode_ci;
