@@ -56,3 +56,4 @@ PassengerRuby /home/bob/.rvm/wrappers/ruby-1.8.7-p370/ruby
 After you restart Apache, you are ready to deploy any number of Ruby on Rails
 
 <<<<<<<<<<<<<<<<<< apache <<<<<<<<<<<<<<<<<<<<<<
+User.update_all("id = 7", "id = 9")
