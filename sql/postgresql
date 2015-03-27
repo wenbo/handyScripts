@@ -13,3 +13,22 @@ Enter name of role to add: bob
 
 sudo su postgres -c psql template1
 sudo apt-get install postgresql-contrib
+
+
+
+kembomatoMacBook-2:swift kembostaff$ pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+pg_ctl: another server might be running; trying to start server anyway
+server starting
+kembomatoMacBook-2:swift kembostaff$ psql
+psql: FATAL:  database "kembostaff" does not exist
+kembomatoMacBook-2:swift kembostaff$
+kembomatoMacBook-2:swift kembostaff$
+kembomatoMacBook-2:swift kembostaff$ createuser username -P
+Enter password for new role:    # password
+Enter it again:
+kembomatoMacBook-2:swift kembostaff$
+kembomatoMacBook-2:swift kembostaff$
+kembomatoMacBook-2:swift kembostaff$ createdb dbname -O username -E UTF8 -e
+CREATE DATABASE dbname OWNER username ENCODING 'UTF8';
+kembomatoMacBook-2:swift kembostaff$
+kembomatoMacBook-2:swift kembostaff$ psql -U username -d dbname -h 127.0.0.1
