@@ -36,3 +36,5 @@ hosts: files dns
 [root@web2 opt]# repoquery -q -f */libltdl.so.*
 
 yum repolist
+yum info php*
+yum list installed | grep httpd

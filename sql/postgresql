@@ -32,3 +32,14 @@ kembomatoMacBook-2:swift kembostaff$ createdb dbname -O username -E UTF8 -e
 CREATE DATABASE dbname OWNER username ENCODING 'UTF8';
 kembomatoMacBook-2:swift kembostaff$
 kembomatoMacBook-2:swift kembostaff$ psql -U username -d dbname -h 127.0.0.1
+
+显示已创建的数据库：
+\l
+
+连接数据库
+\c dbname
+
+显示数据库表
+\d  
+
+
