@@ -2,3 +2,13 @@
 
 htpasswd -b .htpasswd wenbo wenbo2008
 
+
+How to hide X-Powered-By and Server headers
+Then add this to your apache2.conf:
+
+# Hide X-Powered-By and Server headers
+Header always unset "X-Powered-By"
+ServerTokens Prod
+ServerSignature Off
+
+
