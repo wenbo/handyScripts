@@ -95,3 +95,22 @@ $ vi /etc/mysql/my.cnf
 73 general_log             = 1
 
 alter table  campaigns default character set utf8 COLLATE utf8_unicode_ci;
+
+  show create table campaigns;
+
+CREATE TABLE `campaigns` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `link` varchar(255)  COLLATE utf8_unicode_ci DEFAULT NULL,
+  `from_to` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(255)  COLLATE utf8_unicode_ci DEFAULT NULL,
+  `public_time` date DEFAULT NULL,
+  `is_public` tinyint(1) DEFAULT NULL,
+  `top_image_file_name` varchar(255)   COLLATE utf8_unicode_ci DEFAULT NULL,
+  `top_image_content_type` varchar(255)   COLLATE utf8_unicode_ci DEFAULT NULL,
+  `top_image_file_size` int(11) DEFAULT NULL,
+  `top_image_updated_at` datetime DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+

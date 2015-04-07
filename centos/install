@@ -38,3 +38,5 @@ hosts: files dns
 yum repolist
 yum info php*
 yum list installed | grep httpd
+
+php55-php-mysqlnd
