@@ -94,7 +94,7 @@ $ vi /etc/mysql/my.cnf
 72 general_log_file        = /var/log/mysql/mysql.log
 73 general_log             = 1
 
-alter table  campaigns default character set utf8 COLLATE utf8_unicode_ci;
+alter table  collected_products default character set utf8 COLLATE utf8_unicode_ci;
 
   show create table campaigns;
 
@@ -114,3 +114,29 @@ CREATE TABLE `campaigns` (
   PRIMARY KEY (`id`)
 )
 
+
+
+CREATE TABLE `collected_products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_for_show` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `desc` text COLLATE utf8_unicode_ci,
+  `is_public` tinyint(1) DEFAULT NULL,
+  `public_time` date DEFAULT NULL,
+  `searchable_id` int(11) DEFAULT NULL,
+  `searchable_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=854 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+
+
+CREATE TABLE `search_records` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+`request_info` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+`created_at` datetime DEFAULT NULL,
+`updated_at` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT  CHARSET=utf8 COLLATE=utf8_unicode_ci
