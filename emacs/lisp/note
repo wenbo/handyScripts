@@ -1,0 +1,11 @@
+cons函数的名称: 是单词'construct'的缩写
+
+car是短语'Contents of the Address part of the Register'
+(car '(rose violet daisy buttercup))
+执行这个语句后，回显区将显示rose。
+有一个更合理的car函数：first。
+
+cdr（'could-er'）是短语'Contents of the Decrement part of the Register'
+(cdr '(rose violet daisy buttercup))
+求值将在回显区显示(violet daisy butercup)
+cdr的一个更合理的名称是：rest。
