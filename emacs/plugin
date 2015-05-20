@@ -33,3 +33,25 @@ state (<I>), Visual state (<V>), Replace state (<R>), Operator-Pending state (<O
 state (<M>) and Emacs state (<E>). Each state has its own keymaps and customization
 variables.
 -------------------------- すごい ------------------------>
+
+<-------------------------- auto-complete すごい ------------------------
+(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-20141228.633")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20141228.633/dict")
+(ac-config-default) 
+-------------------------- auto-complete すごい ------------------------>
+
+<-------------------------- multi-term すごい ------------------------
+(require 'multi-term)
+(setq multi-term-program "/bin/zsh")
+(custom-set-variables
+ '(term-default-bg-color "#000000")        ;; background color (black)
+ '(term-default-fg-color "#dddd00"))       ;; foreground color (yellow)
+(add-hook 'term-mode-hook
+          (lambda ()
+            (add-to-list 'term-bind-key-alist '("M-[" . multi-term-prev))
+            (add-to-list 'term-bind-key-alist '("M-]" . multi-term-next))))
+(add-hook 'term-mode-hook
+          (lambda ()
+            (setq term-buffer-maximum-size 0)))
+-------------------------- multi-term すごい ------------------------>
