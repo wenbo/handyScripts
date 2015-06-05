@@ -2,3 +2,6 @@ git add -A
 git clean -df
 git init --bare
 
+切到源码的根目录下，
+ git config core.fileMode false
+这样你的所有的git库都会忽略filemode变更了
