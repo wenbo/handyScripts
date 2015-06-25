@@ -7,7 +7,7 @@ C-h a  C-h a runs the command apropos-command, show commands that match PATTERN.
 C-h f list-colors-display
 c-h i runs the command info
 c-h i m elisp
-
+C-o runs the command open-line, which is an interactive compiled Lisp
 C-x v C-h
 C-c C-h
 C-k kill the rest of the visual line

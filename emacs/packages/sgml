@@ -1,0 +1,80 @@
+C-x C-o <html-tag> <tab>
+
+C-c o <html-tag> <tab>
+
+C-c C-t runs the command sgml-tag, which is an interactive compiled
+Lisp function in `sgml-mode.el'.
+
+C-x C-o runs the command delete-blank-lines, which is an interactive
+compiled Lisp function in `simple.el'.
+
+
+C-c C-f runs the command sgml-skip-tag-forward, which is an
+interactive compiled Lisp function in `sgml-mode.el'.
+
+1C-c C-b runs the command sgml-skip-tag-backward, which is an
+interactive compiled Lisp function in `sgml-mode.el'.
+
+    (set-keymap-parent map  sgml-mode-map)
+		    (define-key map "\C-c6" 'html-headline-6)
+		    (define-key map "\C-c5" 'html-headline-5)
+		    (define-key map "\C-c4" 'html-headline-4)
+		    (define-key map "\C-c3" 'html-headline-3)
+		    (define-key map "\C-c2" 'html-headline-2)
+		    (define-key map "\C-c1" 'html-headline-1)
+		    (define-key map "\C-c\r" 'html-paragraph)
+		    (define-key map "\C-c\n" 'html-line)
+		    (define-key map "\C-c\C-c-" 'html-horizontal-rule)
+		    (define-key map "\C-c\C-co" 'html-ordered-list)
+		    (define-key map "\C-c\C-cu" 'html-unordered-list)
+		    (define-key map "\C-c\C-cr" 'html-radio-buttons)
+		    (define-key map "\C-c\C-cc" 'html-checkboxes)
+		    (define-key map "\C-c\C-cl" 'html-list-item)
+		    (define-key map "\C-c\C-ch" 'html-href-anchor)
+		    (define-key map "\C-c\C-cn" 'html-name-anchor)
+		    (define-key map "\C-c\C-ci" 'html-image)
+		    (when html-quick-keys
+		      (define-key map "\C-c-" 'html-horizontal-rule)
+		      (define-key map "\C-co" 'html-ordered-list)
+		      (define-key map "\C-cu" 'html-unordered-list)
+		      (define-key map "\C-cr" 'html-radio-buttons)
+		      (define-key map "\C-cc" 'html-checkboxes)
+		      (define-key map "\C-cl" 'html-list-item)
+		      (define-key map "\C-ch" 'html-href-anchor)
+		      (define-key map "\C-cn" 'html-name-anchor)
+		      (define-key map "\C-ci" 'html-image))
+
+
+
+
+http://qiita.com/fnobi/items/bb3b700b1fbdd1a00196
+
+なお、M-x describe-function RET sgml-tagすると解説が読めます。
+Emacsの関数すべてにおいてこれは使えるので、べんりですよ。
+
+
+ほかにもsgml-modeで使えるものはいっぱいあります。
+キーバインドはどれもC-cで始まるものになっていて、
+比較的覚えやすいのではないでしょうか。
+sgml-close-tag: C-c C-e
+いまいる場所のHTMLタグを閉じます。
+タグ書きすぎて、ネストの訳が分からなくなったときにも使えそう。
+sgml-skip-tag-forward: C-c C-f
+HTMLタグ単位で、前に移動します。
+sgml-skip-tag-backward: C-c C-b
+HTMLタグ単位で、後ろに移動します。
+(このあたりは、1タイプで済むキーバインドに差し替えてもいいかなぁという気も)
+sgml-sgml-tags-invisible: C-c TAB
+HTMLタグを非表示/表示。テキストブラウザみたいな表示になる。
+sgml-delete-tag: C-c DELETE
+HTMLタグを削除。(カーソルのいる位置を囲んでいるタグだけ削除。中身はそのまま残る)
+html-headline-1: C-c 1
+h1タグを入力。C-c 1〜C-c 6まである。
+html-check-boxes: C-c C-c c
+チェックボックスをまとめて、ダイアログで入力。
+だいたいvalueだけ入力すれば勝手に書いてくれるので、かなり早い。
+同様のhtml-radio-buttons: C-c C-c rもあり。
+html-href-anchor: C-c C-c h
+aタグを(ry
+html-image: C-c C-c i
+imgタグを(ry))
