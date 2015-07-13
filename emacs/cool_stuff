@@ -91,7 +91,31 @@ C-x r SPC r (C-x r SPC runs the command point-to-register)
   Save position of point in register r(point-to-register)
 C-x r j r (C-x r j runs the command jump-to-register)
   Jump to the position saved in register r(jump-to-register)
-C-x r b (runs the command bookmark-jump)
+
+;; bookmark
+(defvar bookmark-map
+  (let ((map (make-sparse-keymap)))
+    ;; Read the help on all of these functions for details...
+    (define-key map "x" 'bookmark-set)
+    (define-key map "m" 'bookmark-set) ;"m"ark
+    (define-key map "j" 'bookmark-jump)
+    (define-key map "g" 'bookmark-jump) ;"g"o
+    (define-key map "o" 'bookmark-jump-other-window)
+    (define-key map "i" 'bookmark-insert)
+    (define-key map "e" 'edit-bookmarks)
+    (define-key map "f" 'bookmark-insert-location) ;"f"ind
+    (define-key map "r" 'bookmark-rename)
+    (define-key map "d" 'bookmark-delete)
+    (define-key map "l" 'bookmark-load)
+    (define-key map "w" 'bookmark-write)
+    (define-key map "s" 'bookmark-save)
+    map)
+  "Keymap containing bindings to bookmark functions.
+It is not bound to any key by default: to bind it
+so that you have a bookmark prefix, just use `global-set-key' and bind a
+key of your choice to `bookmark-map'.  All interactive bookmark
+functions have a binding in this keymap.")
+;; C-x r b (runs the command bookmark-jump)
 
 C-x r s r 
   Copy region into register r(copy-to-register)
