@@ -1,3 +1,4 @@
+リストを作るための最も基本的な関数が cons である。
 cons函数的名称: 是单词'construct'的缩写
 
 car是短语'Contents of the Address part of the Register'
