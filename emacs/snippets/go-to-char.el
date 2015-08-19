@@ -9,4 +9,4 @@ occurence of CHAR."
 			(search-forward (string char) nil nil n))
 		(setq unread-command-events (list last-input-event)))
 
-(define-key global-map (kbd "C-c a") 'wy-go-to-char)
+(define-key global-map (kbd "C-c f") 'wy-go-to-char)
