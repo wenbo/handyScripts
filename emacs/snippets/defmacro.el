@@ -10,9 +10,9 @@ For example, (for i from 1 to 10 do (print i))."
 
 
 
-(for i from 1 to 3 do
+(macroexpand '(for i from 1 to 3 do
 		 (setq square (* i i))
-		 (princ (format "\n%d %d" i square)))
+		 (princ (format "\n%d %d" i square))))
 
 →
 (let ((i 1))
@@ -25,3 +25,17 @@ For example, (for i from 1 to 10 do (print i))."
 -|2       4
 -|3       9
 ⇒ nil
+
+
+
+
+(defmacro for (var from init to final do &rest body)
+	  "Execute a simple \"for\" loop.
+For example, (for i from 1 to 10 do (print i))."
+		`(let ((,var ,init))
+			 (while (<= ,var ,final)
+				 ,@body
+				        (inc ,var))))
+(for i from 1 to 3 do
+		 (setq square (* i i))
+		    (princ (format "\n%d %d" i square)))
