@@ -1,0 +1,20 @@
+fdisk 
+mkfs
+tune2fs
+  mkdir /var/www/new_d.0371zhong
+
+>       mount /dev/sdb1 /var/www/new_d.0371zhong
+
+>       umount /var/www/new_d.0371zhong (先unmount)
+
+>
+
+>       vi /ets/fstab
+
+>       这里追加一行：
+
+>       /dev/sdb1      /var/www/new_d.0371zhong  ext3  defaults  1 0
+
+>
+
+>       mount –a (mount all from fstab config)
