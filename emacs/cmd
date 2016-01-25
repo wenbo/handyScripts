@@ -1,1 +1,13 @@
 kembomatoMacBook:emacs kembostaff$   /usr/local/Cellar/emacs/24.4/bin/emacs -version
+
+sudo brew install emacs --with-cocoa
+
+A command line wrapper for the cocoa app was installed to:
+/usr/local/Cellar/emacs/24.5/bin/emacs
+
+To have launchd start emacs at login:
+ln -sfv /usr/local/opt/emacs/*.plist ~/Library/LaunchAgents
+Then to load emacs now:
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.emacs.plist
+.app bundles were installed.
+Run `brew linkapps emacs` to symlink these to /Applications.
