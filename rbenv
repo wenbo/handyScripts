@@ -79,3 +79,6 @@ ruby extconf.rb --with-readline-dir=$(brew --prefix readline)
   echo ruby-china > .rbenv-gemsets
   当前目录下没有 .rbenv-gemsets 文件的情况下，执行 bundle 命令（没有指定 --path 参数的情况）时，是对当前版本的 ruby 版本的 gemset 。也就相当于 rvm 中 global gemset 的作用了
 
+
+# list all available versions:
+$ rbenv install -l
