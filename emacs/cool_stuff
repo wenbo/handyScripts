@@ -127,3 +127,16 @@ C-x r l runs the command bookmark-bmenu-list, Display a list of existing bookmar
 C-j runs the command eval-print-last-sexp
 C-x C-e runs the command eval-last-sexp
 M-!:  M-! runs the command shell-command
+
+<---------  start of tabbar ---------->
+tabbar-mode is an interactive autoloaded Lisp function in `tabbar.el'.
+
+(tabbar-mode &optional ARG)
+
+Toggle display of a tab bar in the header line.
+With prefix argument ARG, turn on if positive, otherwise off.
+Returns non-nil if the new state is enabled.
+
+You can run the command `tabbar-forward-group' with C-c <C-down>
+
+<---------  end of tabbar ---------->

@@ -31,3 +31,10 @@ put   local-file[remote-file]：将本地文件local-file传送至远程主机�
 get   remote-file[local-file]：   将远程主机的文件remote-file传至本地硬盘的local-file。  
 mget  remote-files：传输多个远程文件。  
 mput  local-file：将多个文件传输至远程主机。  
+
+解决:ftp命令行不支持目录下载
+通过wget得到解决
+#wget ftp://IP:PORT/* --ftp-user=xxx --ftp-password=xxx -r
+注:
+星号*必须有,否则下载下来的就一个文件index.html
+-r参数就是用来目录下载的
