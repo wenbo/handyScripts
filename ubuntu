@@ -11,3 +11,8 @@ sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu quantal-getdeb app
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 sudo apt-get install songbird
 =============== songbird ===============
+
+=============== input method ===================
+sudo apt-get install ibus-anthy 
+然后在ibus的首选项里面添加日语->anthy即可
+=============== input method ===================
