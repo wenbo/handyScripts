@@ -55,3 +55,8 @@ variables.
           (lambda ()
             (setq term-buffer-maximum-size 0)))
 -------------------------- multi-term すごい ------------------------>
+
+<-------------------------- helm すごい ------------------------
+  https://github.com/emacs-helm/helm/wiki
+  http://tuhdo.github.io/helm-intro.html
+-------------------------- helm すごい ------------------------>
