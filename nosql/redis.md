@@ -10,4 +10,5 @@ HSET key field value #Sets field in the hash stored at key to value. If key does
 
 HGET key field #Returns the value associated with field in the hash stored at key.
 
-
+HMSET key field value [field value ...] #Sets the specified fields to their respective values in the hash stored at key. 
+HMGET key field [field ...] #Returns the values associated with the specified fields in the hash stored at key.
