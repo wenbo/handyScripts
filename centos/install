@@ -43,3 +43,5 @@ php55-php-mysqlnd
 
 yum install mysql mysql-server 
 yum -y install httpd php mysql php-mysql httpd-manual mod_ssl mod_perl mod_auth_mysql php-mcrypt php-gd php-xml php-mbstring php-ldap php-pear php-xmlrpc mysql-connector-odbc mysql-devel libdbi-dbd-mysql
+
+[root@centosBox ~]# rpm -qa | grep mysql
