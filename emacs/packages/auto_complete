@@ -1,0 +1,5 @@
+https://github.com/auto-complete/auto-complete/blob/master/doc/manual.md
+
+M-1 to select candidate 1, M-2 to select candidate 2
+
+You can select candidates forward or backward by cursor key or M-p and M-n. According to settings, a behavior of completion by TAB will be changed as a behavior of completion by RET. 

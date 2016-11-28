@@ -1,3 +1,4 @@
+Sams Teach Yourself Emacs in 24 Hours : http://docs.huihoo.com/homepage/shredderyin/emacs24/index.htm
 M-/    M-/ runs the command dabbrev-expand, Expand previous word "dynamically".
 C-h c  which command does this keystroke invoke (C-h c runs the command describe-key-briefly)
 C-h k  which command does this keystroke invoke and what does it do?(C-h k runs the command describe-key) <-*好き*->
