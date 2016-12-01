@@ -57,3 +57,5 @@ Web Server Gateway Interface
 
 pip install matplotlib
 pip install mysql-python
+
+bob@bob-OptiPlex-3020:~/src/Python-3.5.2$ sudo -H  make install
