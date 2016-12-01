@@ -5,18 +5,22 @@ C-h k  which command does this keystroke invoke and what does it do?(C-h k runs 
 C-h l  what were my last 100 typed keys
 C-h v  what's this variable and what is it's value <-*好き*->
 C-h v package-activated-list
+C-h v ac-modes
 C-h a  C-h a runs the command apropos-command, show commands that match PATTERN. PATTERN cna be a word, a list of words (separated by spaces), or a regexp (using some regexp special characters).
 C-h f list-colors-display
 c-h i runs the command info
 c-h i m elisp
 C-o runs the command open-line, which is an interactive compiled Lisp
-C-x v C-h
+C-x v C-h  Global Bindings Starting With C-x v:
 C-c C-h
 C-k kill the rest of the visual line
 C-0 C-k kill until to beginning-of-visual-line
 M-x C-h
 
 M-n 或 C-u n 重复执行n次后继命令
+
+C-x ( start-kbd-macro
+C-x ) runs the command kmacro-end-macro
 
 M-x list-packages
 M-x list-color-display
@@ -141,3 +145,7 @@ Returns non-nil if the new state is enabled.
 You can run the command `tabbar-forward-group' with C-c <C-down>
 
 <---------  end of tabbar ---------->
+
+<-------- start of workgroup ------->
+wg-dired											C-c w d
+<-------- end of workgroup ------->
