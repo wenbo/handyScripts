@@ -1,3 +1,4 @@
+bob@bob-OptiPlex-3020:~/src/emacs-24.4$ sudo apt-get build-dep emacs24
 kembomatoMacBook:emacs kembostaff$   /usr/local/Cellar/emacs/24.4/bin/emacs -version
 
 sudo brew install emacs --with-cocoa

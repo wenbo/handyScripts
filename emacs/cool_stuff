@@ -29,6 +29,7 @@ M-x list-registers 查看所有的 register
 M-x package-install solarized-theme
 M-x eval-buffer (eval current buffer)
 M-x revert-buffer (revert current buffer)
+M-x goto-char : Set point to POSITION, a number or marker. Beginning of buffer is position (point-min), end is (point-max).
 M-x load-theme
 M-a : go to beginning of the sentence
 M-e : go to end of the sentence
