@@ -1,3 +1,4 @@
+https://pypi.python.org/pypi
 https://pip.pypa.io/en/stable/
 pip3 list
 pip3 show setuptools
