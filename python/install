@@ -66,6 +66,5 @@ pip3 install scipy -i --trusted-host  http://pypi.douban.com/simple/
 pip3 search  --index http://pypi.douban.com/simple/ scipy
 
 
-pip3 install scipy -i --trusted-host  
-
-scipy-0.18.1-cp35-cp35m-manylinux1_x86_64.whl
+pip3 install scipy -i --trusted-host  scipy-0.18.1-cp35-cp35m-manylinux1_x86_64.whl
+pip install -U scikit-learn
