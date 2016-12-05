@@ -2,3 +2,7 @@
 ;(require 'color-theme-solarized)
 ;(color-theme-solarized)
 (load-theme 'solarized t)
+
+
+
+emacs 使用multi-term : http://www.jianshu.com/p/2c1ac913d2cb#
