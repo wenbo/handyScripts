@@ -85,4 +85,6 @@ du -S | sort -n
 
 count directories:  
 
-split -b 4000m 20141126.sql.tar.gz 20141126_splitted.sql.tar.gz_ 
+split -b 4000m 20141126.sql.tar.gz 20141126_splitted.sql.tar.gz_
+
+sudo apt-get install htop
