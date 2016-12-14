@@ -12,6 +12,12 @@ postgres:
 
 
 mysql
+
+  show full processlist
+  mysql -uroot -pupdate -e 'show full processlist;' > processlist.log
+  mysql -uroot -pupdate -e 'show variables;' > variables.log
+  show variables like '%max_connections%'
+
   mysqldump -u 用户名 -p 数据库名 > 导出的文件名    
   mysqldump -u wcnc -p smgp_apps_wcnc > wcnc.sql
 
