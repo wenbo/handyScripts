@@ -35,6 +35,7 @@ mput  local-file：将多个文件传输至远程主机。
 解决:ftp命令行不支持目录下载
 通过wget得到解决
 #wget ftp://IP:PORT/* --ftp-user=xxx --ftp-password=xxx -r
+#  wget ftp://IP/* --ftp-user=xxx --ftp-password=xxx -r --exclude-directories=/upload_files
 注:
 星号*必须有,否则下载下来的就一个文件index.html
 -r参数就是用来目录下载的
