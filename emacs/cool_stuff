@@ -1,4 +1,7 @@
 Sams Teach Yourself Emacs in 24 Hours : http://docs.huihoo.com/homepage/shredderyin/emacs24/index.htm
+M-n runs the command next-history-element (find-grep or multi-term)
+M-p runs the command previous-history-element (find-grep or multi-term)
+
 M-/    M-/ runs the command dabbrev-expand, Expand previous word "dynamically".
 C-h c  which command does this keystroke invoke (C-h c runs the command describe-key-briefly)
 C-h k  which command does this keystroke invoke and what does it do?(C-h k runs the command describe-key) <-*好き*->
@@ -41,7 +44,7 @@ C-x 1  只保留当前窗口(delete-other-windows)
 C-x 1  横向分屏(split-window-vertically)
 C-x 3  竖向分屏(split-window-horizontally)
 F5     刷新当前文件(M-x revert-buffer)
-C-Space 开始Mark选中
+C-@ or C-Space 开始Mark选中
 C-@    标记文本块的开始
 C-x h  标记整个缓冲区
 
@@ -94,11 +97,25 @@ C-M-V  另一个窗口上卷一个屏
 
 C-c g, M-g g, M-g M-g:  goto line(runs the command goto-line, )
 
+;;register
+C-x r s r 
+  Copy region into register r(copy-to-register)
+C-x r i r 
+  Insert text from register r(copy-to-register)
 C-x r SPC r (C-x r SPC runs the command point-to-register)
   Save position of point in register r(point-to-register)
 C-x r j r (C-x r j runs the command jump-to-register)
   Jump to the position saved in register r(jump-to-register)
+C-x r r(copy-rectangle-to-register) では矩形領域をコピーすることができます。 貼り付ける際のコマンドは同じです。
 
+
+レジスターによるカーソル位置の登録では、 Emacs を終了すると忘れてしまいます。
+こんなときにはブックマークを使います。
+ブックマークでは登録内容をファイル(~/.emacs.d/bookmarks)に保存するので、次に起動した場合も有効です。 また、キーはアルファベット 1 文字ではなく、名前(文字列)となっています。
+C-x r m	bookmark-set	カーソル位置をブックマークに保存
+C-x r b	bookmark-jump	ブックマーク位置へジャンプ
+C-x r l	bookmark-bmenu-list	登録済みブックマークの一覧表示
+登録したブックマークを削除したい場合にはブックマークの一覧から行います。 一覧は Dired などの一般的なリストの操作と同じです。 (d でマークして、 x で実行)
 ;; bookmark
 (defvar bookmark-map
   (let ((map (make-sparse-keymap)))
@@ -123,12 +140,9 @@ so that you have a bookmark prefix, just use `global-set-key' and bind a
 key of your choice to `bookmark-map'.  All interactive bookmark
 functions have a binding in this keymap.")
 ;; C-x r b (runs the command bookmark-jump)
-
-C-x r s r 
-  Copy region into register r(copy-to-register)
-C-x r i r 
-  Insert text from register r(copy-to-register)
 C-x r l runs the command bookmark-bmenu-list, Display a list of existing bookmarks.
+
+
 
 C-j runs the command eval-print-last-sexp
 C-x C-e runs the command eval-last-sexp
