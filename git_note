@@ -5,3 +5,9 @@ git init --bare
 切到源码的根目录下，
  git config core.fileMode false
 这样你的所有的git库都会忽略filemode变更了
+
+
+Your branch and 'origin/foobar' have diverged,
+and have 5 and 1 different commit each, respectively.
+$ git fetch origin
+$ git reset --hard origin/foobar
