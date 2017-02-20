@@ -164,3 +164,10 @@ You can run the command `tabbar-forward-group' with C-c <C-down>
 <-------- start of workgroup ------->
 wg-dired											C-c w d
 <-------- end of workgroup ------->
+<-------- helm -------
+- helm-find-files:  By default, it is bound to <helm-prefix> C-x C-f.
+Move up	C-p
+Move down	C-n
+Up directory	C-l
+C-j: (Shows file name in the Helm buffer) or (Steps into the directory.)
+-------- helm ------->
