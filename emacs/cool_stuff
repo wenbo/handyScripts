@@ -43,6 +43,9 @@ C-x o  other-window
 C-x 1  只保留当前窗口(delete-other-windows)
 C-x 1  横向分屏(split-window-vertically)
 C-x 3  竖向分屏(split-window-horizontally)
+C-x 5 b ido-switch-buffer-other-frame
+C-x 5 0 Delete the selected frame (delete-frame).
+C-x 5 o Select another frame, and raise it.
 F5     刷新当前文件(M-x revert-buffer)
 C-@ or C-Space 开始Mark选中
 C-@    标记文本块的开始
