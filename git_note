@@ -1,6 +1,7 @@
 git add -A
 git clean -df
 git init --bare
+git commit --amend --no-edit # 登録されたインデックスを直前のコミットにまとめる
 
 切到源码的根目录下，
  git config core.fileMode false
