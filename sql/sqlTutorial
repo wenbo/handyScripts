@@ -4,6 +4,8 @@ postgres:
    /etc/postgresql/9.1/main/pg_hba.conf
    $ psql -U lxr lxr
    > \i lxrconf.d/initdb-postgres-custom.sql
+   > ALTER ROLE rails_user WITH CREATEDB;
+   > ALTER ROLE rails_user WITH SUPERUSER;
    createdb -U lxr lxr
    sudo /etc/init.d/postgresql restart
 

@@ -16,3 +16,4 @@ sudo -H  pip3 install numpy
 
 pip3 install tensorflow-0.12.0rc0-cp35-cp35m-manylinux1_x86_64.whl
 
+checkpoint
