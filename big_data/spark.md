@@ -1,6 +1,7 @@
 # References
 [Apache Sparkを勉強して分散処理できますよ！って言えるようになる] http://qiita.com/rtoya/items/d80e59371832877fbbb1
 http://spark.apache.org/downloads.html
+http://www.scala-sbt.org/download.html
 
 ## Apache Sparkとは
 大規模データを分散処理をオンメモリで実現するプラットフォーム
@@ -27,6 +28,7 @@ spark-2.1.0-bin-hadoop2.7     spark-2.1.0-bin-hadoop2.7.tgz
 ➜  spark cd spark-2.1.0-bin-hadoop2.7
 ➜  spark-2.1.0-bin-hadoop2.7 ls
 LICENSE   NOTICE    R         README.md RELEASE   bin       conf      data      examples  jars      licenses  python    sbin      yarn
+➜  spark-2.1.0-bin-hadoop2.7 bin/pyspark
 ➜  spark-2.1.0-bin-hadoop2.7 ./bin/spark-shell
 scala> var a = 3 + 3
 a: Int = 6
