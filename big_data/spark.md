@@ -44,3 +44,8 @@ res14: org.apache.spark.SparkContext = org.apache.spark.SparkContext@1784a296
 
 scala> lines.count()
 res15: Long = 104
+
+
+### DAG
+val lines = sc.textFile("README.md")
+
