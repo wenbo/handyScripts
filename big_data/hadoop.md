@@ -17,6 +17,12 @@ $JAVA_HOME has been set to be the output of:
 
 $ brew info hadoop
 $ yarn -h
+
+<!-- 次のコマンドは YARN 上で動くアプリケーションの一覧を取得するためのコマンドです。 -->
+$ yarn application -list
+<!-- 一覧から取得した Application-Id をもとに Streaming アプリケーションを終了します。 -->
+yarn application -kill application_0160108104903_0001
+
 $ hadoop fs 
   run a generic filesystem user client
 $ hadoop fs -ls /

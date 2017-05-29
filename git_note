@@ -4,6 +4,9 @@ git init --bare
 git commit --amend --no-edit # 登録されたインデックスを直前のコミットにまとめる
 git reset --soft HEAD^  # 直前のコミットを取り消したい（コミットのみ取り消し）. HEAD^：直前のコミットを意味する。
 
+git branch -D feature/2629 マージしたかどうかを問わずに削除する
+git push --delete origin foo または git push origin :foo リモートブランチを削除する
+
 切到源码的根目录下，
  git config core.fileMode false
 这样你的所有的git库都会忽略filemode变更了
