@@ -2,7 +2,11 @@ git add -A
 git clean -df
 git init --bare
 git commit --amend --no-edit # 登録されたインデックスを直前のコミットにまとめる
-git reset --soft HEAD^  # 直前のコミットを取り消したい（コミットのみ取り消し）. HEAD^：直前のコミットを意味する。
+git reset --soft HEAD^  # 直前のコミットを取り消したい（コミットのみ取り消し）. つもりワークディレクトリの内容はそのままでコミットだけを取り消す。HEAD^：直前のコミットを意味する。
+
+「git reset --hard」 → コミット取り消した上でワークディレクトリの内容も書き換える。
+
+git commit --amend --author="Bo Wen <b-wen@ruby-dev.jp>"
 
 git branch -D feature/2629 マージしたかどうかを問わずに削除する
 git push --delete origin foo または git push origin :foo リモートブランチを削除する

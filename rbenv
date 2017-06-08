@@ -82,3 +82,10 @@ ruby extconf.rb --with-readline-dir=$(brew --prefix readline)
 
 # list all available versions:
 $ rbenv install -l
+
+
+望む Ruby のバージョンがリストに表示されない場合は ruby-build を更新する。
+$ cd ~/.rbenv
+$ git pull
+$ cd ~/.rbenv/plugins/ruby-build
+$ git pull
