@@ -1,3 +1,5 @@
+git rebase -i
+
 git add -A
 git clean -df
 git init --bare
