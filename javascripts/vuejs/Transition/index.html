@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta chraset="utf-8">
+    <title>ファイル出力</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="transition-demo">
+        <input type="text" v-model="input | validator" />
+        <p class="success" v-if="validationInput"  v-transition="input">入力値：{{input}}  OKです！</p>
+        <p class="error"   v-if="!validationInput" v-transition="input">入力値：{{input}}  ダメです！</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
