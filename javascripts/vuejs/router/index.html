@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+    <meta chraset="utf-8">
+	</head>
+	<body>
+		<div id="app">
+			<p>
+				<router-link to="/user/foo">/user/foo</router-link>
+				<router-link to="/user/foo/profile">/user/foo/profile</router-link>
+				<router-link to="/user/foo/posts">/user/foo/posts</router-link>
+			</p>
+			<router-view></router-view>
+			<router-view></router-view>
+
+			<h1> test <h1>
+					<router-link to="home2838">2828Home</router-link>
+
+					<!-- 文字列 -->
+					<router-link to="home">Home</router-link>
+					<!-- 次のようにレンダリングされる -->
+					<a href="home">Home</a>
+
+					<!-- v-bind を使った javascript 表現 -->
+					<router-link v-bind:to="'home'">Home</router-link>
+
+					<!-- 他のプロパティのバインディングのような v-bind の省略表現 -->
+					<router-link :to="'home'">Home</router-link>
+
+					<!-- 上記と同じ -->
+					<router-link :to="{ path: 'home' }">Home</router-link>
+
+					<!-- 名前付きルート -->
+					<router-link :to="{ name: 'user', params: { userId: 123 }}">User</router-link>
+
+					<!-- 結果的に /register?plan=private になる query -->
+					<router-link :to="{ path: 'register', query: { plan: 'private' }}">Register</router-link>
+			
+		</div>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
