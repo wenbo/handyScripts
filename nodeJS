@@ -6,3 +6,6 @@ Bower入門(基礎編)
 
 node.js のバージョン管理ツール ndenv を試した
   参照サイト GitHub riywo/ndenv https://github.com/riywo/ndenv
+
+npm install -g decaffeinate
+https://github.com/decaffeinate/decaffeinate
