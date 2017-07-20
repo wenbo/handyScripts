@@ -1,1 +1,3 @@
 剪切文件的方法: 首先选中文件，按Command+C复制文件；然后按Command＋Option＋V；就可以把你的文件剪走了！
+
+diskutil info /

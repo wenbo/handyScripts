@@ -1,5 +1,10 @@
 go get github.com/derekparker/delve/cmd/dlv
 dlv version
+
+go build
+dlv exec ./executable argument1 argument2…
+
+
 $ dlv debug
 Type 'help' for list of commands.
 (dlv)
@@ -13,5 +18,16 @@ print (alias: p) で変数nの値が表示できる。
 list (alias: ls) で現在位置のソースコードの表示ができる。
 stack (alias: bt) でスタック（バックトレース)の表示
 exit (alias: quit | q) でデバッガを終了する。
+restart (alias: r)
+sources --------------------- Print list of source files.
+stack (alias: bt) ----------- Print stack trace.
+step (alias: s) ------------- Single step through program.
+step-instruction (alias: si)  Single step a single cpu instruction.
+stepout --------------------- Step out of the current function.
+thread (alias: tr) ---------- Switch to the specified thread.
+threads --------------------- Print out info for every traced thread.
+trace (alias: t) ------------ Set tracepoint.
+
+dlv attach <pid>
 
 使いこなせるようになるとデバッグが捗りそうですね。
