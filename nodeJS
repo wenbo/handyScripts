@@ -9,3 +9,7 @@ node.js のバージョン管理ツール ndenv を試した
 
 npm install -g decaffeinate
 https://github.com/decaffeinate/decaffeinate
+
+npm list -g 
+npm install -g angular-cli
+npm list -g --depth=0

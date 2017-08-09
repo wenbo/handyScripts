@@ -30,7 +30,12 @@ M-x list-color-display
 M-x view-register 查看某一个 register
 M-x list-registers 查看所有的 register
 M-x package-install solarized-theme
+
+Not found エラー
+M-x package-refresh-contents
+を実行したあとにもう一度 package-install を実行する。これで解決すればめでたしめでたし。
 M-x package-refresh-contents パッケージ情報を更新する. 最新のものをインストールしたい場合は, 事前に実行して置くと 良い. 後述の package-list-packagesからインストールを行う場合は不要.
+
 M-x package-list-packages パッケージ操作バッファを開く.
 M-x eval-buffer (eval current buffer)
 M-x revert-buffer (revert current buffer)
