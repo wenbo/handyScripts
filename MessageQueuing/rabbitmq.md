@@ -9,6 +9,7 @@ tail -f /usr/local/var/log/rabbitmq/rabbit@localhost.log
 
 To have launchd start rabbitmq now and restart at login:
 brew services start rabbitmq
+brew services stop rabbitmq
 brew services restart rabbitmq
 Or, if you don't want/need a background service you can just run:
 rabbitmq-server
