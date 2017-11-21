@@ -13,3 +13,8 @@ https://github.com/decaffeinate/decaffeinate
 npm list -g 
 npm install -g angular-cli
 npm list -g --depth=0
+
+npm install -g yarn
+
+## webpack
+-  devtool: 'cheap-eval-source-map'

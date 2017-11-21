@@ -18,6 +18,9 @@ ps -ef |grep  httpd| grep -v grep| cut -c 9-15| sudo xargs kill -9
 ps -ef |grep  nginx| grep -v grep| cut -c 9-15| sudo xargs kill -9
 fme ".txt~"|xargs rm -rfind . -type d -name ".svn"|xargs rm -rf
 find . -name "*.txt~"|xargs rm -rf
+# Emacsのバックアップファイルを削除する
+find . -name '*~' -print | xargs rm
+
 
 ################# LXR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ./configure --prefix=/usr/local/apache2
@@ -78,6 +81,7 @@ $ sed -i '' -e '1i #encoding: utf-8' ./app/models/*.rb
 ## on mac
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/controllers/`
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/models/`
+$ sed -i '' "s/JWTCheck/errorCheckJWT/g" `grep JWTCheck -rl app/`
 
 
 sed -n '650,655p' 1000.log
