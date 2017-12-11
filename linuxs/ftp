@@ -13,6 +13,7 @@ chroot_list_file=/etc/vsftpd/chroot_list
 
 
 useradd -d /home/wwwroot/ftpuser -g ftp -s /sbin/nologin ftpuser
+useradd -d /var/www/hioki/staging/hiroki_rails -g ftp -s /sbin/nologin ftpuser
 passwd ftpuser
 vi /etc/vsftpd/chroot_list
 service vsftpd restart
