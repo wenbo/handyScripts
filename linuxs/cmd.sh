@@ -3,10 +3,24 @@ git grep '"front/hioki' | grep html.erb
 ## emacs
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/controllers/`
 
+$ sed -i '' "s/show-input>/show-input :debounce=\"2000\">/g" `grep 'show-input>' -rl app/javascript/packs/components/simulation/`
+
 sed -i '' "s/\/assets_doc\/front\/images\//\/assets_doc\/front\/html\/images\//g" `grep 'assets_doc' -rl app/`
 
+$ sed -i '' "s/src=\"\.\/html/src=\"\/assets_doc\/front\/html/g" `grep 'src=".html' -rl app/`
+
 $ sed -i '' "s/src=\"html/src=\"\/assets_doc\/front\/html/g" `grep 'src="html' -rl app/`
-$ sed -i '' "s/href=\"html/href=\"\/assets_doc\/front\/html/g" `grep 'href="html' -rl app/`
+
+$ sed -i '' "s/href=\"\.\.\/css/href=\"\/assets_doc\/front\/html\/css/g" `grep '..' -rl public/assets_doc/about/`
+
+$ sed -i '' "s/href=\"html/href=\"\/assets_doc\/front\/html/g" `grep '..' -rl public/assets_doc/about/`
+$ sed -i '' "s/href=\"\.\./href=\"\/assets_doc\/front\/html/g" `grep '..' -rl public/assets_doc/about/`
+$ sed -i '' "s/src=\"\.\.\/html/src=\"\/assets_doc\/front\/html/g" `grep '..' -rl public/assets_doc/about/`
+
+href="about/ href="assets_doc/about/
+sed -i '' "s/href=\"about\//href=\"assets_doc\/about\//g" `grep 'href="about/' -rl app/`
+
+src="../html
 $ sed -i '' "s/\.\.\//\/assets_doc\/front\/html\//g" `grep '\.\.\/' -rl public/assets_doc/front/html/`
 $ sed -i '' "s/\.\.\//\/assets_doc\/front\/html\//g" `grep '\.\.\/' -rl public/assets_doc/front/html2/`
 
