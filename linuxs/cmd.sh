@@ -1,3 +1,10 @@
+ubuntu:
+sed -i "s/原字符串/新字符串/g" `grep 原字符串 -rl 所在目录`
+sed -i "s/董事长致辞/高层致辞/g" `grep 董事长致辞 -rl ./app/views/`
+$ sed -i "s/src=\"html/src=\"\/assets_doc\/front\/html/g" `grep 'src="html' -rl public/userscenter`
+$ sed -i  "s/href=\"html/href=\"\/assets_doc\/front\/html/g" `grep '..' -rl public/userscenter`
+
+mac:
 $ sed -i '' "s//g" `grep 'href="html' -rl app/`
 git grep '"front/hioki' | grep html.erb
 ## emacs
@@ -10,6 +17,8 @@ sed -i '' "s/\/assets_doc\/front\/images\//\/assets_doc\/front\/html\/images\//g
 $ sed -i '' "s/src=\"\.\/html/src=\"\/assets_doc\/front\/html/g" `grep 'src=".html' -rl app/`
 
 $ sed -i '' "s/src=\"html/src=\"\/assets_doc\/front\/html/g" `grep 'src="html' -rl app/`
+
+$ sed -i "s/src=\"html/src=\"\/assets_doc\/front\/html/g" `grep 'src="html' -rl app/`
 
 $ sed -i '' "s/href=\"\.\.\/css/href=\"\/assets_doc\/front\/html\/css/g" `grep '..' -rl public/assets_doc/about/`
 
