@@ -1,5 +1,0 @@
-1kv# /usr/sbin/httpd -t
-
-htpasswd -b .htpasswd wenbo wenbo2008
-htpasswd -b .htdigest sharp sharp2012
-

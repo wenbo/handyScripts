@@ -199,3 +199,9 @@ Move down	C-n
 Up directory	C-l
 C-j: (Shows file name in the Helm buffer) or (Steps into the directory.)
 -------- helm ------->
+
+C-qでいろいろなコマンドウィンドウでコマンド系の文字の入力が可能です。
+"^g" -- C-q C-g
+改行 -- C-q C-j
+TAB -- C-q C-i
+C-q C-M 

@@ -10,6 +10,38 @@ git grep '"front/hioki' | grep html.erb
 ## emacs
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/controllers/`
 
+<------------------ start ------------>
+git grep -n health_data 
+$ sed -i '' "s/health_data/health_check_data/g" `grep health_data -rl app/`
+$ sed -i '' "s/health_data/health_check_data/g" `grep health_data -rl .rubocop_todo.yml`
+$ sed -i '' "s/health_data/health_check_data/g" `grep health_data -rl config/routes.rb`
+$ sed -i '' "s/health_data/health_check_data/g" `grep health_data -rl spec/`
+find  ./ -name "*ealth_data*"
+HealthData
+$ sed -i '' "s/HealthData/HealthCheckData//g" `grep HealthData -rl app/`
+mv .//app/controllers/api/health_data_controller.rb .//app/controllers/api/health_check_data_controller.rb
+mv .//app/controllers/api/manager/health_data_controller.rb .//app/controllers/api/manager/health_check_data_controller.rb
+mv .//app/javascript/packs/components/manager/health_data .//app/javascript/packs/components/manager/health_check_data
+mv .//db/fixtures/development/04_health_data.rb .//db/fixtures/development/04_health_check_data.rb
+mv .//db/fixtures/staging/04_health_data.rb .//db/fixtures/staging/04_health_check_data.rb
+
+git grep -n HealthDatum
+$ sed -i '' "s/HealthDatum/HealthCheckDatum/g" `grep HealthDatum -rl app/`
+$ sed -i '' "s/HealthDatum/HealthCheckDatum/g" `grep HealthDatum -rl spec/`
+$ sed -i '' "s/health_datum/health_check_datum/g" `grep health_datum -rl app/`
+$ sed -i '' "s/health_datum/health_check_datum/g" `grep health_datum -rl spec/`
+$ sed -i '' "s/health_datum/health_check_datum/g" `grep health_datum -rl .rubocop.yml`
+$ sed -i '' "s/HealthDatum/HealthCheckDatum/g" `grep HealthDatum -rl spec/`
+find  ./ -name "*health_datum*"
+
+mv .//app/javascript/packs/resources/health_datum.js .//app/javascript/packs/resources/health_check_datum.js
+mv .//app/javascript/packs/resources/manager/health_datum.js .//app/javascript/packs/resources/manager/health_check_datum.js
+mv .//app/models/health_datum.rb .//app/models/health_check_datum.rb
+mv .//spec/models/health_datum_spec.rb .//spec/models/health_check_datum_spec.rb
+mv .//app/serializers/health_datum_serializer.rb .//app/serializers/health_check_datum_serializer.rb
+mv .//spec/factories/health_datum.rb .//spec/factories/health_check_datum.rb
+<------------------ end ------------>
+
 $ sed -i '' "s/show-input>/show-input :debounce=\"2000\">/g" `grep 'show-input>' -rl app/javascript/packs/components/simulation/`
 
 sed -i '' "s/\/assets_doc\/front\/images\//\/assets_doc\/front\/html\/images\//g" `grep 'assets_doc' -rl app/`

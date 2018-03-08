@@ -13,3 +13,10 @@ Vue template components
 
 
 router.start(App, 'body')
+
+
+<input v-model="something">
+は、以下の糖衣構文です:
+<input
+  v-bind:value="something"
+    v-on:input="something = $event.target.value">
