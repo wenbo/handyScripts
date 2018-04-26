@@ -9,6 +9,7 @@ $ sed -i '' "s//g" `grep 'href="html' -rl app/`
 git grep '"front/hioki' | grep html.erb
 ## emacs
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/controllers/`
+$ sed -i '' "s/el-dialog\(.*\)v-model/el-dialog\1:visible.sync/g" `grep '<el-dialog' -rl app/javascript/packs/components/`
 
 <------------------ start ------------>
 git grep -n health_data 
