@@ -1,3 +1,17 @@
+React コンポーネントは設計図のようなものなので再利用することにより同じ構造のHTMLを簡単に作成することができます。
+設計図をもとに作られた実体の ことをReactエレメント(element)と呼びます。
+React コンポーネントを一般的なクラスだとすれば、React エレメントはイ ンスタンスに相当する概念といえます。
+
+# まとめ
+- 新たに React アプリケーションを作る際にはルートポイントとなるスクリプトを用意し、そこで ReactDOM.render() する
+- それをトランスパイルしたものを HTML で読みこめば良い
+
+- React でアプリケーションを作る際は、部品となる Component を作って、それを組み合わせて…の繰り返し
+- 親コンポーネントから子コンポーネントに値を渡すときは Props を利用する
+- Component 内部で状態を持つときには State を利用する
+- React 側で Component の状態に応じて決められたメソッド(componentWillMount, componentDidMount, componentWillReceiveProps)を呼んでくれるので、それを適宜利用する
+
+
 $ create-react-app my-app
 - React コンポーネントには大きく分けて 2 つの種類があります。関数定義によって作成する Functional Component(ファンクショナルコンポーネント)とクラス定義によって作成する Class Component(クラスコンポーネント)です。
 -  React コンポーネントを一般的なクラスだとすれば、React エレメントはイ ンスタンスに相当する概念といえます。
@@ -10,7 +24,22 @@ $ create-react-app my-app
 - 特別な props として children というものがあります。React コンポーネントの子要素が children として渡されてきます。
 
 
+## Storesの役割は、
+stateを保持する
+stateへアクセスするためのgetState()を提供する
+stateを更新するためのdispatch(action)を提供する
+リスナーを登録するためのsubscribe(listener)を提供する
+storeをつくるには、combineReducerでつくられたreducerをcreateStore()へ渡します。
+
+
+
+- reducerは、現在のstateとactionを受けて新しいstateを返すだけの純粋なメソッドです。
+
+
 ### keyword
 react-redux react-router-dom react-router-redux redux-thunk react-test-renderer
 actions components containers reducers
 mapDispatchToProps BrowserRouter
+Provider Components Dumb Components(presentational components) Smart Components(container components)
+
+## npm
