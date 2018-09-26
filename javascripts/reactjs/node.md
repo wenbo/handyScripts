@@ -28,6 +28,8 @@ $ create-react-app my-app
 - property initializer syntaxを使うとbindが不要
 
 
+Keep in mind that Redux is only concerned with managing the state.
+In a real app, you'll also want to use UI bindings like react-redux.
 # ここでは重要となってくる Store、Reducer、Action の解説をしつつ、実装を進めていきます。
 簡単に説明をしますと、Store はア プリケーションの状態(state)とロジックを保持している場所で、Reducer は Store が保持し ている状態を変化させるための関数です。Action はユーザーから入力であったり、API からの 情報取得であったり、何らかの状態変化を引き起こす現象を指します。
 ## Storesの役割は、
@@ -47,12 +49,12 @@ Actionは基本的に以下のようなフォーマットを持つオブジェ�
     type: "アクションの種類を一意に識別できる文字列またはシンボル",
     payload: "アクションの実行に必要な任意のデータ",
 }
-## Reducer
+## Reducer combineReducerでは分割された子reducer名と同じキーのstateが使用されます。
 先ほど「Storeの門番」と書いたが，それに相当する役目を背負っているのがこいつだ。
 関数型プログラミングにおいて，Reduceという用語は畳み込み演算を意味する。Reduxにおいては，以下のように，以前の状態とアクションを組み合わせて，新しい状態を生み出すという操作になる。
 注意して見るべきは以下の2点。
-初期状態はReducerのデフォルト引数で定義される
-状態を変更する際，渡されてきたstateそのものを書き換えずに，新しいものを合成するように書く
+1. 初期状態はReducerのデフォルト引数で定義される
+2. 状態を変更する際，渡されてきたstateそのものを書き換えずに，新しいものを合成するように書く
 
 # react-redux は redux が公式として打ち出している React との連携ツールです。
 - ReactはViewを扱うライブラリであり、 Redux が有する Store や Action の情報と疎結合になっていることが望ましいです。

@@ -22,3 +22,7 @@ Your branch and 'origin/foobar' have diverged,
 and have 5 and 1 different commit each, respectively.
 $ git fetch origin
 $ git reset --hard origin/foobar
+
+git branch -m <古いブランチ名> <新しいブランチ名>
+今開いているブランチをリネームする場合は、単純に新しいブランチ名を指定するだけです。
+git branch -m <新しいブランチ名>
