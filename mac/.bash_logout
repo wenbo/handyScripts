@@ -1,1 +1,0 @@
-/Users/kembostaff/workspace/github/handyScripts/.bash_logout
