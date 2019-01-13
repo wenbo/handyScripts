@@ -26,3 +26,9 @@ $ git reset --hard origin/foobar
 git branch -m <古いブランチ名> <新しいブランチ名>
 今開いているブランチをリネームする場合は、単純に新しいブランチ名を指定するだけです。
 git branch -m <新しいブランチ名>
+
+git diff HEAD^^^ --name-only | xargs bundle exec rubocop
+git diff HEAD^^^ --name-only | pbcopy
+git diff HEAD^^^ --name-only | grep ".rb" | paste -s - | pbcopy
+git diff HEAD^^^ --name-only | grep ".rb" | grep -v "schema" | paste -s -
+git diff HEAD^^^ --name-only | grep -e ".rb$" | grep -e "^app/" -e "^lib/" | paste -s - | pbcopy
