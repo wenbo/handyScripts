@@ -52,6 +52,6 @@ kembomatoMacBook-2:swift kembostaff$ psql -U username -d dbname -h 127.0.0.1
 \c dbname
 
 显示数据库表
-\d  
+\d
 
-
+/myapp/backend # psql  --host postgres --port "5432" --username "postgres" --no-password  vfdevelop_development

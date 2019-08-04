@@ -1,3 +1,4 @@
+npx  npmパッケージのバイナリを実行します
 Bower入門(基礎編)
   http://yosuke-furukawa.hatenablog.com/entry/2013/06/01/173308
 
@@ -18,3 +19,10 @@ npm install -g yarn
 
 ## webpack
 -  devtool: 'cheap-eval-source-map'
+
+
+## react-js
+./node_modules/react-scripts/bin/react-scripts.js build
+npm-start
+  This  runs  an  arbitrary  command specified in the package's "start" property of its "scripts" object. If no "start" property is specified on the "scripts" object, it will run node server.js.
+react-scripts start
