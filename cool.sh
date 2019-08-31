@@ -82,6 +82,8 @@ $ sed -i '' -e '1i #encoding: utf-8' ./app/models/*.rb
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/controllers/`
 $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/models/`
 $ sed -i '' "s/JWTCheck/errorCheckJWT/g" `grep JWTCheck -rl app/`
+$ sed -i '' "s/begin_at/start_at/g" `grep begin_at -rl app/`
+$ sed -i '' "s/beginAt/startAt/g" `grep beginAt -rl ./`
 
 
 sed -n '650,655p' 1000.log
