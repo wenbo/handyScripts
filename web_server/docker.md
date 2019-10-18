@@ -3,6 +3,13 @@ docker ps - コンテナの一覧を表示。
 docker logs - コンテナの標準出力を表示。
 docker stop - 実行中のコンテナを停止。
 docker images ローカルのホスト上にあるイメージの一覧を表示しましょう。
+docker-compose build  --no-cache frontend
+docker-compose up frontend
+docker-compose help up
+docker images
+docker image rm dffa07c1aaf3
+docker container ls
+docker container rm f20b624756b0
 docker rmi training/sinatra  イメージも削除できます。
 docker rm nostalgic_morse コンテナの削除
 docker search sinatra
