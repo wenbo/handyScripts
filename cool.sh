@@ -84,6 +84,7 @@ $ sed -i '' "s/user_type/role/g" `grep user_type -rl app/models/`
 $ sed -i '' "s/JWTCheck/errorCheckJWT/g" `grep JWTCheck -rl app/`
 $ sed -i '' "s/begin_at/start_at/g" `grep begin_at -rl app/`
 $ sed -i '' "s/beginAt/startAt/g" `grep beginAt -rl ./`
+$ sed -i '' "s/global_id/auth_id/g" `grep global_id -rl ./`
 
 
 sed -n '650,655p' 1000.log

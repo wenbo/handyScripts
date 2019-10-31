@@ -18,6 +18,7 @@ docker run -t -i training/sinatra /bin/bash
 
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 docker-compose build --no-cache hdf
+docker-compose down --rmi all
 
 docker-compose exec hdb bundle exec rails db:setup
 docker-compose exec hdb bundle exec rails db:seed
