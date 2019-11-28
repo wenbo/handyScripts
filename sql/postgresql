@@ -54,4 +54,7 @@ kembomatoMacBook-2:swift kembostaff$ psql -U username -d dbname -h 127.0.0.1
 显示数据库表
 \d
 
+2つのテーブル、filmsとdistributorsを削除します。
+DROP TABLE films, distributors;
+
 /myapp/backend # psql  --host postgres --port "5432" --username "postgres" --no-password  vfdevelop_development
