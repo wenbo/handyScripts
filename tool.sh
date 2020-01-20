@@ -8,3 +8,6 @@ http://www.appinn.com/pdftohtml/
 powerdesign 数据库设计工具 
 
 rails-erd 你把这个gem加入到Gemfile bundle install && bundle exec erd 
+
+DBeaver SQLクライアントおよびデータベース管理ツールです
+pdAdmin
