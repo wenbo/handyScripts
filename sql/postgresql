@@ -58,3 +58,12 @@ kembomatoMacBook-2:swift kembostaff$ psql -U username -d dbname -h 127.0.0.1
 DROP TABLE films, distributors;
 
 /myapp/backend # psql  --host postgres --port "5432" --username "postgres" --no-password  vfdevelop_development
+
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+cat /usr/local/var/postgres/server.log
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log status
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop -s -m fast
+ps -ef |grep postgres
+brew services list
+brew services restart postgresql
+brew services stop postgresql
