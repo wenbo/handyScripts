@@ -101,5 +101,14 @@ $ aws lambda add-permission --function-name CreateThumbnail2 --principal s3.amaz
 }
 
 $ aws lambda get-policy --function-name CreateThumbnail2 --profile prodaccess --region us-east-2
+
+## SAM
+https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/serverless-sam-cli-install-mac.html
+https://docs.docker.com/docker-for-mac/#file-sharing
+brew tap aws/tap
+brew install aws-sam-cli
+sam --versionw
+pip3 install
+
 ## QA
 1. aws lambda create-function is not authorized to perform
