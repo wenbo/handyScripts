@@ -16,3 +16,5 @@ OK，这样就安装好pip了，
 pip3 install requests
 
 pip3 install pymysql
+
+pip3 install ipython

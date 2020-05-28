@@ -86,7 +86,16 @@ $ sed -i '' "s/begin_at/start_at/g" `grep begin_at -rl app/`
 $ sed -i '' "s/beginAt/startAt/g" `grep beginAt -rl ./`
 $ sed -i '' "s/global_id/auth_id/g" `grep global_id -rl ./`
 $ sed -i '' "s/error500/error/g" `grep error -rl ./`
+sed -i '' '/localize_name/d' `git grep -l "localize_name"`
 
+sed -i '' 's/name_l/name_t/g' `git grep -l "name_l"`
+
+$ sed -i '' "s/ActiveDecorator::Decorator.instance.decorate/decorate/g" `git grep -l ActiveDecorator::Decorator.instance.decorate/decorate`
+
+sed -i '' -E "s/eq\((.+)\.name_t/eq\(decorate\(\1\)\.name_t/" `git grep -l "name_t" ./spec/`
+
+sed -i '' -E "s/\s(.+)\.name_t\s/\sdecorate\(\1\)\.name_t\s/" `git grep -l "name_t" ./spec/`
+sed -i '' -E "s/\s(.+)\.name_t/decorate\(\1\)\.name_t/" `git grep -l "name_t" ./spec/`
 
 sed -n '650,655p' 1000.log
 egrep -r '.+?07/Aug/2014.+?\/refrigerator\/technology\/ HTTP' .  | wc -l
