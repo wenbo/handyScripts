@@ -97,6 +97,8 @@ sed -i '' -E "s/eq\((.+)\.name_t/eq\(decorate\(\1\)\.name_t/" `git grep -l "name
 sed -i '' -E "s/\s(.+)\.name_t\s/\sdecorate\(\1\)\.name_t\s/" `git grep -l "name_t" ./spec/`
 sed -i '' -E "s/\s(.+)\.name_t/decorate\(\1\)\.name_t/" `git grep -l "name_t" ./spec/`
 
+sed -i '' -E "s/RSpec.describe '(.+)'/RSpec.describe \1/" `git grep -l "RSpec.describe '" ./spec/`
+
 sed -n '650,655p' 1000.log
 egrep -r '.+?07/Aug/2014.+?\/refrigerator\/technology\/ HTTP' .  | wc -l
 

@@ -16,6 +16,10 @@ docker search sinatra
 docker pull training/sinatra
 docker run -t -i training/sinatra /bin/bash
 
+docker ps -a
+docker rm name_of_the_docker_container
+
+
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 docker-compose build --no-cache hdf
 docker-compose down --rmi all
