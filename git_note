@@ -8,7 +8,9 @@ git reset --soft HEAD^  # 直前のコミットを取り消したい（コミッ
 
 「git reset --hard」 → コミット取り消した上でワークディレクトリの内容も書き換える。
 
-git commit --amend --author="Bo Wen <b-wen@ruby-dev.jp>"
+g checkout HEAD~1 config/database.yml
+
+git commit --amend --author="Bo Wen <b-wen@>"
 
 git branch -D feature/2629 マージしたかどうかを問わずに削除する
 git push --delete origin foo または git push origin :foo リモートブランチを削除する
@@ -32,3 +34,6 @@ git diff HEAD^^^ --name-only | pbcopy
 git diff HEAD^^^ --name-only | grep ".rb" | paste -s - | pbcopy
 git diff HEAD^^^ --name-only | grep ".rb" | grep -v "schema" | paste -s -
 git diff HEAD^^^ --name-only | grep -e ".rb$" | grep -e "^app/" -e "^lib/" | paste -s - | pbcopy
+
+# it will list all the updated files
+git diff --name-status HEAD^^ HEAD^^^ | grep controller
