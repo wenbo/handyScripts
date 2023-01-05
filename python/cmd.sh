@@ -18,3 +18,8 @@ pip3 install requests
 pip3 install pymysql
 
 pip3 install ipython
+
+pyenv install --list
+pyenv versions
+pyenv global 3.10.4
+python --version

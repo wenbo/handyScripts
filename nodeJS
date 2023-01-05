@@ -17,6 +17,8 @@ npm list -g --depth=0
 
 npm install -g yarn
 
+nodenv local 15.14.0
+
 ## webpack
 -  devtool: 'cheap-eval-source-map'
 

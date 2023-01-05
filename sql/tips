@@ -11,3 +11,39 @@ Default options are read from the following files in the given order:
 /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
 -------------------------  tips 1 --------------------------
 
+
+
+
+==> Caveats
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -u root
+
+To restart mysql after an upgrade:
+  brew services restart mysql
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/mysql/bin/mysqld_safe --datadir=/usr/local/var/mysql
+==> Summary
+🍺  /usr/local/Cellar/mysql/8.0.31: 315 files, 296.8MB
+==> Running `brew cleanup mysql`...
+
+brew services restart mysql
+
+tail -f  /usr/local/var/mysql/PCM0012.local.err
+
+mysql --verbose --help | grep my.cnf
+
+mysql_config --socket
+
+
+## error
+Could not create unix socket lock file /tmp/mysql.sock.lock.
+
+
+## ps 
+  501 23988     1   0  5:15PM ??         0:00.03 /bin/sh /usr/local/opt/mysql/bin/mysqld_safe --datadir=/usr/local/var/mysql
+  501 24111 23988   0  5:15PM ??         0:00.76 /usr/local/opt/mysql/bin/mysqld --basedir=/usr/local/opt/mysql --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/opt/mysql/lib/plugin --log-error=PCM0012.local.err --pid-file=PCM0012.local.pid
