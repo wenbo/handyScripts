@@ -3,6 +3,8 @@
 ## account
 https://895333814097.signin.aws.amazon.com/console
 RPLpb&Yj=pA]
+gsjita@
+bunntai@
 
 ## インストールの確認
 $ which aws

@@ -13,6 +13,10 @@ postgres:
    sudo apt-get install clustalw
 
 
+   sudo brew services stop mysql
+   brew  install homebrew/cask-versions/sequel-pro-nightly --cask
+
+
 mysql
 
   show full processlist

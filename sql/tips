@@ -12,6 +12,10 @@ Default options are read from the following files in the given order:
 -------------------------  tips 1 --------------------------
 
 
+SQLが実行される順序は以下のようになっており
+FROM → WHERE → GROUPBY → HAVING → SELECT → ORDERBY
+
+The AS keyword here is optional
 
 
 ==> Caveats
