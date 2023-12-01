@@ -1,3 +1,6 @@
+## account
+taitaxjp@gmail.com
+## link
 TKC近畿大阪会
 https://search.tkcnf.or.jp/tkc_member/keieiRegionSearch.do?r=14
 
