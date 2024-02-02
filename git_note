@@ -35,5 +35,10 @@ git diff HEAD^^^ --name-only | grep ".rb" | paste -s - | pbcopy
 git diff HEAD^^^ --name-only | grep ".rb" | grep -v "schema" | paste -s -
 git diff HEAD^^^ --name-only | grep -e ".rb$" | grep -e "^app/" -e "^lib/" | paste -s - | pbcopy
 
+git config --global core.commentChar '>'
+git commit --amend コマンドで、直近のコミット メッセージを変更できます。
+
 # it will list all the updated files
 git diff --name-status HEAD^^ HEAD^^^ | grep controller
+
+

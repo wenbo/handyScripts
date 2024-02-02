@@ -1,3 +1,6 @@
+React入門 React・Reduxの導入からサーバサイドレンダ
+穴井 宏幸 (著)
+
 React コンポーネントは設計図のようなものなので再利用することにより同じ構造のHTMLを簡単に作成することができます。
 設計図をもとに作られた実体の ことをReactエレメント(element)と呼びます。
 React コンポーネントを一般的なクラスだとすれば、React エレメントはイ ンスタンスに相当する概念といえます。
@@ -74,3 +77,6 @@ mapDispatchToProps BrowserRouter
 Provider Components Dumb Components(presentational components) Smart Components(container components)
 
 ## npm
+
+## hooks
+useEffect は何をやっているのか？ このフックを使うことで、レンダー後に何かの処理をしないといけない、ということを React に伝えます
