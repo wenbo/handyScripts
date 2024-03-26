@@ -85,3 +85,12 @@ XXは金額の提示を要求しました。
 最後になりましたが、皆様のさらなるご健勝とご活躍を心よりお祈り申し上げます。
 今まで、本当にありがとうございました。
 
+現在OpenSSL系のエラーが原因で `bundle install` に失敗しており、解消に時間がかかっているため
+お忙しいなか申し訳ありませんが、ご存じの方はお力添えいただければと思います。
+
+https://aws.amazon.com/jp/certification/certified-cloud-practitioner/
+AWS クラウドやサービスの基本的な知識を身につけるため
+
+https://cbt-s.com/examinee/examination/fe
+ITに関する基本的な知識を保有していることを確認するため
+
