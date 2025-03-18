@@ -3,3 +3,6 @@
 https://www.uzabase.com/
 SPEEDAは、ビジネスにおける情報収集・分析を効率化し、企業の進化を加速する経済情報プラットフォームです。 業界分析や企業調査に必要なあらゆるビジネス情報が整理・格納されており、アナリストや専門家の知見に基づくオリジナルコンテンツも豊富に収録。
 https://www.uzabase.com/jp/careers/
+
+タックスアンサーコード一覧
+https://www.nta.go.jp/taxes/shiraberu/taxanswer/code/index.htm#code07
