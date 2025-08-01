@@ -80,3 +80,6 @@ Provider Components Dumb Components(presentational components) Smart Components(
 
 ## hooks
 useEffect は何をやっているのか？ このフックを使うことで、レンダー後に何かの処理をしないといけない、ということを React に伝えます
+
+Using memoizing selectors createSelector
+https://react-redux.js.org/api/hooks

@@ -95,3 +95,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 Run at Vim's command line:
 :helptags ~/.vim/bundle/ctrlp.vim/doc
 Restart Vim and check :help ctrlp.txt for usage instructions and configuration details.
+
+:echo expand("%") などとすれば、vim上のステータスバー上で情報を出力して確認できる。
+echo expand('%:p')	フルパス
