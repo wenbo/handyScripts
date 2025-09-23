@@ -28,6 +28,11 @@ docker-compose exec hdb bundle exec rails db:setup
 docker-compose exec hdb bundle exec rails db:seed
 docker-compose exec hdb bundle exec rails c
 
+db コンテナに入り bash を起動しましょう。
+docker compose exec db bash
+$ psql app_development -U admin
+
+
 
 docker-compose
   Define and run multi-container applications with Docker.
