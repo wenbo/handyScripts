@@ -1,3 +1,5 @@
+https://docs.aws.amazon.com/
+
 AWS認定11冠制覇したのでオススメの勉強法などをまとめてみる
 https://qiita.com/nakazax/items/20458e146d3d9f2aa615
 
