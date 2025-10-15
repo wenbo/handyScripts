@@ -13,6 +13,10 @@ InstanceStorage: インスタンスストアはEBSよりパフォーマンスが
 FSx: Amazon FSx では、広く使用されている 4 つのファイルシステム (NetApp ONTAP、OpenZFS、Windows File Server、Lustre) から選択できます
 ELB: Elastic Load Balancing は、アプリケーションへのトラフィックを、1 つまたは複数のアベイラビリティーゾーン (AZ) 内の複数のターゲットおよび仮想アプライアンスに自動的に分散します
   CLB: CLB(Classic Load Balancer)  ALB:Application Load Balancer  NLB(Network Load Balancer)
+
+EKS: Elastic Kubernetes Service (Amazon EKS)
+フルマネージド型 Kubernetes クラスターインフラストラクチャ。Amazon EKS は、独自の Kubernetes インフラストラクチャをインストールしたり操作したりすることなく、AWS で Kubernetes を簡単に使用できるマネージド型サービスです。
+
 Fargate: AWS Fargate は、Amazon ECS または Amazon EKS と互換性のあるサーバーレスコンピューティングエンジンで、サーバーやクラスターを管理することなくコンテナを実行することを可能にします。FargateはEC2に似ていますが、仮想マシンを提供する代わりに、コンテナを提供します。
 AMI: 「AWS AMI」のAMIは（AWS Amazon Machine Image）の略
 SNS: Simple Notification Service
@@ -63,6 +67,9 @@ Resolver: Amazon Route 53 リゾルバー   ネットワークの DNS と簡単�
 Redshift: AWS上で提供されているデータウェアハウス専用のデータベースサービスです。 クラウド内でのフルマネージド型、ペタバイト規模のデータウェアハウスサービスです。あらゆるデータを構造化して蓄積し、高速に分析処理できることが大きな特徴です。 またAmazon Redshiftを用いることで、機械学習を用いた高度なデータ分析も可能です
 リードレプリカ: read replica, データベースの負荷分散のために作成される、参照専用の複製
 イレブンナイン: eleven nine
+
+terraform: Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.
+
 
 BCP: Business Continuity Plan 事業継続計画
 RTO: Recorvery Time Objective 目標復旧時間

@@ -1,6 +1,9 @@
 SAA-C03: AWS Certified Solutions Architect - Associate
 JPY 16500
 
+AWS Certified Solutions Architect - Associate (SAA-C03) 試験ガイド
+https://d1.awsstatic.com/ja_JP/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf
+
 AWS認定資格SAA問題
 https://www.youtube.com/watch?v=6pztD7iPWvI&list=PL2nCE2iR-lpm71Vvu0Xn11lEqa5IXAyC1&index=1
 
