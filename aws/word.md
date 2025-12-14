@@ -19,6 +19,12 @@ EKS: Elastic Kubernetes Service (Amazon EKS)
 
 Fargate: AWS Fargate は、Amazon ECS または Amazon EKS と互換性のあるサーバーレスコンピューティングエンジンで、サーバーやクラスターを管理することなくコンテナを実行することを可能にします。FargateはEC2に似ていますが、仮想マシンを提供する代わりに、コンテナを提供します。
 AMI: 「AWS AMI」のAMIは（AWS Amazon Machine Image）の略
+
+Baseline Governance: 
+Baseline (ベースライン): 基準、基線、最低基準といった意味を持ちます。情報システムにおいては、重要度に応じて規定されたセキュリティコントロールの最低基準を指すことがあります。
+Governance (ガバナンス): 統治、管理、支配といった意味を持つ英単語です。企業などの組織では、健全な運営を行うための管理体制や内部統制を指します。 
+したがって、"Baseline Governance"は文脈に応じて「最低限の統制基準」や「基準となる管理体制」といった意味合いで用いられます。
+
 SNS: Simple Notification Service
 SQS: Simple Queue Service
 AWS Step Functions
@@ -27,7 +33,9 @@ Amazon S3 Glacier Deep Archive
 S3 One Zone-IA: アクセス頻度は低いが、必要に応じてすぐに取り出すこと必要があるデータ向けのストレージクラス。S3 One Zone-Infrequent Access
 EBS: Amazon Elastic Block Store EBS
 AWS Pricing Calculator
-ENI: Elastic Network Interface (ENI)
+ENI: Elastic Network Interface (ENI) Elastic Network Interface
+An elastic network interface is a logical networking component in a VPC that represents a virtual network card.
+
 Kinesis: データストリームをリアルタイムで収集、処理、および分析します
 プロビジョンド IOPS: provisioned-iops, 「1秒間にどのぐらいの入力や出力ができるのかという支給量」が「AWSから約束される」という事を意味します
 スループット: throughput, コンピューターやネットワークの一定時間内に処理される情報量、データ転送速度、通信速度などを示すのに使われる
@@ -47,7 +55,8 @@ IVR: IVRとは、Interactive Voice Responseの略。 コンピューターによ
 SDN: SDNとはSoftware Defined Networkingの略です。 「ソフトウェアによって定義されるネットワーク」という名前の通り、ルーターやサーバ、スイッチなど、ネットワークを構成している機器をソフトウェアを介して一括制御することで機器設定やネットワーク構成を柔軟に変更できます。
 SCP: Service Control Policy
 AWS RAM: Resource Access Manager
-CIDR: Classless Inter-Domain Routing インターネット上のデータルーティング効率を向上させる IP アドレス割り当て方法です。
+SSM: AWS Systems Manager（SSM）は複数のAWSリソースをグループ化し、グループ内リソースの運用データの一元化や運用タスクの自動化などができる運用管理サービスです。Systems Managerは役割ごとに複数の機能で構成されています。例えばOSパッチの適用を自動化する「Patch Manager」や、AWSリソースへの操作をランブックに従って自動実行する「Automation」などがあります。
+CIDR: Classless Inter-Domain Routing インターネット上のデータルーティング効率を向上させる IP アドレス割り当て方法です。IP アドレスの範囲を“何個のIPを含むネットワークなのか”で表す仕組みです。
 DR: disaster-recovery (Backup & Restore, Pilot Light, Warm standby, Multi site)
 DynamoDB: DynamoDBがセッションデータやユーザー設定、メタデータなどを格納するための理想的なデータベースサービスです
 RI: リザーブドインスタンス (RI, ReservedInstances)
@@ -75,6 +84,9 @@ BCP: Business Continuity Plan 事業継続計画
 RTO: Recorvery Time Objective 目標復旧時間
 RPO: Recovery Point Objective 目標復旧時点
 RLO: Recovery Level Objective 目標復旧レベル
+AssumeRole: AssumeRoleはSTSのサービスで、特定のロールに対して一時的に操作できるようにTokenを払い出している。
+STS: AWS STS(Security Token Service)は「AWSサービスに対して何かしら操作したい時に、一時的に操作する権利(Token)を発行する」シンプルなサービス。
+
 
 
 AWS Well-Architected と 6 つの柱

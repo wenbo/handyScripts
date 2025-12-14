@@ -24,3 +24,14 @@ languagereactor.com
 
 ClashX VPN
 https://ikuuu.one/user/tutorial?os=mac&client=clashx##
+
+
+wget -rkp -l 3 https://www.asdf.com
+
+
+Firebase
+「Firebase」とは、モバイルアプリケーションのバックエンドで行う機能をクラウドで提供しているサービスです。いわゆるMBaaS/BaaSであり、Firebaseはその有力なサービスの1つに挙げられます。
+
+Fly.io
+rails scaffoldコマンドで生成したRailsアプリケーションを Fly.io にデプロイしてみました。
+https://fly.io/

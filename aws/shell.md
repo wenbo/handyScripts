@@ -1,0 +1,2 @@
+root user
+sudo su -
