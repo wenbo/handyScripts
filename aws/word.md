@@ -77,6 +77,11 @@ Redshift: AWS上で提供されているデータウェアハウス専用のデ�
 リードレプリカ: read replica, データベースの負荷分散のために作成される、参照専用の複製
 イレブンナイン: eleven nine
 
+WORM(Write Once Read Many), Object Lock
+オブジェクトロック機能には、Governance モードや Compliance モードがあります。
+Governance モード : 特定の権限を持っているユーザは削除できるモード
+Compliance モード : Root ユーザー含めて、だれも削除できないモード
+
 terraform: Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.
 
 

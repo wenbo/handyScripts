@@ -11,6 +11,8 @@ git reset --soft HEAD^  # 直前のコミットを取り消したい（コミッ
 g checkout HEAD~1 config/database.yml
 
 git commit --amend --author="Bo Wen <b-wen@>"
+git commit --amend -m "修正されたコミット"
+git commit --amend コマンドで、直近のコミット メッセージを変更できます。
 
 git branch -D feature/2629 マージしたかどうかを問わずに削除する
 git push --delete origin foo または git push origin :foo リモートブランチを削除する
@@ -36,7 +38,6 @@ git diff HEAD^^^ --name-only | grep ".rb" | grep -v "schema" | paste -s -
 git diff HEAD^^^ --name-only | grep -e ".rb$" | grep -e "^app/" -e "^lib/" | paste -s - | pbcopy
 
 git config --global core.commentChar '>'
-git commit --amend コマンドで、直近のコミット メッセージを変更できます。
 
 # it will list all the updated files
 git diff --name-status HEAD^^ HEAD^^^ | grep controller
