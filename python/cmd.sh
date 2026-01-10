@@ -23,3 +23,15 @@ pyenv install --list
 pyenv versions
 pyenv global 3.10.4
 python --version
+python -V
+
+python -m mod : run library module as a script (terminates option list)
+## python -m venv venv
+source venv/bin/activate 
+pip install numpy
+pip list
+pip install numpy==2.1.0
+pip install -U numpy
+python -m pip install -U pip # pipを最新化
+
+pip list -o, --outdated

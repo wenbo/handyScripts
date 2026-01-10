@@ -20,3 +20,7 @@ https://www.youtube.com/watch?v=t8pPdKYpowI
 
 Data Engineer Lesson
 https://www.udemy.com/course/aws-data-engineer
+
+
+The Python Tutorial
+https://docs.python.org/3.14/tutorial/
