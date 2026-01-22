@@ -11,6 +11,11 @@ https://flc.ouc.edu.cn/wgyywxyjxkbsd/list.htm
 ほしのおうじさま
 steve and maggie
 pepper pig
+SpongeBob SquarePants
+
+
+Notion創業者に聞いた：1億ユーザーにたどり着くまでの挑戦・反省、GenAI（生成AI）の未来への展望
+https://note.com/ai_insider/n/nccca90540f20
 
 ## Gabby’s Doll House
 『ギャビーのドールハウス』（英: Gabby's Dollhouse）は、トレイシー・ペイジ・ジョンソンとジェニファー・トゥーミーがNetflix向けに制作したアメリカ合衆国の実写ドラマおよび、コンピューターアニメーション幼児テレビシリーズである[1]。2021年1月5日よりNetflixで配信されており[1]、これまでに計12シリーズ・81話が配信されている。
