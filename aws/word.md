@@ -73,6 +73,11 @@ WAF: web application firewall, AWS WAF is a web application firewall service tha
 NAT ゲートウェイ: ネットワークアドレス変換 (NAT) サービスです。NAT ゲートウェイを使用すると、プライベートサブネット内のインスタンスは VPC 外のサービスに接続できますが、外部サービスはそれらのインスタンスとの接続を開始できません
 Shield: AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS
 Resolver: Amazon Route 53 リゾルバー   ネットワークの DNS と簡単に統合できる VPC 用の DNS リゾルバーサービス
+## Route53
+「NS」は「Name Server」の略で、作成されたホストゾーンに対して４つのネームサーバーが自動的に作成・割り当てられ、このレコードを削除することはできません。
+「SOA」は「Start of Authority」の略で、ドメインと対応するホストゾーンに関する重要情報 (管理者の電子メールアドレス、ドメインが最後に更新された時期、サーバーが更新の間に待つ時間など) が記録されており、また、このレコードも削除することはできません。
+
+
 Redshift: AWS上で提供されているデータウェアハウス専用のデータベースサービスです。 クラウド内でのフルマネージド型、ペタバイト規模のデータウェアハウスサービスです。あらゆるデータを構造化して蓄積し、高速に分析処理できることが大きな特徴です。 またAmazon Redshiftを用いることで、機械学習を用いた高度なデータ分析も可能です
 リードレプリカ: read replica, データベースの負荷分散のために作成される、参照専用の複製
 イレブンナイン: eleven nine

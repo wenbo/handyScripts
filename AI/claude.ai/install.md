@@ -22,3 +22,5 @@ claude --version
 curl -fsSL https://claude.ai/install.sh | bash
 
 ~/.local/bin/claude
+
+~/.local/bin/claude

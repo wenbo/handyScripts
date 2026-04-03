@@ -3,6 +3,7 @@ SSS Song
 sesamestreet
 Pepper Pig
 Bluey
+Young Sheldon
 
 what are you donging now?
 it's too late.
@@ -14,6 +15,14 @@ you will have a sweet dream and tomorrow will be a nice day.
 look here.
 
 repeat after me.
+
+what the hell is wrong with you
+お前何やってんだよ？
+
+you bet
+どういたしまして
+“Thank you”に対して、“You're welcome”の代わりとして使われるカジュアルな表現。
+
 
 
 I grew up watching anime.
