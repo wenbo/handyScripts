@@ -19,3 +19,9 @@ bob@bob-Vostro-320:apache-tomcat-7.0.54$ ./bin/startup.sh
 http://localhost:8080/manager/status
 
 CATALINA_HOME是TOMCAT安装路径的别名
+
+
+## error on windows
+### EclipseでTomcatを起動したらAddress already in use
+netstat -aon | find "8080"
+taskkill /F /pid 13204
