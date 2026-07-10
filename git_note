@@ -1,3 +1,13 @@
+## gitのremote urlを変更する
+現在のリモートURLを確認する
+git remote -v
+
+新しいリモートURLに変更する
+git remote set-url origin {new url}
+git remote set-url origin git@github.com:wenbo/english_pod.git
+
+
+
 git rebase -i
 
 git add -A
