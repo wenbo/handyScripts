@@ -32,7 +32,9 @@ db コンテナに入り bash を起動しましょう。
 docker compose exec db bash
 $ psql app_development -U admin
 
-
+compose.override.yaml
+When you run 'docker compose up' it reads the overrides automatically.
+compose.override.yaml
 
 docker-compose
   Define and run multi-container applications with Docker.
