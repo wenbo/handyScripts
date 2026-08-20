@@ -4,11 +4,15 @@ https://flc.ouc.edu.cn/wgyywxyjxkbsd/list.htm
 二语习得跨学科研究
 
 ChinesePod
+正式名称は「汉语水平考试(Hanyu Shuiping Kaoshi)」
 HSK 2級 単語リスト.pdf
 HSK2級単語一覧と無料pdf
 https://machibun.co.jp/china/hsk-word-second-level/
 
 EnglishPod on github.com
+
+日本英語検定
+2級（高校卒業程度）： 最年少記録は5歳（年長）です
 
 信奥赛
 
@@ -35,6 +39,11 @@ https://note.com/ai_insider/n/nccca90540f20
 
 ## 徐逸飞
 music math
+
+
+## 高至豪
+《The truth that you leave》
+高至豪（艺名Pianoboy），1980年4月29日出生于中国台湾，台湾大学物理系及物理研究所硕士毕业，中国台湾钢琴演奏者。
 
 ## 马兆远
 马兆远于2009年回国，加入了中国科学院上海光学精密机械研究所。这时候的马兆远才30岁，他看起来光芒四射。
@@ -63,3 +72,20 @@ gabbys-dollhouse-big-cat-house
 
 ## Full House
 『フルハウス』（原題：Full House）は、アメリカで製作されたシチュエーション・コメディ（テレビドラマ）。ABCテレビで1987年から1995年にかけて全192話が放送された。制作はロリマー・テレビジョン[注 1]。妻を事故で亡くした男が、男友達に助けられながら子育てをしていく物語である。
+
+# tai schedule
+vimtutor
+New Concept English
+play piano in English/Chinese/Japanese
+
+8 歳it password
+
+10 歳HSK6級
+
+16 歳IELTS 
+小2で英検2級、中1で英検準1級、中2で英検最高峰1級に合格されたENC/GNA会員、高居玲奈さんがこの度IELTSを受験され、見事7.5のスコアを突破されました！
+
+20 歳税理士
+USCPA
+史上最年少の18歳（高等課程在学中）で５科目合格
+神田 悠
