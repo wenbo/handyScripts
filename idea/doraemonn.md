@@ -25,6 +25,9 @@ qinghua UI
 
 https://www.beso.tax/ (service)
 
+## 業務
+経営管理、財務、税務、DX、語学教育
+
 ## Logo Dream
 PNG To SVG
 https://www.freeconvert.com/ja/png-to-svg/download
