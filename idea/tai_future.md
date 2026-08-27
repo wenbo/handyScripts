@@ -1,3 +1,6 @@
+音楽が趣味、税理士・経理で稼いで生活し、量子力学を研究
+音楽が趣味、税理士・経理で稼いで生活し、量子力学を研究
+
 日语语言文学，博士学位
 https://flc.ouc.edu.cn/szgl/list.htm
 https://flc.ouc.edu.cn/wgyywxyjxkbsd/list.htm
@@ -37,6 +40,10 @@ https://www.khanacademy.org/
 Notion創業者に聞いた：1億ユーザーにたどり着くまでの挑戦・反省、GenAI（生成AI）の未来への展望
 https://note.com/ai_insider/n/nccca90540f20
 
+## 吉松悠太
+https://soundquest.jp/about-author/
+自由派音楽理論
+
 ## 徐逸飞
 music math
 
@@ -74,6 +81,9 @@ gabbys-dollhouse-big-cat-house
 『フルハウス』（原題：Full House）は、アメリカで製作されたシチュエーション・コメディ（テレビドラマ）。ABCテレビで1987年から1995年にかけて全192話が放送された。制作はロリマー・テレビジョン[注 1]。妻を事故で亡くした男が、男友達に助けられながら子育てをしていく物語である。
 
 # tai schedule
+税理士・経理で稼いで、量子力学で研究
+
+日语は日常会話のレベルで良い、英語と数学は大切。
 vimtutor
 New Concept English
 play piano in English/Chinese/Japanese
