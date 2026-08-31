@@ -1,3 +1,7 @@
+## 業務
+経営管理、財務、税務、DX、語学教育
+
+## refer
 http://www.sakabeiin.com/index.html
 asu-forever
 
@@ -7,7 +11,17 @@ https://www.kaikei-home.com/taxnara/
 税理士 仲田芽衣（なかた会計事務所代表／大阪）
 https://naka.tax/
 
+### 小谷野税理士法人
+法人課税信託を基本からわかりやすく解説！令和7年の法改正による変更点とは
+https://koyano-cpa.gr.jp/nobiyo-kaikei/column/6737/
 
+現在ご依頼中の顧問税理士の
+対応が遅い・ITリテラシーが低い・頼りにならない
+と感じている中小企業経営者様へ
+https://koyano-cpa.gr.jp/nobiyo-kaikei/change/
+
+
+### 古林将一
 https://www.shcs.com.cn/
 古林将一
 上海華鐘コンサルタントグループ
