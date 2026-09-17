@@ -1,6 +1,10 @@
 音楽が趣味、税理士・経理で稼いで生活し、量子力学を研究
 音楽が趣味、税理士・経理で稼いで生活し、量子力学を研究
 
+大阪大学量子情報・量子生命研究センター：https://qiqb.osaka-u.ac.jp/
+Quantum logic gate
+https://en.wikipedia.org/wiki/Quantum_logic_gate
+
 日语语言文学，博士学位
 https://flc.ouc.edu.cn/szgl/list.htm
 https://flc.ouc.edu.cn/wgyywxyjxkbsd/list.htm

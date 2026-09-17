@@ -1,6 +1,8 @@
 learn IT & aws at same time.
 https://www.aws.training/certification/
 
+大阪大学量子情報・量子生命研究センター：https://qiqb.osaka-u.ac.jp/
+
 piano + machine learning
 
 https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/how-it-works.html
